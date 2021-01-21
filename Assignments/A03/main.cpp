@@ -61,7 +61,6 @@ ostream &operator<<(ostream &os, const CircularArrayQue &other) {
  * Main Driver
  * 
  * For this program, the main driver was used to test the CircularArrayQue class
- * 
  */
 int main() {
     CircularArrayQue C1(5);
@@ -85,4 +84,5 @@ int main() {
     // C1.Push(3);
 
     cout << C1 << endl;
+
 }
