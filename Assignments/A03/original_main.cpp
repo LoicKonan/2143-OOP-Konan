@@ -59,7 +59,7 @@ ostream &operator<<(ostream &os, const CircularArrayQue &other) {
 
 /**
  * Main Driver
- * 
+
  * For this program, the main driver was used to test the CircularArrayQue class
  * 
  */
