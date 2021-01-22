@@ -1,7 +1,7 @@
 ## Assignment 5 - Basic OOP terminology
-### - Name: Loic Konan
-### - Date: 28 Jan 2021
-### - Class: 2143 OOP
+### Name: Loic Konan
+### Date: 28 Jan 2021
+### Class: 2143 OOP
 
 
 
@@ -21,47 +21,49 @@
 > This is your method definition.....
 
 #### Abstraction
+>
 
 #### Attributes / Properties
-
+>
 
 #### Class Variable
-
+>
 
 #### Composition
-
+>
 
 #### Constructor
-
+>
 
 #### Encapsulation
-
+>
 
 #### Friends
-
+>
 
 #### Inheritance
-
+>
 
 #### Instance Variable
-
+>
 
 #### Member Variable
-
+>
 
 #### Multiple Inheritance
-
+>
 
 #### Overloading
-
+>
 
 #### Polymorphism
-
+>
 
 #### Public / Private / Protected
-
+>
 
 #### Static
-
+>
 
 #### Virtual
+>
