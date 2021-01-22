@@ -1,7 +1,8 @@
 ## Assignment 5 - Basic OOP terminology
-### Name: Loic Konan
-### Date: 28 Jan 2021
-### Class: 2143 OOP
+
+- Name: Loic Konan
+- Date: 28 Jan 2021
+- Class: 2143 OOP
 
 
 
