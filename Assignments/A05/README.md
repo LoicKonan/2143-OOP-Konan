@@ -19,7 +19,7 @@
 > In object-oriented programming, an Object is an instance of a class. An object is nothing but a self-contained component which consists of methods and  properties to make a particular type of data useful.
 > For example:
 > 
-> <img src="https://www.atnyla.com/library/images-tutorials/class-and-object-in-java.PNG" width=450>
+> <img src="https://www.atnyla.com/library/images-tutorials/class-and-object-in-java.PNG" width=250>
 
 #### Method
 
@@ -28,7 +28,7 @@
 > set of objects in an application. A method can be re-used in multiple objects.
 > For example:
 >
-><img src="https://miro.medium.com/max/810/1*xiYI_rl-_pX_27BAjxBL3g.png" width=450>
+><img src="https://miro.medium.com/max/810/1*xiYI_rl-_pX_27BAjxBL3g.png" width=250>
 
 #### Abstraction
 
@@ -36,7 +36,7 @@ Abstraction in Object-Oriented Programming mean to "shows" only essential attrib
 unnecessary information. The main purpose of abstraction is hiding the unnecessary details from the users.
 > For example:
 >
-><img src="https://www.guru99.com/images/abstraction_in_oops_112.png" width=450>
+><img src="https://www.guru99.com/images/abstraction_in_oops_112.png" width=250>
 
 #### Attributes / Properties
 
@@ -44,7 +44,7 @@ unnecessary information. The main purpose of abstraction is hiding the unnecessa
 > In short, attributes / Properties store information about the instance.
 > For example:
 >
-> ><img src="https://miro.medium.com/max/700/1*MV6B2jANikTULx6wFLrcEg.png" width=450>
+> ><img src="https://miro.medium.com/max/700/1*MV6B2jANikTULx6wFLrcEg.png" width=250>
 
 #### Class Variable
 
@@ -52,7 +52,7 @@ unnecessary information. The main purpose of abstraction is hiding the unnecessa
 > with the static keyword in a class, but outside a method, constructor or a block.
 > For example:
 >
-> <img src="https://www.programmerinterview.com/images/memVariables.png" width=400>
+> <img src="https://www.programmerinterview.com/images/memVariables.png" width=250>
 
 #### Composition
 
