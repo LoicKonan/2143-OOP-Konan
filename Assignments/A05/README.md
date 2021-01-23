@@ -52,7 +52,7 @@ unnecessary information. The main purpose of abstraction is hiding the unnecessa
 > with the static keyword in a class, but outside a method, constructor or a block.
 > For example:
 >
-> <img src="https://www.programmerinterview.com/images/memVariables.png" width=300>
+> <img src="https://www.programmerinterview.com/images/memVariables.png" width=400>
 
 #### Composition
 
