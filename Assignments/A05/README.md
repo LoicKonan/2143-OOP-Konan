@@ -18,6 +18,7 @@
 
 > In object-oriented programming, an Object is an instance of a class. An object is nothing but a self-contained component which consists of methods and  properties to make a particular type of data useful.
 > For example:
+> 
 > <img src="https://www.atnyla.com/library/images-tutorials/class-and-object-in-java.PNG" width=450>
 
 #### Method
@@ -42,6 +43,7 @@ unnecessary information. The main purpose of abstraction is hiding the unnecessa
 > Attributes / Properties are data stored inside a class or instance and represent the state or quality of the class or instance
 > In short, attributes / Properties store information about the instance.
 > For example:
+>
 > ><img src="https://miro.medium.com/max/700/1*MV6B2jANikTULx6wFLrcEg.png" width=450>
 
 #### Class Variable
@@ -49,7 +51,8 @@ unnecessary information. The main purpose of abstraction is hiding the unnecessa
 > A Class Variables are shared between a class and all its subclasses.It is also known as static variables declared
 > with the static keyword in a class, but outside a method, constructor or a block.
 > For example:
-> <img src="https://www.programmerinterview.com/images/memVariables.png" width=450>
+>
+> <img src="https://www.programmerinterview.com/images/memVariables.png" width=250>
 
 
 #### Composition
