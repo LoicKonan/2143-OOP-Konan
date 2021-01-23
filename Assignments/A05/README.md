@@ -19,9 +19,8 @@
 
 #### Object
 
-> is an instance of a class. An object in OOPS is nothing but a self-contained component which consists of methods and 
-> properties to make a particular type of data useful.
-> > For example:
+> In object-oriented programming, an Object is an instance of a class. An object in OOPS is nothing but a self-contained component which consists of methods and  properties to make a particular type of data useful.
+> For example:
 > <img src="https://www.atnyla.com/library/images-tutorials/class-and-object-in-java.PNG" width=250 height=250>
 
 #### Method
