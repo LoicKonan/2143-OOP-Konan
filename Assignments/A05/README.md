@@ -52,7 +52,7 @@ unnecessary information. The main purpose of abstraction is hiding the unnecessa
 > with the static keyword in a class, but outside a method, constructor or a block.
 > For example:
 >
-> <img src="https://www.programmerinterview.com/images/memVariables.png" width=250>
+> <img src="https://www.programmerinterview.com/images/memVariables.png" width=350>
 
 #### Composition
 
@@ -61,7 +61,7 @@ unnecessary information. The main purpose of abstraction is hiding the unnecessa
 > This relationship means that a Composite **has a** Component.
 > For example:
 >
-> <img src="https://image.slidesharecdn.com/compositionppt-170615151624/95/composition-in-oop-2-638.jpg?cb=1507486822" width=450>
+> <img src="https://image.slidesharecdn.com/compositionppt-170615151624/95/composition-in-oop-2-638.jpg?cb=1507486822" width=250>
 
 #### Constructor
 >
