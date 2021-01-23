@@ -10,7 +10,8 @@
 
 #### Class
 
-> This is your definition of what a class is. Using images is A-ok. For example: 
+> In object-oriented programming, a class is an extensible program-code-template for creating objects, it provide initial values for member variables and implementations of behavior for member functions.
+> For example:
 >
 ><img src="https://ds055uzetaobb.cloudfront.net/image_optimizer/722c82aff075a14313be7fa7463f7fedad151a0a.png" width=250>
 
