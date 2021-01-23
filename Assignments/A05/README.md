@@ -25,15 +25,15 @@
 > A method is a programmed procedure that is defined as part of a class and included in any object of that class.
 > A method in an object can only have access to the data known to that object, which ensures data integrity among the
 > set of objects in an application. A method can be re-used in multiple objects.
-> For example:
->
+>For example:
+> 
 ><img src="https://miro.medium.com/max/810/1*xiYI_rl-_pX_27BAjxBL3g.png" width=450>
 
 #### Abstraction
 
 Abstraction in Object-Oriented Programming mean to "shows" only essential attributes and "hides"
 unnecessary information. The main purpose of abstraction is hiding the unnecessary details from the users.
-For example:
+> For example:
 >
 ><img src="https://www.guru99.com/images/abstraction_in_oops_112.png" width=450>
 
