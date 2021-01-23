@@ -16,11 +16,14 @@
 *
 *    Files:
 *          main.cpp    
+*
 ****************************************************************************/
+
 
 #include <iostream>
 
 using namespace std;
+
 
 
 /*
@@ -30,8 +33,6 @@ using namespace std;
 *        such as push and pop to add or remove nodes from the list.
 *        
 *    Public Methods:
-*        - void init(int size = 0) 
-*        - bool Full()
 *        - CircularArrayQue() - default constructor
 *        - CircularArrayQue(int size)  - Programmer Define constructor
 *        - void Push(int item)
@@ -39,90 +40,139 @@ using namespace std;
 *        - friend ostream &operator<<(ostream &os,const CircularArrayQue &other)
 
 *    Private Methods:
-*        - No Private methods
-*        - No Protected methods
+*        - void init(int size = 0) 
+*        - bool Full()
 
 *    Usage:
 *        - Create a class object of a Linked List
 *        - insert or delete nodes from the Linked List
 
 */
-class CircularArrayQue 
+class CircularArrayQue
 {
 private:
     int *Container;
     int Front;
     int Rear;
-    int QueSize;            // items in the queue
+    int QueSize; // items in the queue
     int CurrentSize;
-    void init(int size = 0) 
+
+
+/**
+ *  Private :  void init
+ *
+ * Description:
+ *            
+ *
+ * Params:
+ *          - int size = 0
+ *
+ * Returns:
+ *          - NULL
+ */
+    void init(int size = 0)
     {
         Front = Rear = CurrentSize = 0;
         QueSize = size;
     }
 
+/**
+ *  Private :  bool Full
+ *
+ * Description:
+ *            
+ *
+ * Params:
+ *          - None
+ *
+ * Returns:
+ *          - [bool] CurrentSize == QueSize
+ */
     bool Full()
-     {
+    {
         return CurrentSize == QueSize;
     }
 
+
 public:
-    // Default Constructor inits everything
+/**
+ * Public :  CircularArrayQue
+ *
+ * Description:
+ *            Default Constructor
+ *
+ * Params:
+ *          - None
+ *
+ * Returns:
+ *          - NULL
+ */
     CircularArrayQue()
-     {
+    {
         Container = new int[10];
         init(10);
     }
 
-    // Programmer Define constructor 
-    CircularArrayQue(int size) 
+
+/**
+ *  Public :  CircularArrayQue
+ *
+ * Description:
+ *            Default Constructor
+ *
+ * Params:
+ *          - int size
+ *
+ * Returns:
+ *          - NULL
+ */
+    CircularArrayQue(int size)
     {
         Container = new int[size];
         init(size);
     }
 
-
- /**
-     * Public : Push
-     * 
-     * Description:
-     *      allocate new memory and init node
-     * 
-     * Params:
-     *      - int item
-     * 
-     * Returns:
-     *      void
-     */
+/**
+ * Public : Push
+ * 
+ * Description:
+ *            allocate new memory and init node
+ *  
+ * Params:
+ *          - int item
+ * 
+ * Returns:
+ *          void
+ */
     void Push(int item)
-     {
-        if (!Full()) 
+    {
+        if (!Full())
         {
             Container[Rear] = item;
             Rear = (Rear + 1) % QueSize;
             CurrentSize++;
-        } else
-         {
+        }
+        else
+        {
             cout << "FULL!!!!" << endl;
         }
     }
 
-
 /**
-     * Public : Pop
-     * 
-     * Description:
-     *      Remove a node
-     * 
-     * Params:
-     *      - None
-     * 
-     * Returns:
-     *      [int] temp
-     */
+ * Public : Pop
+ * 
+ * Description:
+ *      Remove a node
+ * 
+ * Params:
+ *      - None
+ * 
+ * Returns:
+ *      [int] temp
+ */
 
     int Pop()
-     {
+    {
         int temp = Container[Front];
         Front = (Front + 1) % QueSize;
         CurrentSize--;
@@ -133,23 +183,22 @@ public:
     friend ostream &operator<<(ostream &os, const CircularArrayQue &other);
 };
 
-
- /**
-     * Public : ostream
-     * 
-     * Description:
-     *      overloading the cout operator to print a List object
-     * 
-     * Params:
-     *      - ostream &os, const CircularArrayQue &other
-     * 
-     * Returns:
-     *      [string] os
-     */
+/**
+ * Public : ostream
+ * 
+ * Description:
+ *      overloading the cout operator to print a List object
+ * 
+ * Params:
+ *      - ostream &os, const CircularArrayQue &other
+ * 
+ * Returns:
+ *      [string] os
+ */
 ostream &operator<<(ostream &os, const CircularArrayQue &other)
- {
+{
 
-    for (int i = other.Front; i < other.CurrentSize; i = (i + 1) % other.QueSize) 
+    for (int i = other.Front; i < other.CurrentSize; i = (i + 1) % other.QueSize)
     {
         os << other.Container[i] << " ";
     }
@@ -162,28 +211,14 @@ ostream &operator<<(ostream &os, const CircularArrayQue &other)
  * 
  * For this program, the main driver was used to test the CircularArrayQue class
  */
-int main() 
+int main()
 {
-    CircularArrayQue C1(5);   // Declare Linked List object.
-
-    // C1.Push(34);
-    // C1.Push(38);
-    // C1.Push(44);
-    // C1.Push(22);
-    // C1.Push(99);
-    // C1.Push(100);
-
+    CircularArrayQue C1(5); // Declare Linked List object.
     C1.Push(1);
     C1.Push(2);
     C1.Push(3);
-    // C1.Push(6);
-    // C1.Push(7);
-    cout << C1 << endl;
 
-    // C1.Push(1);
-    // C1.Push(2);
-    // C1.Push(3);
+    cout << C1 << endl; // Display on the screen
 
     cout << C1 << endl;
-
 }
