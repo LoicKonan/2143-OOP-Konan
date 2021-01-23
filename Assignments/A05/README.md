@@ -40,7 +40,7 @@ unnecessary information. The main purpose of abstraction is hiding the unnecessa
 
 #### Attributes / Properties
 
-> Attributes / Properties are data stored inside a class or instance and represent the state or quality of the class or instance
+> Attributes / Properties are data stored inside a class or instance and represent the state or quality of the class or instance.
 > In short, attributes / Properties store information about the instance.
 > For example:
 >
@@ -52,11 +52,16 @@ unnecessary information. The main purpose of abstraction is hiding the unnecessa
 > with the static keyword in a class, but outside a method, constructor or a block.
 > For example:
 >
-> <img src="https://www.programmerinterview.com/images/memVariables.png" width=250>
-
+> <img src="https://www.programmerinterview.com/images/memVariables.png" width=450>
 
 #### Composition
+
+> It enables creating complex types by combining objects of other types.
+> This means that a class Composite can contain an object of another class Component.
+> This relationship means that a Composite *bold has a* Component.
+> For example:
 >
+> <img src="https://image.slidesharecdn.com/compositionppt-170615151624/95/composition-in-oop-2-638.jpg?cb=1507486822" width=450>
 
 #### Constructor
 >
