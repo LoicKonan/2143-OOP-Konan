@@ -16,15 +16,19 @@
 >
 ><img src="https://ds055uzetaobb.cloudfront.net/image_optimizer/722c82aff075a14313be7fa7463f7fedad151a0a.png" width=250>
 
-
 #### Object
 
-> In object-oriented programming, an Object is an instance of a class. An object in OOPS is nothing but a self-contained component which consists of methods and  properties to make a particular type of data useful.
+> In object-oriented programming, an Object is an instance of a class. An object is nothing but a self-contained component which consists of methods and  properties to make a particular type of data useful.
 > For example:
 > <img src="https://www.atnyla.com/library/images-tutorials/class-and-object-in-java.PNG" width=450>
 
 #### Method
-> This is your method definition.....
+> A method is a programmed procedure that is defined as part of a class and included in any object of that class.
+> A method in an object can only have access to the data known to that object, which ensures data integrity among the
+> set of objects in an application. A method can be re-used in multiple objects.
+For example:
+>
+><img src="https://miro.medium.com/max/810/1*xiYI_rl-_pX_27BAjxBL3g.png" width=450>
 
 #### Abstraction
 >
