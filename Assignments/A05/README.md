@@ -112,18 +112,24 @@
 > ***Multiple Inheritance*** is a feature of C++ where a **class can inherit from more than one classes**.
 > The constructors of inherited classes are called in the same order in which they are inherited.
 >> For example:
-> <img src="https://binaryterms.com/wp-content/uploads/2020/06/Multiple-Inheritance-in-Object-Orientation.jpg" width=350>
+> <img src="https://binaryterms.com/wp-content/uploads/2020/06/Multiple-Inheritance-in-Object-Orientation.jpg" width=250>
 
 #### Overloading
 
 > Function overloading is a feature in C++ where two or more functions can have the **same name but different parameters**.
 >> For example:
-> <img src="https://haygot.s3.amazonaws.com/questions/933713_919938_ans_bb02050cd3e340a18b46ca8ce889579e.png" width=350>
+> <img src="https://haygot.s3.amazonaws.com/questions/933713_919938_ans_bb02050cd3e340a18b46ca8ce889579e.png" width=450>
 
 #### Polymorphism
+
+> Polymorphism is the ability of different functions to be invoked with the same name.
+> There are two forms:
+>
+> - Static polymorphism
+> - Dynamic polymorphism
 >
 >> For example:
-> <img src="" width=450>
+> <img src="https://i.stack.imgur.com/6Ks3t.png" width=450>
 
 #### Public / Private / Protected
 >
