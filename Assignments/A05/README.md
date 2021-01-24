@@ -68,8 +68,7 @@
 
 > Constructors have the **same name** as the class or struct, and they usually **initialize the data members of the new object**.
 > In C++, Constructor is automatically called when object (instance of class) create.
- For example:
->
+> For example:
 > <img src="https://www.studytonight.com/cpp/images/copy-constructor.gif" width=450>
 
 #### Encapsulation
@@ -77,8 +76,7 @@
 > It refers to the bundling of data with the methods that operate on that data.
 > **Encapsulation** is used to hide the values or state of a structured data object inside a class,
 > preventing unauthorized parties’ direct access to them.
- For example:
->
+> For example:
 > <img src="http://www.expertphp.in/images/articles/ArtImgKPTPrr_OOP4.jpg" width=450>
 
 #### Friends
