@@ -109,7 +109,7 @@ public:
  */
     CircularArrayQue()
     {
-        Container = new int[10];
+        Container = new int[10];    // allocate new memory
         init(10);
     }
 
@@ -128,7 +128,7 @@ public:
  */
     CircularArrayQue(int size)
     {
-        Container = new int[size];
+        Container = new int[size];    // allocate new memory
         init(size);
     }
 
