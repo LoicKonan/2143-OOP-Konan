@@ -132,9 +132,15 @@
 > <img src="https://i.stack.imgur.com/6Ks3t.png" width=450>
 
 #### Public / Private / Protected
+
+> In C++, there are three access specifiers:
+>
+> - Public - Members are accessible from outside the class.
+> - Private - Members cannot be accessed (or viewed) from outside the class.
+> - Protected - Members cannot be accessed from outside the class, however, they can be accessed in inherited classes.
 >
 >> For example:
-> <img src="" width=450>
+> <img src="https://www.bogotobogo.com/cplusplus/images/private_inheritance/class_inheritance_diagram.png" width=450>
 
 #### Static
 >
