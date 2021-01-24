@@ -54,7 +54,7 @@ private:
     int *Container;
     int Front;
     int Rear;
-    int QueSize; // items in the queue
+    int QueSize;        // items in the queue
     int CurrentSize;
 
 
@@ -115,7 +115,7 @@ public:
 
 
 /**
- *  Public :  CircularArrayQue
+ * Public :   CircularArrayQue
  *
  * Description:
  *            Default Constructor
