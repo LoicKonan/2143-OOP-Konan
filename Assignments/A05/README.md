@@ -90,7 +90,7 @@
 
 > Is the ability of a class to **derive or inherit** methods and properties from another class.
 >> For example:
-> <img src="https://www.cpp.thiyagaraaj.com/cms/assets/cimages/friend_function.png" width=450>
+> <img src="https://www.mycplus.com/mycplus/wp-content/uploads/2008/10/Inheritance-1280x640.png" width=450>
 
 #### Instance Variable
 >
