@@ -4,7 +4,7 @@
 *    Email:            loickonan.lk@gmail.com
 *    Label:            Basic Project Organization Commenting C++ code
 *    Title:            Linked List Comments
-*    Course:           CMPS 3013
+*    Course:           CMPS 2143
 *    Semester:         Spring 2021
 *    Description:
 *        Program create a Linked List with various Nodes.
