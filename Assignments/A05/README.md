@@ -103,36 +103,38 @@
 #### Member Variable
 
 > A member variable is a variable that is part of a class.
-> The member variables of an object are accessed using the dot operator
+> The member variables of an object are accessed using the dot operator.
 >> For example:
 > <img src="https://1.bp.blogspot.com/-b-snzBFnoHs/Vu6rs2fUoqI/AAAAAAAAAXQ/CPUenSOSJKsZTxWqwWwn0v-DZde8f8GNQ/s1600/memberVariables.JPG" width=450>
 
 #### Multiple Inheritance
->
+
+> ***Multiple Inheritance*** is a feature of C++ where a **class can inherit from more than one classes**.
+> The constructors of inherited classes are called in the same order in which they are inherited
 >> For example:
-> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
+> <img src="https://binaryterms.com/wp-content/uploads/2020/06/Multiple-Inheritance-in-Object-Orientation.jpg" width=450>
 
 #### Overloading
 >
 >> For example:
-> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
+> <img src="" width=450>
 
 #### Polymorphism
 >
 >> For example:
-> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
+> <img src="" width=450>
 
 #### Public / Private / Protected
 >
 >> For example:
-> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
+> <img src="" width=450>
 
 #### Static
 >
 >> For example:
-> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
+> <img src="" width=450>
 
 #### Virtual
 >
 >> For example:
-> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
+> <img src="" width=450>
