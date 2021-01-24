@@ -1,7 +1,7 @@
 ## Assignment 5 - Basic OOP terminology
 
 - Name: Loic Konan
-- Date: 28 Jan 2021
+- Date:  28 Jan 2021
 - Class: 2143 OOP
 
 ## Definitions
@@ -135,14 +135,19 @@
 
 > In C++, there are three access specifiers:
 >
-> - Public - Members are accessible from outside the class.
-> - Private - Members cannot be accessed (or viewed) from outside the class.
-> - Protected - Members cannot be accessed from outside the class, however, they can be accessed in inherited classes.
+> - **Public** - Members are accessible from outside the class.
+> - **Private** - Members cannot be accessed (or viewed) from outside the class.
+> - **Protected** - Members cannot be accessed from outside the class, however, they can be accessed in inherited classes.
 >
 >> For example:
-> <img src="https://www.bogotobogo.com/cplusplus/images/private_inheritance/class_inheritance_diagram.png" width=450>
+> <img src="https://www.bogotobogo.com/cplusplus/images/private_inheritance/class_inheritance_diagram.png" width=250>
 
 #### Static
+
+> **Static** keyword has different meanings when used with different types. We can use static keyword with:
+>
+> - **Static Variables** : Variables in a function, Variables in a class
+> - **Static Members of Class** : Class objects and Functions in a class
 >
 >> For example:
 > <img src="" width=450>
