@@ -144,15 +144,19 @@
 
 #### Static
 
-> **Static** keyword has different meanings when used with different types. We can use static keyword with:
+> **Static** keyword makes any variable, object or function a constant one.
+> That means, only one copy of that particular variable or function would be created and will
+> be accessed by all the instances of the class. We can use static keyword with:
 >
 > - **Static Variables** : Variables in a function, Variables in a class
 > - **Static Members of Class** : Class objects and Functions in a class
 >
 >> For example:
-> <img src="" width=450>
+> <img src="https://dotnettutorials.net/wp-content/uploads/2018/07/word-image-485-300x136.png" width=450>
 
 #### Virtual
->
+
+> **A virtual function** is a member function which is declared within a base class and is Overriden by a derived class.
+> ***Virtual functions*** ensure that the correct function is called for an object.
 >> For example:
-> <img src="" width=450>
+> <img src="https://prepinsta.com/wp-content/uploads/2019/02/Virtual-Base-Class-in-C.png" width=450>
