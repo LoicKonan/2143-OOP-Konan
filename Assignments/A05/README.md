@@ -81,13 +81,16 @@
 
 #### Friends
 
-> If a function is friend function of a class, then the friend function is not the actual member of the class.
-> But that friend function has rights to access to all private and protected members (variables and functions).
+> If a function is **friend function** of a class, then the friend function is not the actual member of the class.
+> But that friend function ***has rights to access*** to all private and protected members (variables and functions).
 >> For example:
 > <img src="https://www.cpp.thiyagaraaj.com/cms/assets/cimages/friend_function.png" width=450>
 
 #### Inheritance
->
+
+> Is the ability of a class to **derive or inherit** methods and properties from another class.
+>> For example:
+> <img src="https://www.cpp.thiyagaraaj.com/cms/assets/cimages/friend_function.png" width=450>
 
 #### Instance Variable
 >
