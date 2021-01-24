@@ -45,7 +45,8 @@ using namespace std;
 *    Usage:
 *        - Create a class object of a Linked List
 *        - insert or delete nodes from the Linked List
-
+*        - $ ./main filename
+*
 */
 class CircularArrayQue
 {
@@ -61,7 +62,7 @@ private:
  * Private :  void init
  *
  * Description:
- *            
+ *            - Initialize Current and  Que Size to zero.
  *
  * Params:
  *          - int size = 0
@@ -79,7 +80,7 @@ private:
  * Private :  bool Full
  *
  * Description:
- *            
+ *               If it is full assign the QueSize to Current Size.
  *
  * Params:
  *          - None
@@ -135,7 +136,8 @@ public:
  * Public : Push
  * 
  * Description:
- *            allocate new memory and init node
+ *            - Add to the Current size if not full
+ *            - Else print out full.
  *  
  * Params:
  *          - int item
@@ -174,7 +176,7 @@ public:
     {
         int temp = Container[Front];
         Front = (Front + 1) % QueSize;
-        CurrentSize--;
+        CurrentSize--;              // Decrease Current size by one.
         return temp;
     }
 
@@ -212,7 +214,7 @@ ostream &operator<<(ostream &os, const CircularArrayQue &other)
  */
 int main()
 {
-    CircularArrayQue C1(5); // Declare Linked List object.
+    CircularArrayQue C1(5); // Declare Linked List object and push some value in it.
     C1.Push(1);
     C1.Push(2);
     C1.Push(3);
