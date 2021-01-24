@@ -20,7 +20,7 @@
 > which consists of methods and  properties to make a particular type of data useful.
 >> For example:
 >
-> <img src="https://www.atnyla.com/library/images-tutorials/class-and-object-in-java.PNG" width=250>
+> <img src="https://www.atnyla.com/library/images-tutorials/class-and-object-in-java.PNG" width=450>
 
 #### Method
 
@@ -29,7 +29,7 @@
 > set of objects in an application. A method can be ***re-used*** in multiple objects.
 >> For example:
 >
-><img src="https://miro.medium.com/max/810/1*xiYI_rl-_pX_27BAjxBL3g.png" width=250>
+><img src="https://miro.medium.com/max/810/1*xiYI_rl-_pX_27BAjxBL3g.png" width=450>
 
 #### Abstraction
 
@@ -37,7 +37,7 @@
 > unnecessary information. The main purpose of abstraction is hiding the unnecessary details from the users.
 >> For example:
 >
-><img src="https://www.guru99.com/images/abstraction_in_oops_112.png" width=250>
+><img src="https://www.guru99.com/images/abstraction_in_oops_112.png" width=450>
 
 #### Attributes / Properties
 
@@ -45,7 +45,7 @@
 > In short, attributes / Properties **store information about the instance**.
 >> For example:
 >
-> ><img src="https://miro.medium.com/max/700/1*MV6B2jANikTULx6wFLrcEg.png" width=250>
+> ><img src="https://miro.medium.com/max/700/1*MV6B2jANikTULx6wFLrcEg.png" width=450>
 
 #### Class Variable
 
@@ -53,7 +53,7 @@
 > with the ***static*** keyword in a class, but outside a method, constructor or a block.
 >> For example:
 >
-> <img src="https://www.programmerinterview.com/images/memVariables.png" width=250>
+> <img src="https://www.programmerinterview.com/images/memVariables.png" width=450>
 
 #### Composition
 
@@ -69,7 +69,7 @@
 > Constructors have the **same name** as the class or struct, and they usually **initialize the data members of the new object**.
 > In C++, Constructor is automatically called when object (instance of class) create.
 >> For example:
-> <img src="https://www.studytonight.com/cpp/images/copy-constructor.gif" width=250>
+> <img src="https://www.studytonight.com/cpp/images/copy-constructor.gif" width=400>
 
 #### Encapsulation
 
@@ -77,20 +77,20 @@
 > **Encapsulation** is used to hide the values or state of a structured data object inside a class,
 > preventing unauthorized parties’ direct access to them.
 >> For example:
-> <img src="http://www.expertphp.in/images/articles/ArtImgKPTPrr_OOP4.jpg" width=250>
+> <img src="http://www.expertphp.in/images/articles/ArtImgKPTPrr_OOP4.jpg" width=450>
 
 #### Friends
 
 > If a function is **friend function** of a class, then the friend function is not the actual member of the class.
 > But that friend function ***has rights to access*** to all private and protected members (variables and functions).
 >> For example:
-> <img src="https://www.cpp.thiyagaraaj.com/cms/assets/cimages/friend_function.png" width=250>
+> <img src="https://www.cpp.thiyagaraaj.com/cms/assets/cimages/friend_function.png" width=450>
 
 #### Inheritance
 
 > Is the ability of a class to **derive or inherit** methods and properties from another class.
 >> For example:
-> <img src="https://www.mycplus.com/mycplus/wp-content/uploads/2008/10/Inheritance-1280x640.png" width=250>
+> <img src="https://www.mycplus.com/mycplus/wp-content/uploads/2008/10/Inheritance-1280x640.png" width=450>
 
 #### Instance Variable
 
@@ -98,27 +98,27 @@
 > methods, or blocks. Instance variables are created when an object is instantiated,
 > and are accessible to all the constructors, methods, or blocks in the class.
 >> For example:
-> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=250>
+> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=400>
 
 #### Member Variable
 
 > A member variable is a variable that is part of a class.
 > The member variables of an object are accessed using the dot operator.
 >> For example:
-> <img src="https://1.bp.blogspot.com/-b-snzBFnoHs/Vu6rs2fUoqI/AAAAAAAAAXQ/CPUenSOSJKsZTxWqwWwn0v-DZde8f8GNQ/s1600/memberVariables.JPG" width=250>
+> <img src="https://1.bp.blogspot.com/-b-snzBFnoHs/Vu6rs2fUoqI/AAAAAAAAAXQ/CPUenSOSJKsZTxWqwWwn0v-DZde8f8GNQ/s1600/memberVariables.JPG" width=450>
 
 #### Multiple Inheritance
 
 > ***Multiple Inheritance*** is a feature of C++ where a **class can inherit from more than one classes**.
 > The constructors of inherited classes are called in the same order in which they are inherited.
 >> For example:
-> <img src="https://binaryterms.com/wp-content/uploads/2020/06/Multiple-Inheritance-in-Object-Orientation.jpg" width=250>
+> <img src="https://binaryterms.com/wp-content/uploads/2020/06/Multiple-Inheritance-in-Object-Orientation.jpg" width=200>
 
 #### Overloading
 
 > Function overloading is a feature in C++ where two or more functions can have the **same name but different parameters**.
 >> For example:
-> <img src="https://haygot.s3.amazonaws.com/questions/933713_919938_ans_bb02050cd3e340a18b46ca8ce889579e.png" width=250>
+> <img src="https://haygot.s3.amazonaws.com/questions/933713_919938_ans_bb02050cd3e340a18b46ca8ce889579e.png" width=450>
 
 #### Polymorphism
 
@@ -129,7 +129,7 @@
 > - Dynamic polymorphism
 >
 >> For example:
-> <img src="https://i.stack.imgur.com/6Ks3t.png" width=250>
+> <img src="https://i.stack.imgur.com/6Ks3t.png" width=350>
 
 #### Public / Private / Protected
 
