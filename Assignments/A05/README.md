@@ -80,7 +80,11 @@
 > <img src="http://www.expertphp.in/images/articles/ArtImgKPTPrr_OOP4.jpg" width=450>
 
 #### Friends
->
+
+> If a function is friend function of a class, then the friend function is not the actual member of the class.
+> But that friend function has rights to access to all private and protected members (variables and functions).
+>> For example:
+> <img src="https://www.cpp.thiyagaraaj.com/cms/assets/cimages/friend_function.png" width=450>
 
 #### Inheritance
 >
