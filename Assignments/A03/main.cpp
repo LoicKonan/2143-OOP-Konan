@@ -59,7 +59,7 @@ private:
 
 
 /**
- *  Private :  void init
+ * Private :  void init
  *
  * Description:
  *            
@@ -77,7 +77,7 @@ private:
     }
 
 /**
- *  Private :  bool Full
+ * Private :  bool Full
  *
  * Description:
  *            
@@ -142,7 +142,7 @@ public:
  *          - int item
  * 
  * Returns:
- *          void
+ *          - void
  */
     void Push(int item)
     {
