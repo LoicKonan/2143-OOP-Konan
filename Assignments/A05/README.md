@@ -93,25 +93,46 @@
 > <img src="https://www.mycplus.com/mycplus/wp-content/uploads/2008/10/Inheritance-1280x640.png" width=450>
 
 #### Instance Variable
->
+
+> An **Instance Variable** is a variable which is ***declared in a class but outside*** of constructors,
+> methods, or blocks. Instance variables are created when an object is instantiated,
+> and are accessible to all the constructors, methods, or blocks in the class.
+>> For example:
+> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
 
 #### Member Variable
->
+
+> A member variable is a variable that is part of a class.
+> The member variables of an object are accessed using the dot operator
+>> For example:
+> <img src="https://1.bp.blogspot.com/-b-snzBFnoHs/Vu6rs2fUoqI/AAAAAAAAAXQ/CPUenSOSJKsZTxWqwWwn0v-DZde8f8GNQ/s1600/memberVariables.JPG" width=450>
 
 #### Multiple Inheritance
 >
+>> For example:
+> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
 
 #### Overloading
 >
+>> For example:
+> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
 
 #### Polymorphism
 >
+>> For example:
+> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
 
 #### Public / Private / Protected
 >
+>> For example:
+> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
 
 #### Static
 >
+>> For example:
+> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
 
 #### Virtual
 >
+>> For example:
+> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191113121956/TypesofVariableInC.png" width=450>
