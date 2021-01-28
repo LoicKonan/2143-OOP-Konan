@@ -5,7 +5,7 @@
 ### Description
 
 This is the "hello world" of SFML game programming.
-This assignment is more about breaking the ice with SFML, and how to get comfortable it for future programs.
+This assignment is more about breaking the ice with SFML, and how to get comfortable with it for future programs.
 
 ### Files
 
