@@ -24,7 +24,6 @@
 
 using namespace std;
 
-
 /*
 *    Class Name: CircularArrayQue
 *    Description:
@@ -56,7 +55,6 @@ private:
     int Rear;
     int QueSize;        // items in the queue
     int CurrentSize;
-
 
 /**
  * Private :  void init
