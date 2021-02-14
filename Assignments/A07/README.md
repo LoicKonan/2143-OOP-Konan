@@ -10,9 +10,7 @@ Designing classes with the OOP mindset, you should follow a few principles to ke
 
 |  #  | File                                   | Description                                |
 | :-: | -------------------------------------- | ------------------------------------------ |
-|  1  | [main.cpp](main.cpp)                   | The main cpp with comments and description |
-|  2  | [original_main.cpp](original_main.cpp) | The main cpp before any comments.          |
-|  3  | [Banner](Banner)                       | Banner for Assignment                      |
+|  1  | [Banner](Banner)                       | Banner for Assignment                      |
 
 ### Instructions
 
