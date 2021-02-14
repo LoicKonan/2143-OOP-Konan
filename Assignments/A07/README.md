@@ -28,15 +28,15 @@ A process of Object-Oriented analysis:
 
 When writing "requirements" for your classes (and we are following a very loose design process for now) you should think in the following terms:
 
-- The <thing> should provide <something> so we can do <this>.
-- They don't ALL have to fit this exactly, but each "requirement" or "attribute" should at least have a <subject> => <verb> approach.
+- The < thing > should provide < something > so we can do < this >.
+- They don't ALL have to fit this exactly, but each "requirement" or "attribute" should at least have a < subject > => < verb > approach.
   **Example:**
 
-- A **score** (the <thing>) should know its **value** (the <something>) so it can be **displayed** (the <this>) on a game window.
-- A **player** (the <thing>) should know its **location** (the <something>) so it can be **checked** (the <this>) for collisions.
+- A **score** (the < thing >) should know its **value** (the < something >) so it can be **displayed** (the < this >) on a game window.
+- A **player** (the < thing >) should know its **location** (the < something >) so it can be **checked** (the < this >) for collisions.
 - Without all the keywords embedded now:
-  -- A debris item should know its speed and direction so we can update its location.
-  -- A player should know its speed and direction so we can update its location.
+  - A debris item should know its speed and direction so we can update its location.
+  - A player should know its speed and direction so we can update its location.
   What do we notice about a debris item and a player? Seems to be a lot of overlap! We can leverage that information in our design!
 
 ### Files
@@ -48,7 +48,7 @@ When writing "requirements" for your classes (and we are following a very loose 
 
 ### Instructions
 
-1- Identify the classes and objects to be used in the program.
+1 - Identify the classes and objects to be used in the program.
 2- Define the attributes for each class.
 3- Define the behaviors for each class.
 4- Define the relationship between classes.
@@ -56,32 +56,39 @@ When writing "requirements" for your classes (and we are following a very loose 
 #### Possible Classes
 
 **Player**
--- Has a Shape
-Has a Size
-Has a Color
-Has a Speed
-Has a Location (could change)
-Can move in any direction using keys
-Can collide with other "objects"
+
+- Has a Shape
+- Has a Size
+- Has a Color
+- Has a Speed
+- Has a Location (could change)
+- Can move in any direction using keys
+- Can collide with other "objects"
 
 **Debris**
---Has a Shape
-Has a Size
-Has a Color
-Has a Speed
-Has a Location (could change)
-Can move in any direction
-Can collide with other "objects"
+
+- Has a Shape
+- Has a Size
+- Has a Color
+- Has a Speed
+- Has a Location (could change)
+- Can move in any direction
+- Can collide with other "objects"
 
 **Scoring**
-When a Player comes collides with Debris score is negatively effected.
-When a piece of Debris leaves game screen (on the left), score is positively effected.
+
+- When a Player comes collides with Debris score is negatively effected.
+- When a piece of Debris leaves game screen (on the left), score is positively effected.
+
 **Text**
-Has a Font (can change)
-Has a Location
-Has a Color
-Has a Size
+
+- Has a Font (can change)
+- Has a Location
+- Has a Color
+- Has a Size
+
 **Game**
--- Has player(s)
-Has score(s)
-Has debris(s) (yes "debris" can be plural but it doesn't make the point)
+
+- Has player(s)
+- Has score(s)
+- Has debris(s) (yes "debris" can be plural but it doesn't make the point)
