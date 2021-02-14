@@ -47,10 +47,10 @@ When writing "requirements" for your classes (and we are following a very loose 
 
 ### Instructions
 
-1. Identify the classes and objects to be used in the program.
-2. Define the attributes for each class.
-3. Define the behaviors for each class.
-4. Define the relationship between classes.
+**1. Identify the classes and objects to be used in the program.**
+**2. Define the attributes for each class.**
+**3. Define the behaviors for each class.**
+**4. Define the relationship between classes.**
 
 ### Possible Classes
 
