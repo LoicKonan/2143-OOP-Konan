@@ -4,8 +4,7 @@
 
 #### Description
 
-To use Object Oriented Programming mindset to design the classes.
-A process of Object-Oriented analysis:
+To use **Object Oriented Programming** mindset to clarify what we need to implement, what classes are needed, and how those classes are related and finally to specifies how they will carry out their resposibilities.
 
 #### Dry (Don't Repeat Yourself)
 
@@ -48,12 +47,12 @@ When writing "requirements" for your classes (and we are following a very loose 
 
 ### Instructions
 
-1 - Identify the classes and objects to be used in the program.
-2- Define the attributes for each class.
-3- Define the behaviors for each class.
-4- Define the relationship between classes.
+1 - Identify the classes and objects to be used in the program\.
+2 - Define the attributes for each class\.
+3 - Define the behaviors for each class\.
+4 - Define the relationship between classes\.
 
-#### Possible Classes
+### Possible Classes
 
 **Player**
 
