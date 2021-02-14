@@ -4,7 +4,7 @@
 
 #### Description
 
-To use **Object Oriented Programming** mindset to clarify what we need to implement, what classes are needed, and how those classes are related and finally to specifies how they will carry out their resposibilities.
+To use **Object Oriented Programming** mindset to clarify what we need to implement, what classes are needed, how those classes are related and finally to specifies how they will carry out their resposibilities.
 
 #### Dry (Don't Repeat Yourself)
 
@@ -28,7 +28,7 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 When writing "requirements" for your classes (and we are following a very loose design process for now) you should think in the following terms:
 
 - The ***< thing >***  should provide  ***< something >***  so we can do ***< this >***.
-- They don't ALL have to fit this exactly, but each "requirement" or "attribute" should at least have a < ***subject > => < verb > approach.
+- They don't ALL have to fit this exactly, but each "requirement" or "attribute" should at least have a < ***subject*** > => < verb > approach.
   **Example:**
 
 - A **score** (the **< thing >**) should know its **value** (the **< something >**) so it can be **displayed** (the **< this >**) on a game window.
