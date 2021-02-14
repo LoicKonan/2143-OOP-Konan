@@ -16,23 +16,23 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 
 - A class should be written to handle one defined thing, and handle it well.
 - The definition of "one" is the question here.
-- Think along the lines of decoupling. For example when **ClassA** depends heavily on **ClassB**, the chances of ClassA being affected when ClassB is changed are high. We don't want this to happen.
+- Think along the lines of decoupling. For example when **ClassA** depends heavily on **ClassB**, the chances of **ClassA** being affected when **ClassB** is changed are high. We don't want this to happen.
 
 #### Favor Composition over Inheritance
 
 - To favor composition over inheritance is a design principle that gives the design higher flexibility.
-  -It is more natural to build classes out of various separate components rather than trying to find commonality between them in order to create an inheritance hierarchy.
+- It is more natural to build classes out of various separate components rather than trying to find commonality between them in order to create an inheritance hierarchy.
 
 #### Requirements / Attributes
 
 When writing "requirements" for your classes (and we are following a very loose design process for now) you should think in the following terms:
 
-- The < thing > should provide < something > so we can do < this >.
-- They don't ALL have to fit this exactly, but each "requirement" or "attribute" should at least have a < subject > => < verb > approach.
+- The ***< thing >***  should provide  ***< something >***  so we can do ***< this >***.
+- They don't ALL have to fit this exactly, but each "requirement" or "attribute" should at least have a < ***subject > => < verb > approach.
   **Example:**
 
-- A **score** (the < thing >) should know its **value** (the < something >) so it can be **displayed** (the < this >) on a game window.
-- A **player** (the < thing >) should know its **location** (the < something >) so it can be **checked** (the < this >) for collisions.
+- A **score** (the **< thing >**) should know its **value** (the **< something >**) so it can be **displayed** (the **< this >**) on a game window.
+- A **player** (the **< thing >**) should know its **location** (the **< something >**) so it can be **checked** (the **< this >**) for collisions.
 - Without all the keywords embedded now:
   - A debris item should know its speed and direction so we can update its location.
   - A player should know its speed and direction so we can update its location.
@@ -47,10 +47,10 @@ When writing "requirements" for your classes (and we are following a very loose 
 
 ### Instructions
 
-1 - Identify the classes and objects to be used in the program\.
-2 - Define the attributes for each class\.
-3 - Define the behaviors for each class\.
-4 - Define the relationship between classes\.
+1. Identify the classes and objects to be used in the program.
+2. Define the attributes for each class.
+3. Define the behaviors for each class.
+4. Define the relationship between classes.
 
 ### Possible Classes
 
