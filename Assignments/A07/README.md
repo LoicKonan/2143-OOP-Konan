@@ -8,17 +8,17 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 
 ### Files
 
-|  #  | File                                     | Description                           |
-| :-: | ---------------------------------------- | ------------------------------------- |
-|  1  | [Banner](Banner)                         | Banner for Assignment                 |
+|  #  | File                       | Description                           |
+| :-: | -------------------------- | ------------------------------------- |
+|  1  | [Banner](Banner)           | Banner for Assignment                 |
 |  1  | [Diagram.png](Diagram.png) | Visual model of the classes using UML |
 
 ### Instructions
 
-1. __Identify the classes and objects to be used in the program.__
-2. __Define the attributes for each class.__
-3. __Define the behaviors for each class.__
-4. __Define the relationship between classes.__
+1. **Identify the classes and objects to be used in the program.**
+2. **Define the attributes for each class.**
+3. **Define the behaviors for each class.**
+4. **Define the relationship between classes.**
 
 ### Possible Classes
 
