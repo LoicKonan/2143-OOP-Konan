@@ -47,10 +47,10 @@ When writing "requirements" for your classes (and we are following a very loose 
 
 ### Instructions
 
-1. **Identify the classes and objects to be used in the program.**
-2. **Define the attributes for each class.**
-3. **Define the behaviors for each class.**
-4. **Define the relationship between classes.**
+1. __Identify the classes and objects to be used in the program.__
+2. __Define the attributes for each class.__
+3. __Define the behaviors for each class.__
+4. __Define the relationship between classes.__
 
 ### Possible Classes
 
@@ -91,6 +91,11 @@ When writing "requirements" for your classes (and we are following a very loose 
 - Has player(s)
 - Has score(s)
 - Has debris(s) (yes "debris" can be plural but it doesn't make the point)
+
+**Shape**
+
+- Is a player
+- Is a debris
 
 ### Diagram
 
