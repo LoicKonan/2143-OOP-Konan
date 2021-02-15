@@ -40,10 +40,10 @@ When writing "requirements" for your classes (and we are following a very loose 
 
 ### Files
 
-|  #  | File                                 | Description                           |
-| :-: | ------------------------------------ | ------------------------------------- |
-|  1  | [Banner](Banner)                     | Banner for Assignment                 |
-|  1  | [Untitled Diagram](UntitledDiagram) | Visual model of the classes using UML |
+|  #  | File                                     | Description                           |
+| :-: | ---------------------------------------- | ------------------------------------- |
+|  1  | [Banner](Banner)                         | Banner for Assignment                 |
+|  1  | [UntitledDiagram.png](Untitled Diagram.png) | Visual model of the classes using UML |
 
 ### Instructions
 
