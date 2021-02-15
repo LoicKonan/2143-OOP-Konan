@@ -73,4 +73,4 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 
 ### Diagram
 
-<img src="Diagram.jpg" width="800">
+<img src="Diagram.jng" width="800">
