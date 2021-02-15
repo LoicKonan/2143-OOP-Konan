@@ -27,8 +27,8 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 
 When writing "requirements" for your classes (and we are following a very loose design process for now) you should think in the following terms:
 
-- The ***< thing >***  should provide  ***< something >***  so we can do ***< this >***.
-- They don't ALL have to fit this exactly, but each "requirement" or "attribute" should at least have a < ***subject*** > => < verb > approach.
+- The **_< thing >_** should provide **_< something >_** so we can do **_< this >_**.
+- They don't ALL have to fit this exactly, but each "requirement" or "attribute" should at least have a < **_subject_** > => < verb > approach.
   **Example:**
 
 - A **score** (the **< thing >**) should know its **value** (the **< something >**) so it can be **displayed** (the **< this >**) on a game window.
@@ -36,14 +36,14 @@ When writing "requirements" for your classes (and we are following a very loose 
 - Without all the keywords embedded now:
   - A debris item should know its speed and direction so we can update its location.
   - A player should know its speed and direction so we can update its location.
-  What do we notice about a debris item and a player? Seems to be a lot of overlap! We can leverage that information in our design!
+    What do we notice about a debris item and a player? Seems to be a lot of overlap! We can leverage that information in our design!
 
 ### Files
 
-|  #  | File             | Description                           |
-| :-: | ---------------- | ------------------------------------- |
-|  1  | [Banner](Banner) | Banner for Assignment                 |
-|  1  | []()             | Visual model of the classes using UML |
+|  #  | File                                 | Description                           |
+| :-: | ------------------------------------ | ------------------------------------- |
+|  1  | [Banner](Banner)                     | Banner for Assignment                 |
+|  1  | [Untitled Diagram](UntitledDiagram) | Visual model of the classes using UML |
 
 ### Instructions
 
