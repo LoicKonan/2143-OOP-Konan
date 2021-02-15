@@ -43,7 +43,7 @@ When writing "requirements" for your classes (and we are following a very loose 
 |  #  | File                                     | Description                           |
 | :-: | ---------------------------------------- | ------------------------------------- |
 |  1  | [Banner](Banner)                         | Banner for Assignment                 |
-|  1  | [UntitledDiagram.png](Untitled Diagram.png) | Visual model of the classes using UML |
+|  1  | [UntitledDiagram.png](UntitledDiagram.png) | Visual model of the classes using UML |
 
 ### Instructions
 
