@@ -77,6 +77,6 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
   
 <img src="Shape.png" width="200">
 
-### **Diagram**
+**Diagram**
 
 <img src="Diagram.png" width="800">
