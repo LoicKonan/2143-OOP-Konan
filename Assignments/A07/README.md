@@ -11,7 +11,7 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 |  #  | File                       | Description                           |
 | :-: | -------------------------- | ------------------------------------- |
 |  1  | [Banner](Banner)           | Banner for Assignment                 |
-|  1  | [Diagram.jpg](Diagram.jpg) | Visual model of the classes using UML |
+|  1  | [Diagram.jng](Diagram.jpg) | Visual model of the classes using UML |
 
 ### Instructions
 
