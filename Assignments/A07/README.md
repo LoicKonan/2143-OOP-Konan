@@ -20,7 +20,7 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 3. **Define the behaviors for each class.**
 4. **Define the relationship between classes.**
 
-### Possible Classes
+### Classes
 
 **Player**
 
