@@ -6,38 +6,6 @@
 
 To use **Object Oriented Programming** mindset to clarify what we need to implement, what classes are needed, how those classes are related and finally to specifies how they will carry out their resposibilities.
 
-#### Dry (Don't Repeat Yourself)
-
-- Don't write duplicate code.
-- A class should do its own thing. If two classes are doing the same thing, to the same data, maybe it should be its own class entirely.
-- Similarly, if you have a block of code in more than two places consider making it a separate method.
-
-#### Single Responsibility Principle (SRP)
-
-- A class should be written to handle one defined thing, and handle it well.
-- The definition of "one" is the question here.
-- Think along the lines of decoupling. For example when **ClassA** depends heavily on **ClassB**, the chances of **ClassA** being affected when **ClassB** is changed are high. We don't want this to happen.
-
-#### Favor Composition over Inheritance
-
-- To favor composition over inheritance is a design principle that gives the design higher flexibility.
-- It is more natural to build classes out of various separate components rather than trying to find commonality between them in order to create an inheritance hierarchy.
-
-#### Requirements / Attributes
-
-When writing "requirements" for your classes (and we are following a very loose design process for now) you should think in the following terms:
-
-- The **_< thing >_** should provide **_< something >_** so we can do **_< this >_**.
-- They don't ALL have to fit this exactly, but each "requirement" or "attribute" should at least have a < **_subject_** > => < verb > approach.
-  **Example:**
-
-- A **score** (the **< thing >**) should know its **value** (the **< something >**) so it can be **displayed** (the **< this >**) on a game window.
-- A **player** (the **< thing >**) should know its **location** (the **< something >**) so it can be **checked** (the **< this >**) for collisions.
-- Without all the keywords embedded now:
-  - A debris item should know its speed and direction so we can update its location.
-  - A player should know its speed and direction so we can update its location.
-    What do we notice about a debris item and a player? Seems to be a lot of overlap! We can leverage that information in our design!
-
 ### Files
 
 |  #  | File                                     | Description                           |
