@@ -94,4 +94,4 @@ When writing "requirements" for your classes (and we are following a very loose 
 
 ### Diagram
 
-<img src="UntitledDiagram.png" width="400">
+<img src="UntitledDiagram.png" width="800">
