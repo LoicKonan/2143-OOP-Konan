@@ -24,8 +24,6 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 
 **Player**
 
-<img src="Player.png" width="200">
-
 - Has a Shape
 - Has a Size
 - Has a Color
@@ -33,10 +31,9 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 - Has a Location (could change)
 - Can move in any direction using keys
 - Can collide with other "objects"
+<img src="Player.png" width="200">
 
 **Debris**
-
-<img src="Debris.png" width="200">
 
 - Has a Shape
 - Has a Size
@@ -45,37 +42,34 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 - Has a Location (could change)
 - Can move in any direction
 - Can collide with other "objects"
+<img src="Debris.png" width="200">
 
 **Scoring**
 
-<img src="Scoring.png" width="200">
-
 - When a Player comes collides with Debris score is negatively effected.
 - When a piece of Debris leaves game screen (on the left), score is positively effected.
+<img src="Scoring.png" width="200">
 
 **Text**
-
-<img src="Text.png" width="200">
 
 - Has a Font (can change)
 - Has a Location
 - Has a Color
 - Has a Size
+<img src="Text.png" width="200">
 
 **Game**
-
-<img src="Game.png" width="200">
 
 - Has player(s)
 - Has score(s)
 - Has debris(s) (yes "debris" can be plural but it doesn't make the point)
+<img src="Game.png" width="200">
 
 **Shape**
 
-<img src="Shape.png" width="200">
-
 - Is a player
 - Is a debris
+<img src="Shape.png" width="200">
 
 ### Diagram
 
