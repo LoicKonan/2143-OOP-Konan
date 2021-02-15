@@ -91,3 +91,7 @@ When writing "requirements" for your classes (and we are following a very loose 
 - Has player(s)
 - Has score(s)
 - Has debris(s) (yes "debris" can be plural but it doesn't make the point)
+
+### Diagram
+
+<img src="UntitledDiagram.png" width="400">
