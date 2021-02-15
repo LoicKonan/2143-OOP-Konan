@@ -11,7 +11,13 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 |  #  | File                       | Description                           |
 | :-: | -------------------------- | ------------------------------------- |
 |  1  | [Banner](Banner)           | Banner for Assignment                 |
-|  1  | [Diagram.png](Diagram.png) | Visual model of the classes using UML |
+|  2  | [Diagram.png](Diagram.png) | Visual model of the classes using UML |
+|  3  | [Player.png](Player.png)   | Player UML                            |
+|  4  | [Debris.png](Debris.png)   | Debris UML                            |
+|  5  | [Game.png](Game.png)       | Game UML                              |
+|  6  | [Scoring.png](Scoring.png) | Scoring UML                           |
+|  7  | [Shape.png](Shape.png)     | Shape UML                             |
+|  8  | [Text.png](Text.png)       | Text UML                              |
 
 ### Instructions
 
@@ -50,7 +56,7 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 
 - When a Player comes collides with Debris score is negatively effected.
 - When a piece of Debris leaves game screen (on the left), score is positively effected.
-  
+
 <img src="Scoring.png" width="200">
 
 **Text**
@@ -59,7 +65,7 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 - Has a Location
 - Has a Color
 - Has a Size
-  
+
 <img src="Text.png" width="200">
 
 **Game**
@@ -67,14 +73,14 @@ To use **Object Oriented Programming** mindset to clarify what we need to implem
 - Has player(s)
 - Has score(s)
 - Has debris(s) (yes "debris" can be plural but it doesn't make the point)
-  
+
 <img src="Game.png" width="200">
 
 **Shape**
 
 - Is a player
 - Is a debris
-  
+
 <img src="Shape.png" width="200">
 
 **Diagram**
