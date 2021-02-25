@@ -1,0 +1,42 @@
+# 1 "C:\\Users\\loick\\OneDrive\\2143-OOP-Konan\\Assignments\\A03\\.vscode\\launch.json"
+# 1 "C:\\Users\\loick\\OneDrive\\2143-OOP-Konan\\Assignments\\A03//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "C:\\Users\\loick\\OneDrive\\2143-OOP-Konan\\Assignments\\A03\\.vscode\\launch.json"
+{
+
+
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "pwa-extensionHost"
+        },
+        {
+            "name": "(gdb) Attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/path/to/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+
+    ]
+}

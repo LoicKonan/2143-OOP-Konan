@@ -65,6 +65,7 @@ private:
  * Params:
  *          - int size = 0
  *
+ * 
  * Returns:
  *          - NULL
  */
