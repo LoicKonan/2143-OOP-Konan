@@ -15,7 +15,7 @@ We will be organizing our code and applying some OOP techniques on subsequent as
 **Player**
 >
     - Is a circle shape
-    > - But could be another shape or sprite (later).
+    - But could be another shape or sprite (later).
     - Size is configurable
     - Color is configurable
     - Starting location also configurable
