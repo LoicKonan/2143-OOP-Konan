@@ -8,12 +8,15 @@ We will be organizing our code and applying some OOP techniques on subsequent as
 
 ### Files
 
-|  #  | File                                 | Description                                         |
-| :-: | ------------------------------------ | --------------------------------------------------- |
-|  1  | [Banner](Banner)                     | Banner for Assignment                               |
+|  #  | File                 | Description           |
+| :-: | -------------------- | --------------------- |
+|  1  | [Banner](Banner)     | Banner for Assignment |
+|  2  | [main.cpp](main.cpp) | My main cpp file      |
 
 **Player**
+
 >
+
     - Is a circle shape
     - But could be another shape or sprite (later).
     - Size is configurable
@@ -24,7 +27,9 @@ We will be organizing our code and applying some OOP techniques on subsequent as
     - A player can however possibly move other directions as well (in later installments).
 
 **Debris**
+
 >
+
     - Is a rectangle shape
     - But could be another shape or sprite (later).
     - Size is configurable
@@ -36,12 +41,16 @@ We will be organizing our code and applying some OOP techniques on subsequent as
     - The frequency and speed should slowly increase over time. Enough that after ONE minute of play, it should be impossible
 
 **Scoring**
+
 >
+
     - When a Player comes collides with Debris score is negatively effected.
     - When a piece of Debris leaves game screen (on the left), score is positively effected.
 
 **Text Output**
+
 >
+
     - Score gets displayed somewhere on the screen.
     - Font is configurable.
     - Location is configurable.
