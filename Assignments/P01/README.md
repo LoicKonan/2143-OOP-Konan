@@ -24,7 +24,7 @@ Build a Space War Game using the OOP concept learn in class. This game Has a pla
 >
 - The main Character is A **US Marine Space Ship** of the year 3099.
 - The Goal is to shoot as many Alien Ships as possible and to not lose all your life.
-- The main Character start 10 life but lose a life every time it is touch by an Alien ship.
+- The main Character start with 10 life but lose a life every time it is touch by an Alien ship.
 
 **Enemy**
 
