@@ -4,7 +4,11 @@
 
 #### Description
 
-Build a Space War Game using the OOP concept learn in class. This game Has a player, an enemy(or debris), scoring system and a text output.
+Build a Space War Game using the OOP concept learn in class. This game content a scoring system, a text output and 3 classes:
+
+- Missile
+- Player
+- Enemy(or debris)
 
 ### Files
 
