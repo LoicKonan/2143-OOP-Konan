@@ -46,7 +46,6 @@ Build a Space War Game using the OOP concept learn in class. This game Has a pla
 - Each Character life is diplay on the side of the ship.
 - When the Game end you see a Game over text.
 
-
 ### Instructions
 
 - Make sure to add the ***different file*** in the box above in order to run this game properly.
