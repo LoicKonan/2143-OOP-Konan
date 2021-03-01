@@ -30,7 +30,6 @@ Build a Space War Game using the OOP concept learn in class. This game Has a pla
 **Enemy**
 
 >
-
 - The **Alien Ship** of the year 3099 have come to destroy our **EARTH**.
 - The Goal for the Alien Ships is to touch the **"US Marine Space Ship"** and to deplete it life.
 - The Alien Ship start with 2 life but lose a life every time it get hit by a bullet.
@@ -38,7 +37,6 @@ Build a Space War Game using the OOP concept learn in class. This game Has a pla
 **Scoring**
 
 >
-
 - When a you comes collides with an Allien Ship the score is negatively effected.
 - When you hit the Alien with your weapon you can see how many life they have left.
 
@@ -51,6 +49,7 @@ Build a Space War Game using the OOP concept learn in class. This game Has a pla
 - When the Game end you see a Game over text.
 
 ### Instructions
+>
 
 - Make sure to add the **_different file_** in the box above in order to run this game properly.
 - Then make sure you add each file in your SFML **content** folder.
