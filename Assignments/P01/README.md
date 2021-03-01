@@ -4,55 +4,49 @@
 
 #### Description
 
-We will be organizing our code and applying some OOP techniques on subsequent assignments.
+Build a Space War Game using the OOP concept learn in class. This game Has a player, an enemy(or debris), scoring system and a text output.
 
 ### Files
 
-|  #  | File                 | Description           |
-| :-: | -------------------- | --------------------- |
-|  1  | [Banner](Banner)     | Banner for Assignment |
-|  2  | [main.cpp](main.cpp) | My main cpp file      |
+|  #  | File                       | Description                                                |
+| :-: | -------------------------- | ---------------------------------------------------------- |
+|  1  | [Banner](Banner)           | Banner for Assignment                                      |
+|  2  | [main.cpp](main.cpp)       | My main cpp file                                           |
+|  3  | [Dosis-Light](Dosis-Light) | The Font use to display the Score                          |
+|  4  | [ship.png](ship.png)       | The US Space Ship                                          |
+|  5  | [enemy.png](enemy.png)     | The Alien Space Ship                                       |
+|  6  | [missile.png](enemy.png)   | The missile                                                |
+|  7  | [song.wav](song.wav)       | The song that play while the Game is running.              |
+|  8  | [ren.ogg](enemy.png)       | The song that play while you destroy some Alien Space Ship |
 
 **Player**
 
 >
-
-    - Is a circle shape
-    - But could be another shape or sprite (later).
-    - Size is configurable
-    - Color is configurable
-    - Starting location also configurable
-    - However for this "game" player starts at middle left of screen.
-    - Moves up and down (1 direction only for now) using up and down arrows (additional keys can be set to do same thing).
-    - A player can however possibly move other directions as well (in later installments).
-
-**Debris**
+    - The main Character is A **"US Marine Space Ship"** of the year 3099.
+    - The Goal is to shoot as many Alien Ships as possible and to not lose all your life.
+    - The main Character start 10 life but lose a life every time it is touch by an Alien ship.
+    - 
+**Enemy**
 
 >
-
-    - Is a rectangle shape
-    - But could be another shape or sprite (later).
-    - Size is configurable
-    - Color is configurable
-    - Starting location also configurable
-    - Moves them from right to left starting at a random Y location just off right side of screen.
-    - The size should be random between some min and max value.
-    - The speed should also be random set between some min and max value.
-    - The frequency and speed should slowly increase over time. Enough that after ONE minute of play, it should be impossible
+    - The Alien Ship of the year 3099 have come to destroy our **EARTH**.
+    - The Goal for the Alien Ships is to touch the **"US Marine Space Ship"** and to deplete it life.
+    - The Alien Ship start with 2 life but lose a life every time it get hit by a bullet.
 
 **Scoring**
 
 >
-
-    - When a Player comes collides with Debris score is negatively effected.
-    - When a piece of Debris leaves game screen (on the left), score is positively effected.
+    - When a you comes collides with an Allien Ship the score is negatively effected.
+    - When you hit the Alien with your weapon you can see how many life they have left.
 
 **Text Output**
 
 >
+    - Score gets displayed Top Left on the screen.
+    - Each Character life is diplay on the side of the ship
+    - When the Game end you see a Game over text.
+    - 
 
-    - Score gets displayed somewhere on the screen.
-    - Font is configurable.
-    - Location is configurable.
-    - Color is configurable.
-    - Size is configurable.
+### Instructions
+
+- Make sure to add the different file in above in your file in order to run this game properly.
