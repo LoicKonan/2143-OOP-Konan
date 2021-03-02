@@ -8,14 +8,13 @@
 *    Semester:         Spring 2021
 *    Description:
 *
-*       A Game Program created with some of the basic main concept of
-*		OOP, such as Astraction and Encapsulatio, the Goal is to eventually
+*       A Game Program created with some of the basics of OOP
+*		such as Astraction and Encapsulation, the Goal is to eventually
 *		add more OOP Concept to this game such as the 3 big rules and the
-*		3 main concept of OOP and to make multiple Levels for this game and
-*		a Menu of this game.
+*		3 main concept of OOP and to make multiple Levels and a Menu of this game.
 *
 *    Usage:
-*		 - cltr shift B to start the game.
+*		 - cltr + shift + B (to start the game).
 *		 - You start with 10 life and you have to kill as many enemy space
 *		 - as possible, without them touching you.
 *
@@ -70,7 +69,7 @@ using namespace sf;
 class Missile
 {
 public:
-	Sprite shape; // Build in tool to create a shape object of missile.
+	Sprite shape;                                // Build in tool to create a shape object of missile.
 
 	Missile(Texture *texture, Vector2f pos);
 
@@ -92,7 +91,7 @@ public:
  */
 Missile::Missile(Texture *texture, Vector2f pos)
 {
-	this->shape.setTexture(*texture); // initializing the shape.
+	this->shape.setTexture(*texture);            // initializing the shape.
 
 	this->shape.setScale(0.07f, 0.07f);
 
@@ -138,12 +137,12 @@ Missile::~Missile()
 class US_MARINES
 {
 public:
-	Sprite shape; // Build in tool to create a shape object of missile.
+	Sprite shape;                                // Build in tool to create a shape object of missile.
 	Texture *texture;
 
-	int Life; // Life span for our ship.
+	int Life;                                    // Life span for our ship.
 
-	std::vector<Missile> missiles; // A Vector of missile.
+	std::vector<Missile> missiles;               // A Vector of missile.
 
 	US_MARINES(Texture *texture);
 	~US_MARINES();
@@ -163,12 +162,12 @@ public:
  */
 US_MARINES::US_MARINES(Texture *texture)
 {
-	this->Life = 10; // Initializing our life span to 10.
+	this->Life = 10;                             // Initializing our life span to 10.
 
-	this->texture = texture; // Initializing the texture for our ship.
+	this->texture = texture;                     // Initializing the texture for our ship.
 	this->shape.setTexture(*texture);
 
-	this->shape.setScale(0.1f, 0.1f); // Initializing our shape scale to those foat points.
+	this->shape.setScale(0.1f, 0.1f);            // Initializing our shape scale to those foat points.
 }
 
 /**
@@ -211,10 +210,9 @@ US_MARINES::~US_MARINES()
 class Enemy
 {
 public:
-	Sprite shape; // Build in tool to create a shape
-				  // object of missile.
+	Sprite shape;                                // Build in tool to create a shape object of missile.
 
-	int Life; // The Enemy life span.
+	int Life;                                    // The Enemy life span.
 
 	Enemy(Texture *texture, Vector2u windowSize);
 
@@ -235,14 +233,14 @@ public:
  */
 Enemy::Enemy(Texture *texture, Vector2u windowSize)
 {
-	this->Life = 2; // Initializing the enemy life span to 2.
+	this->Life = 2;                              // Initializing the enemy life span to 2.
 
-	this->shape.setTexture(*texture); // Initializing the shape Texture.
+	this->shape.setTexture(*texture);            // Initializing the shape Texture.
 
-	this->shape.setScale(0.1f, 0.1f); // Initializing the shape Scale.
+	this->shape.setScale(0.1f, 0.1f);            // Initializing the shape Scale.
 
-	// Setting the position of our enemy
-	// on the window and using the random built in tool.
+                                                 // Setting the position of our enemy
+	                                             // on the window and using the random built in tool.
 	this->shape.setPosition(windowSize.x - this->shape.getGlobalBounds().width,
 							rand() % (int)(windowSize.y - this->shape.getGlobalBounds().height));
 }
