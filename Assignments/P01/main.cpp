@@ -282,18 +282,18 @@ int main()
 	sf::Music music, war;                        // sound when you press the left mouse key.
 	if (!music.openFromFile("content/ren.ogg"))
 	{
-		return -1;                               // Return error.
+		return -1;                           // Return error.
 	}
 
 	// Declaring and inializing the music
 	war.openFromFile("content/song.wav");        // when your game start.
 
 	war.setVolume(50);                           // Setting the sound of this at half.
-	war.play();		                             // Calling the function to play the music.
+	war.play();		                     // Calling the function to play the music.
 
 	// Declacring and inializing the clock bulding in tool.
 	Clock clock;
-	float Time = 0.f;			                 // Initializing a variable time.
+	float Time = 0.f;			     // Initializing a variable time.
 	float Time_Multiplier = 62.5f;               // Initializing a delta time.
 
 
@@ -316,69 +316,69 @@ int main()
 	// Declaring a score text using the built in tool Text.
 	Text scoreText;
 	scoreText.setFont(font);			         // Setting the Font.
-	scoreText.setCharacterSize(30);		         // Setting the size.
-	scoreText.setFillColor(Color::White);        // Setting the COLOR of the scoreboard TEXT.
-	scoreText.setPosition(350.f, 10.f);	         // Setting the location of scoredboard.
+	scoreText.setCharacterSize(30);		                 // Setting the size.
+	scoreText.setFillColor(Color::White);                    // Setting the COLOR of the scoreboard TEXT.
+	scoreText.setPosition(350.f, 10.f);	                 // Setting the location of scoredboard.
 
-	Text gameOverText;					         // Declaring a Game Over Message text using the built in tool Text.
+	Text gameOverText;					 // Declaring a Game Over Message text using the built in tool Text.
 	gameOverText.setFont(font);			         // Setting the Font.
-	gameOverText.setCharacterSize(80);	         // Setting the size.
-	gameOverText.setFillColor(Color::Red);       // Setting the COLOR of the scoreboard TEXT.
+	gameOverText.setCharacterSize(80);	                 // Setting the size.
+	gameOverText.setFillColor(Color::Red);                   // Setting the COLOR of the scoreboard TEXT.
 
-	gameOverText.setPosition(260.f, 260.f);      // Setting the location of displacement of the game over message.
-	gameOverText.setString("Game OVER");	     // Setting the message to Display.
+	gameOverText.setPosition(260.f, 260.f);                  // Setting the location of displacement of the game over message.
+	gameOverText.setString("Game OVER");	                 // Setting the message to Display.
 
-	int score = 0;					             // Initializing the score to Zero.
-	US_MARINES US_MARINES(&US_ship);             // US_MARINES initialize.
-	float shootTimer = 20.f;		             // The shooting timing.
+	int score = 0;					         // Initializing the score to Zero.
+	US_MARINES US_MARINES(&US_ship);                         // US_MARINES Space Ship initialize.
+	float shootTimer = 20.f;		                 // The shooting timing.
 
-	Text LifeText;						         // Declaring a Game Over Message text using the built in tool Text.
+	Text LifeText;						 // Declaring a Game Over Message text using the built in tool Text.
 	LifeText.setFont(font);				         // Setting the Font.
-	LifeText.setCharacterSize(20);		         // Setting the size of our characters.
-	LifeText.setFillColor(Color::Green);         // Setting the Color.
+	LifeText.setCharacterSize(20);		                 // Setting the size of our characters.
+	LifeText.setFillColor(Color::Green);                     // Setting the Color.
 
-	float Display_Enemy = 0.f;	                 // Using a float variable to inialize the displacement of the enemy.
-	std::vector<Enemy> enemies;                  // Enemy initialize.
+	float Display_Enemy = 0.f;	                         // Using a float variable to inialize the displacement of the enemy.
+	std::vector<Enemy> enemies;                              // Enemy initialize.
 
-	Text EnemyLifeText;						     // Declaring Enemy life sign using the built in tool Text.
-	EnemyLifeText.setFont(font);			     // Setting the Font.
-	EnemyLifeText.setCharacterSize(15);		     // Setting the size of our characters.
-	EnemyLifeText.setFillColor(Color::White);    // Setting the Color.
+	Text EnemyLifeText;				         // Declaring Enemy life sign using the built in tool Text.
+	EnemyLifeText.setFont(font);			         // Setting the Font.
+	EnemyLifeText.setCharacterSize(15);		         // Setting the size of our characters.
+	EnemyLifeText.setFillColor(Color::White);                // Setting the Color.
 
-	while (window.isOpen())                      // While the Window is open do the inside commands.
+	while (window.isOpen())                                  // While the Window is open do the inside commands.
 	{
 		Event event;
 		while (window.pollEvent(event))
 		{
-			if (event.type == Event::Closed)     // If the event equal to close then close the window.
+			if (event.type == Event::Closed)         // If the event equal to close then close the window.
 				window.close();
 		}
 
-		Time = clock.restart().asSeconds();      // Time = 0,016 seconds, frame at 60fps
+		Time = clock.restart().asSeconds();              // Time = 0,016 seconds, frame at 60fps
 		std::cout << Time << "\n";
 
 
 		// Using this if statement to control the Commands.
-		if (US_MARINES.Life > 0)                 // If US_MARINES Ship life is greater than 0.
+		if (US_MARINES.Life > 0)                         // If US_MARINES Ship life is greater than 0.
 		{
-			// When you Press "W" you will move up at a -10 speed up.
+			                                         // When you Press "W" you will move up at a -10 speed up.
 			if (Keyboard::isKeyPressed(Keyboard::W))
 			{
 				US_MARINES.shape.move(0.f, -10.f * Time * Time_Multiplier);
 			}
-			// When you Press "A" you will move up at a -10 Backward up.
+			                                         // When you Press "A" you will move up at a -10 Backward up.
 			if (Keyboard::isKeyPressed(Keyboard::A))
 			{
 				US_MARINES.shape.move(-10.f * Time * Time_Multiplier, 0.f);
 			}
 
-			// When you Press "S" you will move up at a +10 speed Down.
+			                                         // When you Press "S" you will move up at a +10 speed Down.
 			if (Keyboard::isKeyPressed(Keyboard::S))
 			{
 				US_MARINES.shape.move(0.f, 10.f * Time * Time_Multiplier);
 			}
 
-			// When you Press "D" you will move up at a +10 speed forward.
+			                                         // When you Press "D" you will move up at a +10 speed forward.
 			if (Keyboard::isKeyPressed(Keyboard::D))
 			{
 				US_MARINES.shape.move(10.f * Time * Time_Multiplier, 0.f);
@@ -391,13 +391,13 @@ int main()
 			LifeText.setString(std::to_string(US_MARINES.Life));
 
 			// Collision with window
-			if (US_MARINES.shape.getPosition().x <= 0) // Left
+			if (US_MARINES.shape.getPosition().x <= 0)    // Left
 				US_MARINES.shape.setPosition(0.f, US_MARINES.shape.getPosition().y);
 
 			if (US_MARINES.shape.getPosition().x >= window.getSize().x - US_MARINES.shape.getGlobalBounds().width) // Right
 				US_MARINES.shape.setPosition(window.getSize().x - US_MARINES.shape.getGlobalBounds().width, US_MARINES.shape.getPosition().y);
 
-			if (US_MARINES.shape.getPosition().y <= 0) // Top
+			if (US_MARINES.shape.getPosition().y <= 0)     // Top
 				US_MARINES.shape.setPosition(US_MARINES.shape.getPosition().x, 0.f);
 
 			if (US_MARINES.shape.getPosition().y >= window.getSize().y - US_MARINES.shape.getGlobalBounds().height) // Bottom
@@ -409,13 +409,13 @@ int main()
 
 			if (Mouse::isButtonPressed(Mouse::Left) && shootTimer >= 15)   // When the Left mouse is Press.
 			{
-				music.play();                                              // Play the weapon sound.
+				music.play();                                          // Play the weapon sound.
 
 				// Calling the vector of bullets to shoot.
 				US_MARINES.missiles.push_back(Missile(&Bullets, US_MARINES.shape.getPosition()));
 
 				           
-				shootTimer = 0;                                            // Reset time
+				shootTimer = 0;                                         // Reset time
 			}
 
 			// Missiles
@@ -434,19 +434,19 @@ int main()
 				}
 
 				
-				for (size_t k = 0; k < enemies.size(); k++)                // Enemy collision
+				for (size_t k = 0; k < enemies.size(); k++)                 // Enemy collision
 				{	// This if statement handle the the collision
 					// with the Enemy.
 					if (US_MARINES.missiles[i].shape.getGlobalBounds().intersects(enemies[k].shape.getGlobalBounds()))
 					{
-						if (enemies[k].Life <= 1)                          // Add to my score when the Enemy life
+						if (enemies[k].Life <= 1)                   // Add to my score when the Enemy life
 						{
-							score += enemies[k].Life;                      // is less than or equal to 1.
+							score += enemies[k].Life;           // is less than or equal to 1.
 													                     
 							enemies.erase(enemies.begin() + k);
 						}
 						else
-							enemies[k].Life--;                             // when Enemy TAKE Hit take one of their life Away.
+							enemies[k].Life--;                  // when Enemy TAKE Hit take one of their life Away.
 
 						US_MARINES.missiles.erase(US_MARINES.missiles.begin() + i);
 						break;
@@ -455,14 +455,14 @@ int main()
 			}
 
 			
-			if (Display_Enemy < 30)										   // when the number of Enemy is less than 30
+			if (Display_Enemy < 30)                                            // when the number of Enemy is less than 30
 				Display_Enemy += 1.f * Time * Time_Multiplier;             // use this formula to Display them.
 			
-			if (Display_Enemy >= 30)									   // Enemy spawn.
+			if (Display_Enemy >= 30)			                   // Enemy spawn.
 			{
 				enemies.push_back(Enemy(&ALLIEN, window.getSize()));       // When Enemy ship is more than 30 delete some of them.
 			                                                             
-				Display_Enemy = 0;										  // Reset timer to display more Enemies.
+				Display_Enemy = 0;					   // Reset timer to display more Enemies.
 			}
 
 			for (size_t i = 0; i < enemies.size(); i++)
@@ -471,25 +471,25 @@ int main()
 
 				if (enemies[i].shape.getPosition().x <= 0 - enemies[i].shape.getGlobalBounds().width)
 				{
-					enemies.erase(enemies.begin() + i); 				   // If Enemy is out of the window delete that enemy.
+					enemies.erase(enemies.begin() + i); 	           // If Enemy is out of the window delete that enemy.
 					break;
 				}
 
 				if (enemies[i].shape.getGlobalBounds().intersects(US_MARINES.shape.getGlobalBounds()))
 				{
-					enemies.erase(enemies.begin() + i);                    // If Enemy get to hit the us.
+					enemies.erase(enemies.begin() + i);                // If Enemy get to hit the us.
 
-					US_MARINES.Life--;									   // US_MARINES TAKE DAMAGE -1 of our life.
+					US_MARINES.Life--;				   // US_MARINES TAKE DAMAGE -1 of our life.
 					break;
 				}
 			}
 
-			scoreText.setString("Score: " + std::to_string(score));        // Displaying our Score accordingly.
+			scoreText.setString("Score: " + std::to_string(score));            // Displaying our Score accordingly.
 		}
 
-		window.clear();                                                    // Clear the window so our pictures don't smear everywhere.
+		window.clear();                                                            // Clear the window so our pictures don't smear everywhere.
 
-		window.draw(US_MARINES.shape);  							       // US_MARINES getting draw or display.
+		window.draw(US_MARINES.shape);  					   // US_MARINES getting draw or display.
 
 		for (size_t i = 0; i < US_MARINES.missiles.size(); i++)			   // Missiles
 		{
@@ -497,7 +497,7 @@ int main()
 		}
 
 		// Using this for loop to Display the Enemy
-		for (size_t i = 0; i < enemies.size(); i++) 					   // Life span, the position, and to draw them.
+		for (size_t i = 0; i < enemies.size(); i++) 			           // Life span, the position, and to draw them.
 		{
 			EnemyLifeText.setString(std::to_string(enemies[i].Life) + "/" + std::to_string(enemies[i].Life));
 			EnemyLifeText.setPosition(enemies[i].shape.getPosition().x,
@@ -506,15 +506,15 @@ int main()
 			window.draw(enemies[i].shape);
 		}
 
-		window.draw(scoreText); 										   // Draw the score Text.
-		window.draw(LifeText);	                                           // Draw the Life Text.
+		window.draw(scoreText); 						   // Draw the score Text.
+		window.draw(LifeText);	                                                   // Draw the Life Text.
 
 		if (US_MARINES.Life <= 0)
 		{                                  
-			window.draw(gameOverText);								       // When we die, Display "Game over".
+			window.draw(gameOverText);					   // When we die, Display "Game over".
 		}
 
-		window.display();                                                  // Dislplay the Window.
+		window.display();                                                          // Dislplay the Window.
 	}
 
 	return 0;
