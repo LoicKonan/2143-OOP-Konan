@@ -278,42 +278,42 @@ int main()
 	window.setFramerateLimit(200);
 
 
-	// Declaring and inializing the
-	sf::Music music, war;                        // sound when you press the left mouse key.
+	                                                         // Declaring and inializing the war music.
+	sf::Music music, war;                                    // sound when you press the left mouse key.
 	if (!music.openFromFile("content/ren.ogg"))
 	{
-		return -1;                           // Return error.
+		return -1;                                       // Return error.
 	}
 
-	// Declaring and inializing the music
-	war.openFromFile("content/song.wav");        // when your game start.
+	                                                         // Declaring and inializing the music
+	war.openFromFile("content/song.wav");                    // when your game start.
 
-	war.setVolume(50);                           // Setting the sound of this at half.
-	war.play();		                     // Calling the function to play the music.
+	war.setVolume(50);                                       // Setting the sound of this at half.
+	war.play();		                                 // Calling the function to play the music.
 
-	// Declacring and inializing the clock bulding in tool.
+	                                                         // Declacring and inializing the clock bulding in tool.
 	Clock clock;
-	float Time = 0.f;			     // Initializing a variable time.
-	float Time_Multiplier = 62.5f;               // Initializing a delta time.
+	float Time = 0.f;			                 // Initializing a variable time.
+	float Time_Multiplier = 62.5f;                           // Initializing a delta time.
 
 
-    // Initialize and Display the ScoreBoard text.
+                                                                 // Initialize and Display the ScoreBoard text.
 	Font font;
 	font.loadFromFile("content/Dosis-Light.ttf");
 
-	// Initialize and Display the Good guys SHIP.
+	                                                         // Initialize and Display the Good guys SHIP.
 	Texture US_ship;
 	US_ship.loadFromFile("content/ship.png");
 
-	// Initialize and Display the Bad guys SHIP.
+	                                                         // Initialize and Display the Bad guys SHIP.
 	Texture ALLIEN;
 	ALLIEN.loadFromFile("content/Enemy.png");
 
-	// Initialize and Display the Fire Missle.
+	                                                         // Initialize and Display the Fire Missle.
 	Texture Bullets;
 	Bullets.loadFromFile("content/missile.png");
 
-	// Declaring a score text using the built in tool Text.
+	                                                         // Declaring a score text using the built in tool Text.
 	Text scoreText;
 	scoreText.setFont(font);			         // Setting the Font.
 	scoreText.setCharacterSize(30);		                 // Setting the size.
