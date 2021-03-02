@@ -358,28 +358,25 @@ int main()
 		std::cout << Time << "\n";
 
 
-		// Using this if statement to control the Commands.
+		                                                 // Using this if statement to control the Commands.
 		if (US_MARINES.Life > 0)                         // If US_MARINES Ship life is greater than 0.
-		{
-			                                         // When you Press "W" you will move up at a -10 speed up.
-			if (Keyboard::isKeyPressed(Keyboard::W))
+		{			                                         
+			if (Keyboard::isKeyPressed(Keyboard::W)) // When you Press "W" you will move up at a -10 speed up.
 			{
 				US_MARINES.shape.move(0.f, -10.f * Time * Time_Multiplier);
 			}
-			                                         // When you Press "A" you will move up at a -10 Backward up.
-			if (Keyboard::isKeyPressed(Keyboard::A))
+			                                        
+			if (Keyboard::isKeyPressed(Keyboard::A)) // When you Press "A" you will move up at a -10 Backward up.
 			{
 				US_MARINES.shape.move(-10.f * Time * Time_Multiplier, 0.f);
 			}
-
-			                                         // When you Press "S" you will move up at a +10 speed Down.
-			if (Keyboard::isKeyPressed(Keyboard::S))
+			                     
+			if (Keyboard::isKeyPressed(Keyboard::S)) // When you Press "S" you will move up at a +10 speed Down.
 			{
 				US_MARINES.shape.move(0.f, 10.f * Time * Time_Multiplier);
 			}
-
-			                                         // When you Press "D" you will move up at a +10 speed forward.
-			if (Keyboard::isKeyPressed(Keyboard::D))
+			                                         
+			if (Keyboard::isKeyPressed(Keyboard::D)) // When you Press "D" you will move up at a +10 speed forward.
 			{
 				US_MARINES.shape.move(10.f * Time * Time_Multiplier, 0.f);
 			}
@@ -390,7 +387,7 @@ int main()
 			// Ususing the to_string build in function to make or integer variable to act like a string.
 			LifeText.setString(std::to_string(US_MARINES.Life));
 
-			// Collision with window
+			                                              // Collision with window
 			if (US_MARINES.shape.getPosition().x <= 0)    // Left
 				US_MARINES.shape.setPosition(0.f, US_MARINES.shape.getPosition().y);
 
@@ -415,20 +412,20 @@ int main()
 				US_MARINES.missiles.push_back(Missile(&Bullets, US_MARINES.shape.getPosition()));
 
 				           
-				shootTimer = 0;                                         // Reset time
+				shootTimer = 0;                                              // Reset time
 			}
 
 			// Missiles
 			for (size_t i = 0; i < US_MARINES.missiles.size(); i++)
 			{
-				// Moving the speed of my missile at that equation.
+				                                                             // Moving the speed of my missile at that equation.
 				US_MARINES.missiles[i].shape.move(20.f * Time * Time_Multiplier, 0.f);
 
-				// This if statement Handle the US MARINES Space Ship
-				// not to go out of the window establish.
+				                                                             // This if statement Handle the US MARINES Space Ship
+				                                                             // not to go out of the window establish.
 				if (US_MARINES.missiles[i].shape.getPosition().x > window.getSize().x)
 				{
-					// When my missile are out out of the window Erase them.
+					                                                     // When my missile are out out of the window Erase them.
 					US_MARINES.missiles.erase(US_MARINES.missiles.begin() + i);
 					break;
 				}
@@ -496,7 +493,7 @@ int main()
 			window.draw(US_MARINES.missiles[i].shape);
 		}
 
-		// Using this for loop to Display the Enemy
+		                                                                           // Using this for loop to Display the Enemy
 		for (size_t i = 0; i < enemies.size(); i++) 			           // Life span, the position, and to draw them.
 		{
 			EnemyLifeText.setString(std::to_string(enemies[i].Life) + "/" + std::to_string(enemies[i].Life));
