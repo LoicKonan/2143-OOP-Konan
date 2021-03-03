@@ -457,7 +457,7 @@ int main()
 			
 			if (Display_Enemy >= 30)			                   // Enemy spawn.
 			{
-				enemies.push_back(Enemy(&ALLIEN, window.getSize()));       // When Enemy ship is more than 30 delete some of them.
+				enemies.push_back(Enemy(&ALLIEN, window.getSize()));       
 			                                                             
 				Display_Enemy = 0;					   // Reset timer to display more Enemies.
 			}
