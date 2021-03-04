@@ -62,4 +62,4 @@ Build a Space War Game using the OOP concept learn in class. This game content a
 - Then make sure you add each file in your SFML **content** folder.
 - The Player, the Enemy sprite and the music all go in the content folder of your sfml.
 
-  <img src="screenshot.png">
+  <img src="Screenshot.png">
