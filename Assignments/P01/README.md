@@ -58,7 +58,7 @@ Build a Space War Game using the OOP concept learn in class. This game content a
 
 >
 
-- Make sure to add the **_different file_** in the box above in order to run this game properly.
+- Make sure to add all the **_different file_** in order to make this game run properly.
 - Then make sure you add each file in your SFML **content** folder.
 - The Player, the Enemy sprite and the music all go in the content folder of your sfml.
 
