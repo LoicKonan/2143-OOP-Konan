@@ -21,4 +21,4 @@ This program does not require any non standard libraries
 
 ### Example
 
-  <img src="Screenshot.png">
+  <img src="screenshot.png">
