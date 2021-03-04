@@ -19,6 +19,6 @@ This assignment is more about breaking the ice with SFML, and how to get comfort
 
 This program does not require any non standard libraries
 
-### Example Command
+### Example
 
-None for now.
+  <img src="Screenshot.png">
