@@ -18,6 +18,7 @@ public:
         array = new int[size];
     }
     NumContainer(int s)
+    
     {
         size = s;
         array = new int[size];
