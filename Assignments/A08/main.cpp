@@ -35,7 +35,7 @@ public:
 };
 
 
-/**
+ /**
  * This is an implementation of our single color rgb class. 
  * 
  */
@@ -104,5 +104,5 @@ int main()
     RgbColor Color1(255,200,11);
     RgbColor Color2(100,14,123);
     RgbColor Color3 = Color1 + Color2;
-    cout<<Color3<<endl;
+    cout << Color3 << endl;
 }
