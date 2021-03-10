@@ -131,13 +131,18 @@ RgbColor::RgbColor(int _r, int _g, int _b)
 
 ostream &operator<<(ostream &os, const RgbColor &rhs)
 {
-    system("Color 04");
+    //system("Color 04");
     os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
     return os;
 }
 
 int main()
 {
+
+    vector<RgbColor>mycolors;
+
+
+    
     RgbColor Color1(255, 200, 11);
     RgbColor Color2(100, 14, 123);
     RgbColor Color3 = Color1 + Color2;
