@@ -88,14 +88,9 @@ RgbColor::~RgbColor() {}
 class ColorPallete : public RgbColor
 {
 private:
-    vector<int> myColors;
+    static vector<int> myColors;
 
 public:
-
-    const vector<int> &get_myColors() const
-    {
-        return myColors;
-    }
 
     void addColor(const int &color)
     {
