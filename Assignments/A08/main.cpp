@@ -53,6 +53,8 @@ protected:
     int r; //int 0-255 red
     int g; //int 0-255 green
     int b; //int 0-255 blue
+
+
 public:
     ~RgbColor();
     RgbColor();              // default constructor
@@ -69,12 +71,17 @@ public:
 
     void GrayScale(); // averages colors
 
+    void AddColor(RgbColor rgbcolor);
+
     // print to stdout
     friend ostream &operator<<(ostream &, const RgbColor &);
 
     // add (mix) two colors
     RgbColor operator+(const RgbColor &);
+
+    static vector<RgbColor> myColors;
 };
+
 
 /**
  *  Destructor ~RgbColor()
@@ -82,21 +89,6 @@ public:
 
 RgbColor::~RgbColor() {}
 
-
-
-
-class ColorPallete : public RgbColor
-{
-private:
-    static vector<int> myColors;
-
-public:
-
-    void addColor(const int &color)
-    {
-        myColors.push_back(color);
-    }
-};
 
 RgbColor RgbColor::operator+(const RgbColor &rhs)
 {
@@ -131,15 +123,66 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
     return os;
 }
 
+
+
+vector<RgbColor> RgbColor::myColors;
+
+
+void RgbColor:: SetR(int red)
+{
+    r = red;
+}
+
+void RgbColor::SetG(int green)
+{
+    g = green;
+}
+
+void RgbColor::SetB(int blue)
+{
+    b = blue;
+}
+
+int RgbColor:: GetR()
+{
+    return r;
+}
+
+int RgbColor::GetG()
+{
+    return g;
+}
+
+int RgbColor::GetB()
+{
+    return b;
+}
+
+ void RgbColor::AddColor(RgbColor rgbcolor)
+{
+	myColors.push_back(rgbcolor);
+}
+
 int main()
 {
+    RgbColor newColor;
+    int red, green, blue;
 
-    vector<RgbColor>mycolors;
+
+	newColor.SetR(30);
+	newColor.SetR(21);
+	newColor.SetR(111);
 
 
-    
-    RgbColor Color1(255, 200, 11);
-    RgbColor Color2(100, 14, 123);
-    RgbColor Color3 = Color1 + Color2;
-    cout << Color3 << endl;
+    cout << "Enter the colors red, green and blue: ";
+	cin >> red >> blue >> green;
+	cin.get();
+	cout << '\n';
+
+	newColor.SetR(red);
+	newColor.SetG(green);
+	newColor.SetB(blue);
+	// Add account to the database
+	newColor.AddColor(newColor);
+
 }
