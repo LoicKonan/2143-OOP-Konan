@@ -165,24 +165,32 @@ int RgbColor::GetB()
 
 int main()
 {
-    RgbColor newColor;
+    RgbColor newColor1, newColor;
+
     int red, green, blue;
-
-
-	newColor.SetR(30);
-	newColor.SetR(21);
-	newColor.SetR(111);
-
 
     cout << "Enter the colors red, green and blue: ";
 	cin >> red >> blue >> green;
-	cin.get();
-	cout << '\n';
 
 	newColor.SetR(red);
 	newColor.SetG(green);
 	newColor.SetB(blue);
-	// Add account to the database
-	newColor.AddColor(newColor);
+    newColor.GetR();
+	newColor.GetG();
+	newColor.GetB();
+    newColor.AddColor(newColor); // Add account to the database
+    cout<< newColor <<endl;
 
+
+
+    cout << "Enter the colors for the next colorpalette red, green and blue: ";
+	cin >> red >> blue >> green;
+	newColor1.SetR(red);
+	newColor1.SetG(green);
+	newColor1.SetB(blue);
+    newColor1.GetR();
+	newColor1.GetG();
+	newColor1.GetB();
+	newColor1.AddColor(newColor1); // Add account to the database
+    cout<< newColor1 <<endl;
 }
