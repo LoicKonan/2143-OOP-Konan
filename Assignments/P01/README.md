@@ -25,16 +25,20 @@ Built a Space War Game using the OOP concept learned in class. This game contain
 
 **Player**
 
->
   <img src="ship.png">
+
+>
+
 - The main Character is A **US Marine Space Ship** of the year 3099.
 - The Goal is to shoot as many Alien Ships as possible and to not lose all your life.
 - The main Character start with 10 life but lose a life every time it is touch by an Alien ship.
 
 **Enemy**
 
->
   <img src="enemy.png">
+
+>
+  
 - The **Alien Ship** of the year 3099 have come to destroy our **EARTH**.
 - The Goal for the Alien Ships is to touch the **"US Marine Space Ship"** and to deplete it life.
 - The Alien Ship start with 2 life but lose a life every time it get hit by a bullet.
