@@ -1,3 +1,5 @@
+
+
 #include <iostream>
 #include <vector>
 #include <stdlib.h>
@@ -101,12 +103,6 @@ int RgbColor::GetB()
     return b;
 }
 
- void RgbColor::AddColor(RgbColor rgbcolor)
-{
-	myColors.push_back(rgbcolor);
-}
-
-
 
 ostream &operator<<(ostream &os, const RgbColor &rhs)
 {
@@ -114,6 +110,18 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
     os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
     return os;
 }
+
+
+
+
+
+
+
+ void RgbColor::AddColor(RgbColor rgbcolor)
+{
+	myColors.push_back(rgbcolor);
+}
+
 
 vector<RgbColor> RgbColor::myColors;
 
