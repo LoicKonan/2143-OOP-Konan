@@ -27,31 +27,37 @@ using namespace std;
 
 /**
 *    Class Name: RgbColor
+*
 *    Description:
-*        This is an implementation of our single color rgb class. 
-*        
-*    ~RgbColor();             // Destructor
-*    RgbColor();              // default constructor
-*    RgbColor(int);           // overloaded 1
-*    RgbColor(int, int, int); // overloaded 2
+*        This is an implementation of our single color rgb class.
+* 
+*    Public Methods:
 *
-*    void SetR(int);          // setter red
-*    void SetG(int);          // setter green
-*    void SetB(int);          // setter blue
+*       ~RgbColor();             // Destructor
+*       RgbColor();              // default constructor
+*        RgbColor(int);           // overloaded 1
+*       RgbColor(int, int, int); // overloaded 2
 *
-*    int GetR();              // getter red
-*    int GetG();              // getter green
-*    int GetB();              // getter blue
+*       void SetR(int);          // setter red
+*       void SetG(int);          // setter green
+*       void SetB(int);          // setter blue
 *
-*    void GrayScale();        // averages colors
+*       int GetR();              // getter red
+*       int GetG();              // getter green
+*       int GetB();              // getter blue
 *
-*    void AddColor(RgbColor rgbcolor);
+*       void GrayScale();        // averages colors
 *
-*    friend ostream &operator<<(ostream &, const RgbColor &); // print to stdout
+*       void AddColor(RgbColor rgbcolor);
 *
-*    RgbColor operator+(const RgbColor &);   // add (mix) two colors
+*       friend ostream &operator<<(ostream &, const RgbColor &); // print to stdout
 *
-*    static vector<RgbColor> myColors;
+*       RgbColor operator+(const RgbColor &);   // add (mix) two colors
+*
+*       static vector<RgbColor> myColors;
+*
+*        Usage:
+*            - Create a class of colors.
 *
 */
 class RgbColor
