@@ -35,7 +35,7 @@ using namespace std;
 *
 *       ~RgbColor();             // Destructor
 *       RgbColor();              // default constructor
-*        RgbColor(int);           // overloaded 1
+*       RgbColor(int);           // overloaded 1
 *       RgbColor(int, int, int); // overloaded 2
 *
 *       void SetR(int);          // setter red
@@ -95,24 +95,68 @@ public:
 
 
 /**
- * RgbColor 
- * 
+ * Public :  RgbColor()
+ *
+ * Description:
+ *           Default Constructor
+ *
+ * Params:
+ *          - None
+ *
+ * Returns:
+ *          - NULL
  */
-void RgbColor:: GrayScale()                 // averages colors
+RgbColor::RgbColor()
 {
-    b = g = r = ((r + g + b) / 3);
+    r = g = b = 0;
 }
 
 
 /**
- *  Destructor ~RgbColor()
+ * Public :   ~RgbColor() {}
+ *
+ * Description:
+ *            Destructor
+ *
+ * Params:
+ *          - NONE
+ *
+ * Returns:
+ *          - NULL
  */
-RgbColor::~RgbColor() {}
+RgbColor::~RgbColor() 
+{}
 
 
 /**
- * RgbColor 
+ * Public :    GrayScale() 
  * 
+ * Description:
+ *            - averages colors
+ *  
+ * Params:
+ *            - NONE
+ * 
+ * Returns:
+ *            - void
+ */
+void RgbColor:: GrayScale()           
+{
+    b = g = r = ((r + g + b) / 3);    
+{
+
+
+/**
+ * Public :    operator+(const RgbColor &rhs) 
+ * 
+ * Description:
+ *            - assignment operator overload that adds values
+ *  
+ * Params:
+ *            - (const RgbColor &rhs
+ * 
+ * Returns:
+ *            - RgbColor
  */
 RgbColor RgbColor::operator+(const RgbColor &rhs)
 {
@@ -125,18 +169,16 @@ RgbColor RgbColor::operator+(const RgbColor &rhs)
 
 
 /**
- * RgbColor::RgbColor 
- * 
- */
-RgbColor::RgbColor()
-{
-    r = g = b = 0;
-}
-
-
-/**
- * RgbColor::RgbColor 
- * 
+ * Public :  RgbColor()
+ *
+ * Description:
+ *          - Overload Constructor
+ *
+ * Params:
+ *          - int
+ *
+ * Returns:
+ *          - NULL
  */
 RgbColor::RgbColor(int color)
 {
@@ -144,9 +186,18 @@ RgbColor::RgbColor(int color)
 }
 
 
+
 /**
- * RgbColor::RgbColor 
- * 
+ * Public :  RgbColor()
+ *
+ * Description:
+ *          - Overload Constructor
+ *
+ * Params:
+ *          - int, int, int
+ *
+ * Returns:
+ *          - NULL
  */
 RgbColor::RgbColor(int _r, int _g, int _b)
 {
@@ -216,8 +267,18 @@ int RgbColor::GetB()
 }
 
 /**
- *   
- */
+
+ * Public : ostream
+ * 
+ * Description:
+ *      overloading the cout operator to print 
+ * 
+ * Params:
+ *      - ostream &os, const const RgbColor &rhs
+ * 
+ * Returns:
+ *      [string] os
+ */   
 ostream &operator<<(ostream &os, const RgbColor &rhs)
 {
     // system("Color 04");
@@ -241,8 +302,8 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
 vector<RgbColor> RgbColor::myColors;
 
 /**
+ * Main Driver
  * 
- *  
  */
 int main()
 {
