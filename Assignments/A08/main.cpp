@@ -399,7 +399,7 @@ ColorPallette::ColorPallette(int s)
  * Public :  ColorPallette(const ColorPallette &other)
  *
  * Description:
- *          - 
+ *          - overload construtor
  *
  * Params:
  *          - const ColorPallette &other
