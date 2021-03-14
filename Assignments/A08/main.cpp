@@ -24,6 +24,37 @@
 
 using namespace std;
 
+
+/**
+ *  Class Name: RgbColor
+*    Description:
+*        This is an implementation of our single color rgb class. 
+*        
+*    ~RgbColor();             // Destructor
+*    RgbColor();              // default constructor
+*    RgbColor(int);           // overloaded 1
+*    RgbColor(int, int, int); // overloaded 2
+*
+*    void SetR(int);          // setter red
+*    void SetG(int);          // setter green
+*    void SetB(int);          // setter blue
+*
+*    int GetR();              // getter red
+*    int GetG();              // getter green
+*    int GetB();              // getter blue
+*
+*    void GrayScale();        // averages colors
+*
+*    void AddColor(RgbColor rgbcolor);
+*
+*    friend ostream &operator<<(ostream &, const RgbColor &); // print to stdout
+*
+*    RgbColor operator+(const RgbColor &);   // add (mix) two colors
+*
+*    static vector<RgbColor> myColors;
+*    Usage:
+*        - Create a colors.
+*/
 class RgbColor
 {
 protected:
