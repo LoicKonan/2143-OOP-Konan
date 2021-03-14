@@ -1,5 +1,5 @@
 /**
- * Author:             Loic Konan
+* Author:              Loic Konan
 *    Email:            loickonan.lk@gmail.com
 *    Label:            A08
 *    Title:            Copy Constructor
@@ -26,7 +26,7 @@ using namespace std;
 
 
 /**
- *  Class Name: RgbColor
+*    Class Name: RgbColor
 *    Description:
 *        This is an implementation of our single color rgb class. 
 *        
@@ -52,8 +52,7 @@ using namespace std;
 *    RgbColor operator+(const RgbColor &);   // add (mix) two colors
 *
 *    static vector<RgbColor> myColors;
-*    Usage:
-*        - Create a colors.
+*
 */
 class RgbColor
 {
@@ -90,16 +89,24 @@ public:
 
 
 /**
+ * RgbColor 
+ * 
+ */
+void RgbColor:: GrayScale()                 // averages colors
+{
+    b = g = r = ((r + g + b) / 3);
+}
+
+
+/**
  *  Destructor ~RgbColor()
  */
-
 RgbColor::~RgbColor() {}
+
 
 /**
  * RgbColor 
  * 
- * @param  {RgbColor} rhs : 
- * @return {RgbColor}     : 
  */
 RgbColor RgbColor::operator+(const RgbColor &rhs)
 {
@@ -124,7 +131,6 @@ RgbColor::RgbColor()
 /**
  * RgbColor::RgbColor 
  * 
- * @param  {int} color : 
  */
 RgbColor::RgbColor(int color)
 {
@@ -135,9 +141,6 @@ RgbColor::RgbColor(int color)
 /**
  * RgbColor::RgbColor 
  * 
- * @param  {int} _r : 
- * @param  {int} _g : 
- * @param  {int} _b : 
  */
 RgbColor::RgbColor(int _r, int _g, int _b)
 {
@@ -150,7 +153,6 @@ RgbColor::RgbColor(int _r, int _g, int _b)
 /**
  * RgbColor 
  * 
- * @param  {int} red : 
  */
 void RgbColor:: SetR(int red)
 {
@@ -161,7 +163,6 @@ void RgbColor:: SetR(int red)
 /**
  * RgbColor 
  * 
- * @param  {int} green : 
  */
 void RgbColor::SetG(int green)
 {
@@ -172,7 +173,6 @@ void RgbColor::SetG(int green)
 /**
  * RgbColor 
  * 
- * @param  {int} blue : 
  */
 void RgbColor::SetB(int blue)
 {
@@ -183,7 +183,6 @@ void RgbColor::SetB(int blue)
 /**
  * RgbColor 
  * 
- * @return {int}  : 
  */
 int RgbColor:: GetR()
 {
@@ -194,7 +193,6 @@ int RgbColor:: GetR()
 /**
  * RgbColor 
  * 
- * @return {int}  : 
  */
 int RgbColor::GetG()
 {
@@ -205,7 +203,6 @@ int RgbColor::GetG()
 /**
  * RgbColor 
  * 
- * @return {int}  : 
  */
 int RgbColor::GetB()
 {
@@ -213,10 +210,7 @@ int RgbColor::GetB()
 }
 
 /**
- * 
- * @param  {ostream} os   : 
- * @param  {RgbColor} rhs : 
- * @return {ostream}      : 
+ *   
  */
 ostream &operator<<(ostream &os, const RgbColor &rhs)
 {
@@ -226,14 +220,9 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
 }
 
 
-
-
-
-
  /**
   * RgbColor 
   * 
-  * @param  {RgbColor} rgbcolor : 
   */
  void RgbColor::AddColor(RgbColor rgbcolor)
 {
@@ -241,12 +230,9 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
 }
 
 /**
- * 
- * @param  {v []} undefined : 
+ *
  */
 vector<RgbColor> RgbColor::myColors;
-
-
 
 /**
  * 
