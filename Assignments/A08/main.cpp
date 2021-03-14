@@ -1,5 +1,5 @@
 /**
-* Author:              Loic Konan
+*    Author:           Loic Konan
 *    Email:            loickonan.lk@gmail.com
 *    Label:            A08
 *    Title:            Copy Constructor
@@ -7,9 +7,12 @@
 *    Semester:         Spring 2021
 *
 *    Description:
-*        In this Program we had to Re-write the RgbColor class using a vector to hold all of the rgb colors 
+*        In this Program we had to Re-write the RgbColor class to hold many colors,
+*        and store them in a dynamically allocated structure
 *        so that it stores many colors the new class name is ColorPallette. 
-*        Implemented Inheritance with the two main class in order to make sure that they are tightly couples.
+*        Implemented Inheritance with the two main class in order to make sure
+*        that they are tightly couples.
+*
 *    Usage:
 *        - $ ./main filename
 *
@@ -23,7 +26,6 @@
 #include <stdlib.h>
 
 using namespace std;
-
 
 /**
 *    Class Name: RgbColor
@@ -50,23 +52,22 @@ using namespace std;
 *
 *       void AddColor(RgbColor rgbcolor);
 *
-*       friend ostream &operator<<(ostream &, const RgbColor &); // print to stdout
+*       friend ostream &operator<<(ostream &, const RgbColor &);
 *
-*       RgbColor operator+(const RgbColor &);   // add (mix) two colors
+*       RgbColor operator+(const RgbColor &); 
 *
 *       static vector<RgbColor> myColors;
 *
-*        Usage:
+*       Usage:
 *            - Create a class of colors.
 *
 */
 class RgbColor
 {
 protected:
-    int r;                  // int 0-255 red
-    int g;                  // int 0-255 green
-    int b;                  // int 0-255 blue
-
+    int r; // int 0-255 red
+    int g; // int 0-255 green
+    int b; // int 0-255 blue
 
 public:
     ~RgbColor();
@@ -74,25 +75,20 @@ public:
     RgbColor(int);           // overloaded 1
     RgbColor(int, int, int); // overloaded 2
 
-    void SetR(int);          // setter red
-    void SetG(int);          // setter green
-    void SetB(int);          // setter blue
+    void SetR(int); // setter red
+    void SetG(int); // setter green
+    void SetB(int); // setter blue
 
-    int GetR();              // getter red
-    int GetG();              // getter green
-    int GetB();              // getter blue
+    int GetR(); // getter red
+    int GetG(); // getter green
+    int GetB(); // getter blue
 
-    void GrayScale();        // averages colors
-
-    void AddColor(RgbColor rgbcolor);
+    void GrayScale(); // averages colors
 
     friend ostream &operator<<(ostream &, const RgbColor &); // print to stdout
 
-    RgbColor operator+(const RgbColor &);   // add (mix) two colors
-
-    static vector<RgbColor> myColors;
+    RgbColor operator+(const RgbColor &); // add (mix) two colors
 };
-
 
 /**
  * Public :  RgbColor()
@@ -111,7 +107,6 @@ RgbColor::RgbColor()
     r = g = b = 0;
 }
 
-
 /**
  * Public :   ~RgbColor() {}
  *
@@ -124,9 +119,7 @@ RgbColor::RgbColor()
  * Returns:
  *          - NULL
  */
-RgbColor::~RgbColor() 
-{}
-
+RgbColor::~RgbColor(){}
 
 /**
  * Public :    GrayScale() 
@@ -140,11 +133,10 @@ RgbColor::~RgbColor()
  * Returns:
  *            - void
  */
-void RgbColor:: GrayScale()           
+void RgbColor::GrayScale()
 {
-    b = g = r = ((r + g + b) / 3);    
-{
-
+    b = g = r = ((r + g + b) / 3);
+}
 
 /**
  * Public :    operator+(const RgbColor &rhs) 
@@ -153,7 +145,7 @@ void RgbColor:: GrayScale()
  *            - assignment operator overload that adds values
  *  
  * Params:
- *            - (const RgbColor &rhs
+ *            - (const RgbColor &rhs)
  * 
  * Returns:
  *            - RgbColor
@@ -166,7 +158,6 @@ RgbColor RgbColor::operator+(const RgbColor &rhs)
 
     return *this;
 }
-
 
 /**
  * Public :  RgbColor()
@@ -184,8 +175,6 @@ RgbColor::RgbColor(int color)
 {
     r = g = b = color;
 }
-
-
 
 /**
  * Public :  RgbColor()
@@ -206,60 +195,99 @@ RgbColor::RgbColor(int _r, int _g, int _b)
     b = _b;
 }
 
-
 /**
- * RgbColor 
- * 
+ * Public :  SetR(int red)
+ *
+ * Description:
+ *          - setter for red
+ *
+ * Params:
+ *          - int
+ *
+ * Returns:
+ *          - NULL
  */
-void RgbColor:: SetR(int red)
+void RgbColor::SetR(int red)
 {
     r = red;
 }
 
-
 /**
- * RgbColor 
- * 
+ * Public :  SetG(int green)
+ *
+ * Description:
+ *          - setter for green
+ *
+ * Params:
+ *          - int
+ *
+ * Returns:
+ *          - NULL
  */
 void RgbColor::SetG(int green)
 {
     g = green;
 }
 
-
 /**
- * RgbColor 
- * 
+ * Public :  SetB(int blue)
+ *
+ * Description:
+ *          - setter for blue
+ *
+ * Params:
+ *          - int
+ *
+ * Returns:
+ *          - NULL
  */
 void RgbColor::SetB(int blue)
 {
     b = blue;
 }
 
-
 /**
- * RgbColor 
- * 
+ * Public :  GetR()
+ *
+ * Description:
+ *          - Getter for Red
+ * Params:
+ *          - none
+ *
+ * Returns:
+ *          - int
  */
-int RgbColor:: GetR()
+int RgbColor::GetR()
 {
     return r;
 }
 
-
 /**
- * RgbColor 
- * 
+ * Public :  GetG()
+ *
+ * Description:
+ *          - Getter for Green
+ * Params:
+ *          - none
+ *
+ * Returns:
+ *          - int
  */
 int RgbColor::GetG()
 {
     return g;
 }
 
-
 /**
- * RgbColor 
- * 
+ * Public :  GetB()
+ *
+ * Description:
+ *          - Getter for Blue
+ * Params:
+ *          - none
+ *
+ * Returns:
+ *          - int
  */
 int RgbColor::GetB()
 {
@@ -278,7 +306,7 @@ int RgbColor::GetB()
  * 
  * Returns:
  *      [string] os
- */   
+ */
 ostream &operator<<(ostream &os, const RgbColor &rhs)
 {
     // system("Color 04");
@@ -286,20 +314,108 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
     return os;
 }
 
-
- /**
-  * RgbColor 
-  * 
-  */
- void RgbColor::AddColor(RgbColor rgbcolor)
+/**
+*    Class Name: ColorPallette
+*
+*    Description:
+*         class to hold many colors, and store them in a 
+*         dynamically allocated structure.
+* 
+*    Public Methods:
+*
+*       ~ColorPallette();
+*       ColorPallette();
+*       ColorPallette(int s);
+*       ColorPallette(const ColorPallette &other);
+*
+*       Usage:
+*            - To store many colors.
+*
+*/
+class ColorPallette
 {
-	myColors.push_back(rgbcolor);
+protected:
+    RgbColor *array; // int pointer (dynamic memory)
+    int size;
+
+public:
+    ~ColorPallette();
+    ColorPallette();
+    ColorPallette(int s);
+    ColorPallette(const ColorPallette &other);
+};
+
+/**
+ * Public :  ColorPallette()
+ *
+ * Description:
+ *          - Default Constructor
+ *
+ * Params:
+ *          - none
+ *
+ * Returns:
+ *          - NULL
+ */
+ColorPallette::ColorPallette()
+{
+    size = 100;
+    array = new RgbColor[size];
 }
 
 /**
+ * Public :  ColorPallette()
  *
+ * Description:
+ *          - Destructor
+ *
+ * Params:
+ *          - none
+ *
+ * Returns:
+ *          - NULL
  */
-vector<RgbColor> RgbColor::myColors;
+ColorPallette::~ColorPallette(){}
+
+/**
+ * Public :  ColorPallette()
+ *
+ * Description:
+ *          - Overload Constructor
+ *
+ * Params:
+ *          - int
+ *
+ * Returns:
+ *          - NULL
+ */
+ColorPallette::ColorPallette(int s)
+{
+    size = s;
+    array = new RgbColor[size];
+}
+
+/**
+ * Public :  ColorPallette(const ColorPallette &other)
+ *
+ * Description:
+ *          - 
+ *
+ * Params:
+ *          - const ColorPallette &other
+ *
+ * Returns:
+ *          - NULL
+ */
+ColorPallette::ColorPallette(const ColorPallette &other)
+{
+    size = other.size;
+    array = new RgbColor[size];
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = other.array[i];
+    }
+}
 
 /**
  * Main Driver
@@ -307,32 +423,23 @@ vector<RgbColor> RgbColor::myColors;
  */
 int main()
 {
-    RgbColor newColor1, newColor;
+    RgbColor newColor;
+
+    RgbColor Color1(255, 200, 11);
+    RgbColor Color2(100, 14, 123);
+    RgbColor Color3 = Color1 + Color2;
+    std::cout << Color3 << std::endl;
 
     int red, green, blue;
 
     cout << "Enter the colors red, green and blue: ";
-	cin >> red >> blue >> green;
+    cin >> red >> blue >> green;
 
-	newColor.SetR(red);
-	newColor.SetG(green);
-	newColor.SetB(blue);
+    newColor.SetR(red);
+    newColor.SetG(green);
+    newColor.SetB(blue);
     newColor.GetR();
-	newColor.GetG();
-	newColor.GetB();
-    newColor.AddColor(newColor); // Add account to the database
-    cout<< newColor <<endl;
-
-
-
-    cout << "Enter the colors for the next colorpalette red, green and blue: ";
-	cin >> red >> blue >> green;
-	newColor1.SetR(red);
-	newColor1.SetG(green);
-	newColor1.SetB(blue);
-    newColor1.GetR();
-	newColor1.GetG();
-	newColor1.GetB();
-	newColor1.AddColor(newColor1); // Add account to the database
-    cout<< newColor1 <<endl;
+    newColor.GetG();
+    newColor.GetB();
+    cout << newColor << endl;
 }
