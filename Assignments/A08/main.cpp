@@ -1,6 +1,22 @@
 /**
- * 
- */
+ * Author:             Loic Konan
+*    Email:            loickonan.lk@gmail.com
+*    Label:            A08
+*    Title:            Copy Constructor
+*    Course:           CMPS 2143
+*    Semester:         Spring 2021
+*
+*    Description:
+*        In this Program we had to Re-write the RgbColor class using a vector to hold all of the rgb colors 
+*        so that it stores many colors the new class name is ColorPallette. 
+*        Implemented Inheritance with the two main class in order to make sure that they are tightly couples.
+*    Usage:
+*        - $ ./main filename
+*
+*    Files:
+*          main.cpp    
+* 
+*/
 
 #include <iostream>
 #include <vector>

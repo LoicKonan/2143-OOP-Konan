@@ -4,7 +4,8 @@
 
 ### Description
 
-Re-writing the RgbColor class from this [code.cpp](code.cpp) using an array to hold all of the rgb colors so that it stores many colors and I am naming it **ColorPallette**.
+Re-writing the RgbColor class from this [code.cpp](code.cpp) using a **Vector** to hold all of the rgb colors so that it stores many colors and naming it **ColorPallette**.
+Decided to implement Inheritance with the two main class in order to make sure that they are tightly couples.
 
 |  #  | File                 | Description                     |
 | :-: | -------------------- | ------------------------------- |
@@ -14,4 +15,4 @@ Re-writing the RgbColor class from this [code.cpp](code.cpp) using an array to h
 
 ### Instructions
 
-- none.
+    - $ ./main filename
