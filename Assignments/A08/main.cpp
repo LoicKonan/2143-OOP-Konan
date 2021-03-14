@@ -1,4 +1,6 @@
-
+/**
+ * 
+ */
 
 #include <iostream>
 #include <vector>
@@ -46,7 +48,12 @@ public:
 
 RgbColor::~RgbColor() {}
 
-
+/**
+ * RgbColor 
+ * 
+ * @param  {RgbColor} rhs : 
+ * @return {RgbColor}     : 
+ */
 RgbColor RgbColor::operator+(const RgbColor &rhs)
 {
     int r = (this->r + rhs.r) / 2;
@@ -56,16 +63,35 @@ RgbColor RgbColor::operator+(const RgbColor &rhs)
     return *this;
 }
 
+
+/**
+ * RgbColor::RgbColor 
+ * 
+ */
 RgbColor::RgbColor()
 {
     r = g = b = 0;
 }
 
+
+/**
+ * RgbColor::RgbColor 
+ * 
+ * @param  {int} color : 
+ */
 RgbColor::RgbColor(int color)
 {
     r = g = b = color;
 }
 
+
+/**
+ * RgbColor::RgbColor 
+ * 
+ * @param  {int} _r : 
+ * @param  {int} _g : 
+ * @param  {int} _b : 
+ */
 RgbColor::RgbColor(int _r, int _g, int _b)
 {
     r = _r;
@@ -73,37 +99,78 @@ RgbColor::RgbColor(int _r, int _g, int _b)
     b = _b;
 }
 
+
+/**
+ * RgbColor 
+ * 
+ * @param  {int} red : 
+ */
 void RgbColor:: SetR(int red)
 {
     r = red;
 }
 
+
+/**
+ * RgbColor 
+ * 
+ * @param  {int} green : 
+ */
 void RgbColor::SetG(int green)
 {
     g = green;
 }
 
+
+/**
+ * RgbColor 
+ * 
+ * @param  {int} blue : 
+ */
 void RgbColor::SetB(int blue)
 {
     b = blue;
 }
 
+
+/**
+ * RgbColor 
+ * 
+ * @return {int}  : 
+ */
 int RgbColor:: GetR()
 {
     return r;
 }
 
+
+/**
+ * RgbColor 
+ * 
+ * @return {int}  : 
+ */
 int RgbColor::GetG()
 {
     return g;
 }
 
+
+/**
+ * RgbColor 
+ * 
+ * @return {int}  : 
+ */
 int RgbColor::GetB()
 {
     return b;
 }
 
-
+/**
+ * 
+ * @param  {ostream} os   : 
+ * @param  {RgbColor} rhs : 
+ * @return {ostream}      : 
+ */
 ostream &operator<<(ostream &os, const RgbColor &rhs)
 {
     // system("Color 04");
@@ -116,16 +183,28 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
 
 
 
-
+ /**
+  * RgbColor 
+  * 
+  * @param  {RgbColor} rgbcolor : 
+  */
  void RgbColor::AddColor(RgbColor rgbcolor)
 {
 	myColors.push_back(rgbcolor);
 }
 
-
+/**
+ * 
+ * @param  {v []} undefined : 
+ */
 vector<RgbColor> RgbColor::myColors;
 
 
+
+/**
+ * 
+ *  
+ */
 int main()
 {
     RgbColor newColor1, newColor;
