@@ -17,7 +17,7 @@ This assignment is more about breaking the ice with SFML, and how to get comfort
 
 ### Instructions
 
-This program does not require any non standard libraries
+This program does not require any non standard libraries.
 
 ### Example
 

@@ -148,8 +148,8 @@
 > That means, only one copy of that particular variable or function would be created and will
 > be accessed by all the instances of the class. We can use static keyword with:
 >
-> - **Static Variables** : Variables in a function, Variables in a class
-> - **Static Members of Class** : Class objects and Functions in a class
+> - **Static Variables** : Variables in a function, Variables in a class.
+> - **Static Members of Class** : Class objects and Functions in a class.
 >
 >> For example:
 > <img src="https://dotnettutorials.net/wp-content/uploads/2018/07/word-image-485-300x136.png" width=250>
