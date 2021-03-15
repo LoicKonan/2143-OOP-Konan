@@ -8,10 +8,12 @@
 *
 *    Description:
 *        In this Program we had to Re-write the RgbColor class to hold many colors,
-*        and store them in a dynamically allocated structure
-*        so that it stores many colors the new class name is ColorPallette. 
-*        Implemented Inheritance with the two main class in order to make sure
-*        that they are tightly couples.
+*        and store the different colors in a dynamically allocated structure
+*        this new class name is ColorPallette. Also added a system command to make the 
+*        console Text output to change color by using a random number generator and 
+*        deciding which color to apply.
+*        The console output text will differ bettween these following colors:
+*        Red, Green, Blue and the standard color white.
 *
 *    Usage:
 *        - $ ./main filename
@@ -24,6 +26,7 @@
 #include <iostream>
 #include <vector>
 #include <stdlib.h>
+#include <ctime>
 
 using namespace std;
 
@@ -119,7 +122,7 @@ RgbColor::RgbColor()
  * Returns:
  *          - NULL
  */
-RgbColor::~RgbColor(){}
+RgbColor::~RgbColor() {}
 
 /**
  * Public :    GrayScale() 
@@ -142,7 +145,7 @@ void RgbColor::GrayScale()
  * Public :    operator+(const RgbColor &rhs) 
  * 
  * Description:
- *            - assignment operator overload that adds values
+ *            - assignment operator overload that adds values.
  *  
  * Params:
  *            - (const RgbColor &rhs)
@@ -299,7 +302,8 @@ int RgbColor::GetB()
  * Public : ostream
  * 
  * Description:
- *      overloading the cout operator to print 
+ *      overloading the cout operator to print the colors
+ *      I also added a system command to change the output of the console.
  * 
  * Params:
  *      - ostream &os, const const RgbColor &rhs
@@ -309,9 +313,29 @@ int RgbColor::GetB()
  */
 ostream &operator<<(ostream &os, const RgbColor &rhs)
 {
-    // system("Color 04");
-    os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
-    return os;
+    // I added 3 system command below to change the color of the ouput on your console.
+    srand((unsigned)time(0));
+    int i;
+    i = (rand() % 4);
+
+    if (i == 1)
+    {
+        system("Color 0A"); // Will display Green
+        return os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
+    }
+    else if (i == 2)
+    {
+        system("Color 0C"); // Will display Red
+        return os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
+    }
+    else if (i == 3)
+    {
+        system("Color 09"); // Will display Blue
+        return os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
+    }
+    else
+        system("Color 07"); // Will display white
+        return os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
 }
 
 /**
@@ -375,7 +399,7 @@ ColorPallette::ColorPallette()
  * Returns:
  *          - NULL
  */
-ColorPallette::~ColorPallette(){}
+ColorPallette::~ColorPallette() {}
 
 /**
  * Public :  ColorPallette()
@@ -428,11 +452,12 @@ int main()
     RgbColor Color1(255, 200, 11);
     RgbColor Color2(100, 14, 123);
     RgbColor Color3 = Color1 + Color2;
-    std::cout << Color3 << std::endl;
+    cout << Color3 << endl
+         << endl;
 
+    // Prompt the user to enter is own set of colors.
     int red, green, blue;
-
-    cout << "Enter the colors red, green and blue: ";
+    cout << "Enter the colors red, green and blue\n";
     cin >> red >> blue >> green;
 
     newColor.SetR(red);
@@ -441,5 +466,7 @@ int main()
     newColor.GetR();
     newColor.GetG();
     newColor.GetB();
+
+    // Display the color that the user picked.
     cout << newColor << endl;
 }

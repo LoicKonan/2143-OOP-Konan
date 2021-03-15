@@ -4,8 +4,9 @@
 
 ### Description
 
-Re-writing the RgbColor class from this [code.cpp](code.cpp) using an **array** to store them in a dynamically allocated structure and naming it **ColorPallette**.
-Decided to implement Inheritance with the two main class in order to make sure that they are tightly couples.
+Re-writing the RgbColor class from this [code.cpp](code.cpp) using an **array** to store the different colors in a dynamically allocated structure and naming it **ColorPallette**. Also added a system command to make the console output to change color by using a random number generator and deciding which color to apply.
+The console output text will differ bettween these following colors:
+**Red** **Green** **Blue** and the standard color **white**.
 
 |  #  | File                 | Description                     |
 | :-: | -------------------- | ------------------------------- |
