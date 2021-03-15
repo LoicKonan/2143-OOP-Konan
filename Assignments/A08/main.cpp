@@ -26,6 +26,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <ctime>
+#include <vector>
 
 using namespace std;
 
@@ -79,9 +80,9 @@ public:
     int GetG(); // getter green
     int GetB(); // getter blue
 
-    void GrayScale(); // averages colors
+    void GrayScale();                                        // averages colors
     friend ostream &operator<<(ostream &, const RgbColor &); // print to stdout
-    RgbColor operator+(const RgbColor &); // add (mix) two colors
+    RgbColor operator+(const RgbColor &);                    // add (mix) two colors
 };
 
 /**
@@ -326,7 +327,7 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
     }
     else
         system("Color 07"); // Will display white
-        return os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
+    return os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
 }
 
 /**
@@ -347,9 +348,9 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
 *            - To store many colors.
 *
 */
-class ColorPallette
+class ColorPallette: RgbColor
 {
-private:
+protected:
     RgbColor *array; // int pointer (dynamic memory)
     int size;
 
@@ -440,18 +441,17 @@ int main()
 {
     RgbColor newColor;
 
-
+    static vector<ColorPallette> something;
 
     RgbColor Color1(255, 200, 11);
     RgbColor Color2(100, 14, 123);
     RgbColor Color3 = Color1 + Color2;
-    cout << Color3 << endl << endl;
+    cout << Color3 << endl
+         << endl;
 
     // Prompt the user to enter is own set of colors.
     int red, green, blue;
-    cout << "Enter the colors red, green and blue\n";
-    cin >> red >> blue >> green;
-
+    
     newColor.SetR(red);
     newColor.SetG(green);
     newColor.SetB(blue);
@@ -461,5 +461,4 @@ int main()
 
     // Display the color that the user picked.
     cout << newColor << endl;
-
 }
