@@ -447,6 +447,9 @@ int main()
     RgbColor newColor;
     ColorPallette pallette;
 
+
+    cout << endl <<endl;
+    
     RgbColor Color1(255, 200, 11);
     RgbColor Color2(100, 14, 123);
     RgbColor Color3 = Color1 + Color2;
@@ -475,5 +478,5 @@ int main()
     pallette.GetB();
 
     pallette.AddColors(pallette);
-    cout << pallette;
+    cout << pallette << endl << endl;
 }
