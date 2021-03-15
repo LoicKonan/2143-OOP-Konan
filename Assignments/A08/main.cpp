@@ -54,7 +54,6 @@ using namespace std;
 *       void GrayScale();        // averages colors
 *       friend ostream &operator<<(ostream &, const RgbColor &);
 *       RgbColor operator+(const RgbColor &); 
-*       static vector<RgbColor> myColors;
 *       Usage:
 *            - Create a class of colors.
 *
@@ -442,7 +441,6 @@ ColorPallette::ColorPallette(const ColorPallette &other)
 
 /**
  * Main Driver
- * 
  */
 int main()
 {
@@ -458,7 +456,7 @@ int main()
     // Prompt the user to enter is own set of colors.
     int red, green, blue;
 
-    cout << "Enter the colors red, green and blue\n";
+    cout << "Enter the colors red, green and blue: ";
     cin >> red >> blue >> green;
 
     newColor.SetR(red);
@@ -468,6 +466,14 @@ int main()
     newColor.GetG();
     newColor.GetB();
 
-    pallette.AddColors(newColor);
+    // Using the vector version to add new colors to it.
+    pallette.SetR(red);
+    pallette.SetG(green);
+    pallette.SetB(blue);
+    pallette.GetR();
+    pallette.GetG();
+    pallette.GetB();
+
+    pallette.AddColors(pallette);
     cout << pallette;
 }
