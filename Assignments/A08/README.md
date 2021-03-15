@@ -16,4 +16,4 @@ The console output text will differ bettween these following colors:
 
 ### Instructions
 
-    - $ ./main filename
+    - $ ./main.cpp
