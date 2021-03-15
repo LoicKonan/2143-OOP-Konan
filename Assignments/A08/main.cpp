@@ -441,8 +441,6 @@ int main()
 {
     RgbColor newColor;
 
-    static vector<ColorPallette> something;
-
     RgbColor Color1(255, 200, 11);
     RgbColor Color2(100, 14, 123);
     RgbColor Color3 = Color1 + Color2;
@@ -452,6 +450,9 @@ int main()
     // Prompt the user to enter is own set of colors.
     int red, green, blue;
     
+    cout << "Enter the colors red, green and blue\n";
+    cin >> red >> blue >> green;
+
     newColor.SetR(red);
     newColor.SetG(green);
     newColor.SetB(blue);
