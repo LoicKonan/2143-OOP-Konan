@@ -24,7 +24,6 @@
 */
 
 #include <iostream>
-#include <vector>
 #include <stdlib.h>
 #include <ctime>
 
@@ -52,15 +51,9 @@ using namespace std;
 *       int GetB();              // getter blue
 *
 *       void GrayScale();        // averages colors
-*
-*       void AddColor(RgbColor rgbcolor);
-*
 *       friend ostream &operator<<(ostream &, const RgbColor &);
-*
 *       RgbColor operator+(const RgbColor &); 
-*
 *       static vector<RgbColor> myColors;
-*
 *       Usage:
 *            - Create a class of colors.
 *
@@ -87,9 +80,7 @@ public:
     int GetB(); // getter blue
 
     void GrayScale(); // averages colors
-
     friend ostream &operator<<(ostream &, const RgbColor &); // print to stdout
-
     RgbColor operator+(const RgbColor &); // add (mix) two colors
 };
 
@@ -117,7 +108,7 @@ RgbColor::RgbColor()
  *            Destructor
  *
  * Params:
- *          - NONE
+ *          - none
  *
  * Returns:
  *          - NULL
@@ -131,7 +122,7 @@ RgbColor::~RgbColor() {}
  *            - averages colors
  *  
  * Params:
- *            - NONE
+ *            - none
  * 
  * Returns:
  *            - void
@@ -163,7 +154,7 @@ RgbColor RgbColor::operator+(const RgbColor &rhs)
 }
 
 /**
- * Public :  RgbColor()
+ * Public :   RgbColor()
  *
  * Description:
  *          - Overload Constructor
@@ -180,7 +171,7 @@ RgbColor::RgbColor(int color)
 }
 
 /**
- * Public :  RgbColor()
+ * Public :   RgbColor()
  *
  * Description:
  *          - Overload Constructor
@@ -199,7 +190,7 @@ RgbColor::RgbColor(int _r, int _g, int _b)
 }
 
 /**
- * Public :  SetR(int red)
+ * Public :   SetR(int red)
  *
  * Description:
  *          - setter for red
@@ -216,7 +207,7 @@ void RgbColor::SetR(int red)
 }
 
 /**
- * Public :  SetG(int green)
+ * Public :   SetG(int green)
  *
  * Description:
  *          - setter for green
@@ -233,7 +224,7 @@ void RgbColor::SetG(int green)
 }
 
 /**
- * Public :  SetB(int blue)
+ * Public :   SetB(int blue)
  *
  * Description:
  *          - setter for blue
@@ -250,7 +241,7 @@ void RgbColor::SetB(int blue)
 }
 
 /**
- * Public :  GetR()
+ * Public :   GetR()
  *
  * Description:
  *          - Getter for Red
@@ -266,7 +257,7 @@ int RgbColor::GetR()
 }
 
 /**
- * Public :  GetG()
+ * Public :   GetG()
  *
  * Description:
  *          - Getter for Green
@@ -282,7 +273,7 @@ int RgbColor::GetG()
 }
 
 /**
- * Public :  GetB()
+ * Public :   GetB()
  *
  * Description:
  *          - Getter for Blue
@@ -358,7 +349,7 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
 */
 class ColorPallette
 {
-protected:
+private:
     RgbColor *array; // int pointer (dynamic memory)
     int size;
 
@@ -370,7 +361,7 @@ public:
 };
 
 /**
- * Public :  ColorPallette()
+ * Public :   ColorPallette()
  *
  * Description:
  *          - Default Constructor
@@ -388,7 +379,7 @@ ColorPallette::ColorPallette()
 }
 
 /**
- * Public :  ColorPallette()
+ * Public :   ColorPallette()
  *
  * Description:
  *          - Destructor
@@ -402,7 +393,7 @@ ColorPallette::ColorPallette()
 ColorPallette::~ColorPallette() {}
 
 /**
- * Public :  ColorPallette()
+ * Public :   ColorPallette()
  *
  * Description:
  *          - Overload Constructor
@@ -420,7 +411,7 @@ ColorPallette::ColorPallette(int s)
 }
 
 /**
- * Public :  ColorPallette(const ColorPallette &other)
+ * Public :   ColorPallette(const ColorPallette &other)
  *
  * Description:
  *          - overload construtor
@@ -449,11 +440,12 @@ int main()
 {
     RgbColor newColor;
 
+
+
     RgbColor Color1(255, 200, 11);
     RgbColor Color2(100, 14, 123);
     RgbColor Color3 = Color1 + Color2;
-    cout << Color3 << endl
-         << endl;
+    cout << Color3 << endl << endl;
 
     // Prompt the user to enter is own set of colors.
     int red, green, blue;
@@ -469,4 +461,5 @@ int main()
 
     // Display the color that the user picked.
     cout << newColor << endl;
+
 }
