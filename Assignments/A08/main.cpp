@@ -338,23 +338,30 @@ ostream &operator<<(ostream &os, const RgbColor &rhs)
 *         dynamically allocated structure.
 * 
 *    Public Methods:
-*
+*       vector<RgbColor> copyColors;
 *       ~ColorPallette();
 *       ColorPallette();
 *       ColorPallette(int s);
 *       ColorPallette(const ColorPallette &other);
-*
+*       void AddColors(RgbColor a)
 *       Usage:
 *            - To store many colors.
 *
 */
-class ColorPallette: RgbColor
+class ColorPallette : public RgbColor
 {
 protected:
+    vector<RgbColor> copyColors;
+
     RgbColor *array; // int pointer (dynamic memory)
     int size;
 
 public:
+    void AddColors(RgbColor a)
+    {
+        copyColors.push_back(a);
+    }
+
     ~ColorPallette();
     ColorPallette();
     ColorPallette(int s);
@@ -440,6 +447,7 @@ ColorPallette::ColorPallette(const ColorPallette &other)
 int main()
 {
     RgbColor newColor;
+    ColorPallette pallette;
 
     RgbColor Color1(255, 200, 11);
     RgbColor Color2(100, 14, 123);
@@ -449,7 +457,7 @@ int main()
 
     // Prompt the user to enter is own set of colors.
     int red, green, blue;
-    
+
     cout << "Enter the colors red, green and blue\n";
     cin >> red >> blue >> green;
 
@@ -460,6 +468,6 @@ int main()
     newColor.GetG();
     newColor.GetB();
 
-    // Display the color that the user picked.
-    cout << newColor << endl;
+    pallette.AddColors(newColor);
+    cout << pallette;
 }
