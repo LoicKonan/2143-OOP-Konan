@@ -1,4 +1,4 @@
-#### Program 2 - Graphviz Class
+## Program 2 - Graphviz Class
 
 ### Loic Konan
 

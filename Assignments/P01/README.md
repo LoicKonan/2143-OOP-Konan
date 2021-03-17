@@ -1,4 +1,4 @@
-#### Program 01 - Game
+## Program 01 - Game
 
 ### Loic Konan
 
