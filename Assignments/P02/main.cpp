@@ -67,22 +67,59 @@ struct LinkedNodes
     string SecondCountry;
     int edge;
 
-    LinkedNodes()                              
+/**
+  * Public : LinkedNodes()
+  * 
+  * Description:
+  *      - Default constructor.
+  *      - Initialize countries name and the edges.
+  *      - friend ostream& operator<<(ostream& OutFile, LinkedNodes& other).
+  * 
+  * Params:
+  *      - None.
+  * 
+  * Returns:
+  *      - N/A
+  */
+    LinkedNodes()                                  
     {
         FirstCountry = SecondCountry = "Name";
         edge = 0;
 
     }
 
-    //create an overload for stuct Node
-    LinkedNodes(string A, string B, int num)
+/**
+  * Public : LinkedNodes()
+  * 
+  * Description:
+  *      - Overload constructor.
+  *      - Initialize countries name and the edges.
+  * 
+  * Params:
+  *      - string A, string B, int num.
+  * 
+  * Returns:
+  *      - N/A
+  */
+    LinkedNodes(string A, string B, int num) 
     {
         FirstCountry = A;
         SecondCountry = B;
         edge = num;
     };
 
-    //overloaded outfile operator that formats the output
+ /**
+  * Public : ostream
+  * 
+  * Description:
+  *      - overloading the cout operator to print the countries names.
+  * 
+  * Params:
+  *      - ostream &os, const const RgbColor &rhs
+  * 
+  * Returns:
+  *      - [string] os
+  */
     friend ostream& operator<<(ostream& OutFile, LinkedNodes& other)
     {
         return OutFile << other.FirstCountry << " ->" << other.SecondCountry <<
