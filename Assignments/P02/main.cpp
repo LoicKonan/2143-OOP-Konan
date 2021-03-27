@@ -39,7 +39,6 @@
 
 using namespace std;
 
-
 //Function prototypes to read from and write to a file.
 void openFiles(ifstream& InFile, ofstream& OutFile);
 
@@ -112,13 +111,14 @@ struct LinkedNodes
   * Public : ostream
   * 
   * Description:
-  *      - overloading the cout operator to print the countries names.
-  * 
+  *      - Overloading the cout operator to print the countries names.
+  *      -  To print the edges.
+  *
   * Params:
-  *      - ostream &os, const const RgbColor &rhs
+  *      - ostream& OutFile, LinkedNodes& other
   * 
   * Returns:
-  *      - [string] os
+  *      - [string] ostream
   */
     friend ostream& operator<<(ostream& OutFile, LinkedNodes& other)
     {
@@ -189,12 +189,36 @@ public:
         this->CountryName = other.CountryName;
     }
 
+/**
+  * Public : ostream()
+  * 
+  * Description:
+  *      - Overloading the cout operator to print the countries names.
+  *      - Print the countries initials.
+  * Params:
+  *      - ostream& OutFile, Node& other
+  * 
+  * Returns:
+  *      - [string] ostream
+  */
     friend ostream& operator<<(ostream& OutFile, Node& other)
     {
         return OutFile << other.Initials << "[label =" << " \" "
         << other.CountryName << " \"]" << '\n';
     }
 
+/**
+  * Public : istream()
+  * 
+  * Description:
+  *      - Overloading the cin operator to read in the countries names.
+  *      - To read in the countries initials.
+  * Params:
+  *      - istream& InFile, Node& Node
+  * 
+  * Returns:
+  *      - [string] istream
+  */
     friend istream& operator>>(istream& InFile, Node& Node)
     {
         InFile >> Node.Initials >> Node.CountryName;
