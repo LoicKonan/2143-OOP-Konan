@@ -1,12 +1,13 @@
-#include <sstream>
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <map>
+#include<sstream>
+#include<iostream>
+#include<fstream>
+#include<vector>
+#include<map>
 
 using namespace std;
 
-//below is an instance of our node that will create a node to print out to
+
+//below is an instance of our node that will create a node to print out to 
 //and link to other nodes
 class Node
 {
@@ -19,6 +20,7 @@ private:
     string Name;
     string NodeNumber;*/
 
+
     string Initials;
     string CountryName;
 
@@ -27,7 +29,7 @@ public:
     Node()
     {
         Initials = CountryName = 'a';
-    }; // default constructor
+    };// default constructor
     //overloaded default method for our node
     //default string of initials and then countryname
     Node(string CountryInitials, string Name)
@@ -46,35 +48,41 @@ public:
     string GetInitials();
 
     //copy constructor for another node
-    Node(const Node &other)
+    Node(const Node& other)
     {
         this->Initials = other.Initials;
         this->CountryName = other.CountryName;
     }
 
     //overloaded outstream operator for our class
-    friend ostream &operator<<(ostream &OutFile, const Node &other);
+    friend ostream& operator<<(ostream& OutFile, const Node& other);
 
     //infile overloader
-    friend istream &operator>>(istream &InFile, Node &Node);
+    friend istream& operator>>(istream& InFile, Node& Node);
     //destructor for our class
-    ~Node(){};
+    ~Node() {};
+
 };
+
+
+
 
 //definition for OutFiletream overloading
 
-ostream &operator<<(ostream &OutFile, const Node &nodes)
+ostream& operator<<(ostream& OutFile, const Node& nodes)
 {
-    return OutFile << "["
-                   << "NodeName = " << nodes.Initials << ","
-                   << " Country = " << nodes.CountryName << "];" << endl;
+    return OutFile << nodes.Initials << "[ label =" << " \" "
+        << nodes.CountryName << " \" ]" << '\n';
 };
 
-istream &operator>>(istream &InFile, Node &Node)
+
+istream& operator>>(istream& InFile, Node& Node)
 {
     InFile >> Node.Initials >> Node.CountryName;
     return InFile;
 }
+
+
 
 //setters for our class dot operator
 void Node::SetInitials(string CountryInitials)
@@ -105,11 +113,13 @@ struct LinkedNodes
     string SecondCountry;
     int edge;
 
+
     //creating a default constructor to set the values to basic default values
     LinkedNodes()
     {
         FirstCountry = SecondCountry = "Name";
         edge = 0;
+
     };
     //create an overload for stuct Node
     //assign the values to the structure name
@@ -121,91 +131,102 @@ struct LinkedNodes
     };
 
     //overloaded outfile operator that formats the output
-    friend ostream &operator<<(ostream &OutFile, LinkedNodes &other)
+    friend ostream& operator<<(ostream& OutFile, LinkedNodes& other)
     {
         //format the output suitable for graphviz
-        return OutFile << other.FirstCountry << " -> " << other.SecondCountry << " [label = " << other.edge << "];" << endl;
+        return OutFile << other.FirstCountry << " ->" << other.SecondCountry <<
+            "[ label =" << " \" " << other.edge << " \" ]" << '\n';
+
     };
+
+
 };
 
+
 //function prototypes to read from InFile
-void openFiles(ifstream &InFile, ofstream &OutFile);
+void openFiles(ifstream& InFile, ofstream& OutFile);
 
 int main()
 {
 
     ifstream InFile;
     ofstream OutFile;
-    openFiles(InFile, OutFile); // prompt for input output
+    openFiles(InFile, OutFile);// prompt for input output
 
-    vector<LinkedNodes *> node_edges; // create a vector of edge pointers called edge
-    LinkedNodes *Links;               // pointer to edges of the edge stuctin
+    vector<LinkedNodes*> node_edges;// create a vector of edge pointers called edge
+    LinkedNodes* Links;// pointer to edges of the edge stuct
 
-    //create objects for class and structures
-    Node nodes; // class node with object nodes
+     //create objects for class and structures
+    Node nodes;// class node with object nodes
 
     //variable initialization
 
-    int NumNodes, Numedges, edges; // second line that reads in node numbers
+    int NumNodes, Numedges, edges;// second line that reads in node numbers
     string GraphType = "", FirstCountry, SecondCountry;
     //these string values are the string values we are reading in
 
-    //read in the first value string to show which kind of graph
-    InFile >> GraphType; // read in the graph type and go to next line
-    OutFile << GraphType << " G {"
-                            "\n\n";
-    InFile >> NumNodes; // read in the next line which is the number of nodes
 
-    OutFile << "[There are =  " << NumNodes << "  Countries Display below];" << endl;
+    //read in the first value string to show which kind of graph
+    InFile >> GraphType;// read in the graph type and go to next line
+    OutFile << GraphType << " MyGraph "<< "{ "<<
+        "\n\n";
+    InFile >> NumNodes;// read in the next line which is the number of nodes
+    
+                       //dont need to print out nodes for transfer to graphviz
+    //OutFile << "There are :  " << NumNodes << "  Nodes" << endl;
     //this is what we will read until
 
     while (!InFile.eof())
-    { //until eof() is encountered
-        for (int i = 0; i < NumNodes; i++)
+    {//until eof() is encountered
+        for (int i = 0; i < NumNodes;i++)
         {
-            // call the outstream and instream overload for
+            // call the outstream and instream overload for 
             // the lines
             //no need for anything else
             InFile >> nodes;
             OutFile << nodes;
+
         }
         //next link read in the value
 
-        InFile >> Numedges; // read in the number of edges
+        InFile >> Numedges;// read in the number of edges
 
         OutFile << "\n\n";
-        OutFile << "[There are " << Numedges << " linked countries];" << endl
-                << endl;
 
-        for (int i = 0; i < Numedges; i++) // traverse tille end of read in value
+        //graphviz doesnt need this
+        //OutFile << " There are " << Numedges << " linked nodes" << endl << endl;
+
+        for (int i = 0; i < Numedges;i++)// traverse tille end of read in value
         {
             //read in the first line the first instance
 
-            //read in all three from infile
-            //create new node dynamically
-            //store in the vector
+                //read in all three from infile 
+                //create new node dynamically
+                //store in the vector
             InFile >> FirstCountry >> SecondCountry >> edges;
             Links = new LinkedNodes(FirstCountry, SecondCountry, edges);
             node_edges.push_back(Links);
+
+
         }
 
-        for (int i = 0; i < node_edges.size(); i++)
+        for (int i = 0;i < node_edges.size();i++)
         {
             //call ostream overload for the stuct
             //print out each line
             OutFile << *node_edges[i];
         }
+        OutFile << "}" << endl; // close off the graph design
     }
-
-    OutFile <<"}";
 
     InFile.close();
     OutFile.close();
     return 0;
+
 }
 
 //#####################################################//
-//f(x) name                                            //
+//f(x) name                                            // 
 //  void openFiles(ifstream& InFile, ofstream& OutFile)//
 //                                                     //
 //what it does?                                        //
@@ -218,9 +239,9 @@ int main()
 // -> no return type because  void                     //
 //#####################################################//
 
-void openFiles(ifstream &InFile, ofstream &OutFile)
+void openFiles(ifstream& InFile, ofstream& OutFile)
 {
-    // Declare variable for the Files.
+    // Declare variable for the Files. 
     char InFileName[40];
     char outFileName[40];
 
