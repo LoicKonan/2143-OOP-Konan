@@ -2,23 +2,24 @@
 *
 *    Author:           Loic Konan
 *    Email:            loickonan.lk@gmail.com
-*    Author:           
-*    Email:            
-*    Author:           
-*    Email:            
+*    Author:           Ethan Coyle
+*    Email:            Ejcoyle0912@my.msutexas.edu
+*    Author:           Jonathan Hogan
+*    Email:            jon.hogan83@gmail.com
 *
 *    Label:            P02
 *    Title:            Program 02 - Graphviz Class
 *    Course:           CMPS 2143
 *    Semester:         Spring 2021
+*
 *    Description:
 *                      This Program is about implementing a **graphviz Language 
 *                      "wrapper" or "facade"**.
 *                      This means we will be implementing a (tiny) **subset** of 
 *                      the graphviz language capability so we can visualize some
-*                      of the typical data structures.
-*
-*
+*                      of the typical data structures that will show all the 
+*                      countries of the world with a distance needed to travel to
+*                      or from each other.
 *    Files:
 *         main.cpp
 *         output.txt
