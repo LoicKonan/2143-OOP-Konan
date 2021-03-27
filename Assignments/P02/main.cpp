@@ -120,8 +120,8 @@ struct LinkedNodes
   */
     friend ostream& operator<<(ostream& OutFile, LinkedNodes& other)
     {
-        return OutFile << other.FirstCountry << " ->" << other.SecondCountry <<
-            "[ label =" << " \" " << other.edge << " \" ]" << '\n';
+        return OutFile << other.FirstCountry << " -> " << other.SecondCountry <<
+            " [label =" << " \"" << other.edge << " miles\"]" << '\n';
     }
 };
 
@@ -314,8 +314,8 @@ public:
   */
     friend ostream& operator<<(ostream& OutFile, Node& other)
     {
-        return OutFile << other.Initials << "[label =" << " \" "
-        << other.CountryName << " \"]" << '\n';
+        return OutFile << other.Initials << " [label =" << " \""
+        << other.CountryName << "\"]" << '\n';
     }
 
 /**
