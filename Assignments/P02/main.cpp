@@ -370,10 +370,6 @@ int main()
         }
 
         InFile >> Numedges;                                 // Read in the number of edges
-        
-        // OutFile << "\n\n[Number of Edges 
-        // (Connection between the countries = "
-        //         << Numedges <<" ]\n\n";
 
         for (int i = 0; i < Numedges;i++)          
         {                                                   
