@@ -4,8 +4,6 @@
 *    Email:            loickonan.lk@gmail.com
 *    Author:           Ethan Coyle
 *    Email:            Ejcoyle0912@my.msutexas.edu
-*    Author:           Jonathan Hogan
-*    Email:            jon.hogan83@gmail.com
 *
 *    Label:            P02
 *    Title:            Program 02 - Graphviz Class
@@ -135,6 +133,7 @@ struct LinkedNodes
  *       
  *    private Methods:
  *        - None.
+ *
  *   public Methods:
  *       - Node()
  *       - Node(string CountryInitials, string Name)  
@@ -235,16 +234,16 @@ public:
     ~Node() {};
 
 /**
- * Public :   SetInitials()
+ * Public : SetInitials()
  *
  * Description:
- *       - setter for the Countries initials
+ *      - setter for the Countries initials
  *
  * Params:
- *       - string CountryInitials
+ *      - string CountryInitials
  *
  * Returns:
- *       - void
+ *      - void
  */
     void SetInitials(string CountryInitials)
     {
@@ -253,16 +252,16 @@ public:
 
 
   /**
-  * Public :   SetCountryName()
+  * Public : SetCountryName()
   *  
   * Description:
-  *       - setter for the Countries Name
+  *      - setter for the Countries Name
   *
   * Params:
-  *       - string Name
+  *      - string Name
   *
   * Returns:
-  *       - void
+  *      - void
   */
     void SetCountryName(string Name)
     {
@@ -270,15 +269,15 @@ public:
     }
 
  /**
-  * Public :   GetCountryName()
+  * Public : GetCountryName()
   *
   * Description:
-  *       - Getter for the contryies Names.
+  *      - Getter for the contryies Names.
   * Params:
-  *       - none.
+  *      - none.
   *
   * Returns:
-  *       - string
+  *      - string
   */
     string GetCountryName()
     {
@@ -286,15 +285,15 @@ public:
     }
 
  /**
-  * Public :   GetInitials()
+  * Public : GetInitials()
   *
   * Description:
-  *       - Getter for the contryies Initials.
+  *      - Getter for the contryies Initials.
   * Params:
-  *       - none.
+  *      - none.
   *
   * Returns:
-  *       - string
+  *      - string
   */
     string GetInitials()
     {
