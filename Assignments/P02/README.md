@@ -15,9 +15,14 @@ This means we will be implementing a (tiny) **subset** of the graphviz language 
 
 |  #  | File                 | Description                     |
 | :-: | -------------------- | ------------------------------- |
-|  1  | [main.cpp](main.cpp) | The new design main cpp program |
-|  3  | [Banner](Banner)     | Banner for Assignment           |
+|  1  | [main.cpp](main.cpp) | The main driver. |
+|  2  | [input.txt](input.txt)     | The input file with all the countries names.           |
+|  3  | [output.txt](output.txt)     | the output file of the design.           |
+|  4  | [Banner](Banner)     | Banner for Assignment.          |
 
 ### Instructions
 
-    - $ ./main.cpp
+- Enter these file name below.
+  - $ ./main.cpp
+  - $ ./input.txt
+  - $ ./output.txt

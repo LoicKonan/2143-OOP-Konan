@@ -1,3 +1,35 @@
+/*****************************************************************************
+*
+*    Author:           Loic Konan
+*    Email:            loickonan.lk@gmail.com
+*    Author:           
+*    Email:            
+*    Author:           
+*    Email:            
+*
+*    Label:            P02
+*    Title:            Program 02 - Graphviz Class
+*    Course:           CMPS 2143
+*    Semester:         Spring 2021
+*    Description:
+*                      This Program is about implementing a **graphviz Language 
+*                      "wrapper" or "facade"**.
+*                      This means we will be implementing a (tiny) **subset** of 
+*                      the graphviz language capability so we can visualize some
+*                      of the typical data structures.
+*
+*
+*    Files:
+*         main.cpp
+*         output.txt
+*         input.txt
+*
+*    Usage:
+*           main.cpp          : driver program
+*           input.txt         : Input file
+*           output.txt        : output file
+*
+******************************************************************************/
 #include<sstream>
 #include<iostream>
 #include<fstream>
@@ -7,107 +39,13 @@
 using namespace std;
 
 
-//below is an instance of our node that will create a node to print out to 
-//and link to other nodes
-class Node
-{
-private:
-    //private attributes
-    /*string EdgeColor;
-    string FillColor;
-    string OutlineColor;
-    string EdgeStyle;
-    string Name;
-    string NodeNumber;*/
+//Function prototypes to read from and write to a file.
+void openFiles(ifstream& InFile, ofstream& OutFile);
 
-
-    string Initials;
-    string CountryName;
-
-public:
-    //default constructor to hold our values
-    Node()
-    {
-        Initials = CountryName = 'a';
-    };
-
-    //overloaded default method for our node
-    //default string of initials and then countryname
-    Node(string CountryInitials, string Name)
-    {
-        CountryName = Name;
-        Initials = CountryInitials;
-    }
-
-    //setters for out attributes
-    void SetInitials(string);
-    void SetCountryName(string);
-
-    //getters to get new name and initials
-    string GetCountryName();
-    string GetInitials();
-
-    //copy constructor for another node
-    Node(const Node& other)
-    {
-        this->Initials = other.Initials;
-        this->CountryName = other.CountryName;
-    }
-
-    //overloaded outstream operator for our class
-    friend ostream& operator<<(ostream& OutFile, const Node& other);
-
-    //infile overloader
-    friend istream& operator>>(istream& InFile, Node& Node);
-    //destructor for our class
-    ~Node() {};
-};
-
-
-
-
-//definition for OutFiletream overloading
-
-ostream& operator<<(ostream& OutFile, const Node& nodes)
-{
-    return OutFile << nodes.Initials << "[ label =" << " \" "
-        << nodes.CountryName << " \" ]" << '\n';
-};
-
-
-istream& operator>>(istream& InFile, Node& Node)
-{
-    InFile >> Node.Initials >> Node.CountryName;
-    return InFile;
-}
-
-
-
-//setters for our class dot operator
-void Node::SetInitials(string CountryInitials)
-{
-    Initials = CountryInitials;
-}
-
-void Node::SetCountryName(string name)
-{
-    CountryName = name;
-}
-
-//getter functions for our nodes dot operator
-string Node::GetCountryName()
-{
-    return CountryName;
-}
-string Node::GetInitials()
-{
-    return Initials;
-}
 
 // creating a struct to read the linked nodes and their edges
 struct LinkedNodes
 {
-    //infile reads node node then edge number
     string FirstCountry;
     string SecondCountry;
     int edge;
@@ -134,72 +72,129 @@ struct LinkedNodes
     {
         return OutFile << other.FirstCountry << " ->" << other.SecondCountry <<
             "[ label =" << " \" " << other.edge << " \" ]" << '\n';
-
     };
-
-
 };
 
 
-//function prototypes to read from InFile
-void openFiles(ifstream& InFile, ofstream& OutFile);
 
+//below is an instance of our node that will create a node to print out to 
+//and link to other nodes
+class Node
+{
+private:
+    //private attributes
+    /*string EdgeColor;
+    string FillColor;
+    string OutlineColor;
+    string EdgeStyle;
+    string Name;
+    string NodeNumber;*/
+
+    string Initials;
+    string CountryName;
+
+public:
+    //default constructor to hold our values
+    Node()
+    {
+        Initials = CountryName = 'a';
+    };
+
+    // Overloaded default method for our node
+    // Default string of initials and then countryname
+    Node(string CountryInitials, string Name)
+    {
+        CountryName = Name;
+        Initials = CountryInitials;
+    }
+
+    ~Node() {};
+
+    void SetInitials(string)
+    {
+        Initials = CountryInitials;
+    }
+
+    void SetCountryName(string)
+    {
+        CountryName = name;
+    }
+
+    string GetCountryName()
+    {
+        return CountryName;
+    }
+
+    string GetInitials()
+    {
+        return Initials;
+    }
+
+    // copy constructor for another node
+    Node(const Node& other)
+    {
+        this->Initials = other.Initials;
+        this->CountryName = other.CountryName;
+    }
+
+    friend ostream& operator<<(ostream& OutFile, const Node& other)
+    {
+        return OutFile << nodes.Initials << "[label =" << " \" "
+        << nodes.CountryName << " \"]" << '\n';
+    }
+
+    friend istream& operator>>(istream& InFile, Node& Node)
+    {
+        InFile >> Node.Initials >> Node.CountryName;
+        return InFile;
+    }
+};
+
+/**
+ * Main Driver
+ *
+ * For this program
+ * 
+ */
 int main()
 {
-
     ifstream InFile;
     ofstream OutFile;
-    openFiles(InFile, OutFile);// prompt for input output
+    openFiles(InFile, OutFile);
 
-    vector<LinkedNodes*> node_edges;// create a vector of edge pointers called edge
-    LinkedNodes* Links;// pointer to edges of the edge stuct
-
-     //create objects for class and structures
-    Node nodes;// class node with object nodes
-
-    //variable initialization
-
-    int NumNodes, Numedges, edges;// second line that reads in node numbers
+    vector<LinkedNodes*> node_edges;                        // Create a vector of edge pointers.
+    LinkedNodes* Links;                                     // Pointer to edges.
+    Node nodes;                                             // Create object call nodes
+    int NumNodes;
+    int Numedges;
+    int edges;
     string GraphType = "", FirstCountry, SecondCountry;
-    //these string values are the string values we are reading in
 
-
-    //read in the first value string to show which kind of graph
-    InFile >> GraphType;// read in the graph type and go to next line
-    OutFile << GraphType << " MyGraph "<< "{ "<<
-        "\n\n";
-    InFile >> NumNodes;                     // read in the next line which is the number of nodes
+    InFile >> GraphType;                                    // Read in the graph type.
+    OutFile << GraphType << "\n{ "<< "\n";                  // Display the graph Type.
+    InFile >> NumNodes;                                     // Read in number of nodes.
     
-    while (!InFile.eof())
-    {//until eof() is encountered
+    while (!InFile.eof())                                   // While the file not empty.
+    {
         for (int i = 0; i < NumNodes;i++)
-        {
-            // call the outstream and instream overload for 
-            // the lines
-            //no need for anything else
-            InFile >> nodes;
+        { 
+            InFile >> nodes;                                // Read in the node and print it out.
             OutFile << nodes;
-
         }
-        //next link read in the value
 
-        InFile >> Numedges;// read in the number of edges
-
+        InFile >> Numedges;                                 // Read in the number of edges
         OutFile << "\n\n";
 
-        //graphviz doesnt need this
-        //OutFile << " There are " << Numedges << " linked nodes" << endl << endl;
-
         for (int i = 0; i < Numedges;i++)          
-        {                                                   //store in the vector
+        {                                                   
             InFile >> FirstCountry >> SecondCountry >> edges;
             Links = new LinkedNodes(FirstCountry, SecondCountry, edges);
-            node_edges.push_back(Links);
+            node_edges.push_back(Links);                    // Store in the vector.
         }
 
         for (int i = 0;i < node_edges.size();i++)
         {                                                   
-            OutFile << *node_edges[i];                      // print out each line
+            OutFile << *node_edges[i];                      // Print out each line.
         }
         OutFile << "}" << endl;                             
     }
@@ -210,44 +205,39 @@ int main()
 
 }
 
-//#####################################################//
-//f(x) name                                            // 
-//  void openFiles(ifstream& InFile, ofstream& OutFile)//
-//                                                     //
-//what it does?                                        //
-// -> purpOutFilee is to user input in and outfile     //
-//                                                     //
-//paramters                                            //
-// -> utilizes the ofstream and outfile                //
-//                                                     //
-// return type                                         //
-// -> no return type because  void                     //
-//#####################################################//
-
+/**
+ *
+ * Function Name: openFiles ()
+ *
+ * Description:   
+ *      - To prompt the user to enter infile and output file name.
+ *      - To Make sure the infile can be open.
+ *
+ * Parameters:    
+ *      - ifstream& InFile, ofstream& OutFile 
+ *
+ * Returns:
+ *      - void
+ *
+ */
 void openFiles(ifstream& InFile, ofstream& OutFile)
 {
-    // Declare variable for the Files. 
-    char InFileName[40];
+    char InFileName[40];                                    // Declare variable for the Files. 
     char outFileName[40];
 
-    // Prompt the user for InFile name
-    cout << "Enter the input file name: ";
+    cout << "Enter the input file name: ";                  // Prompt the user for InFile name.
     cin >> InFileName;
 
-    // open input file
-    InFile.open(InFileName);
+    InFile.open(InFileName);                                // Open input file.
 
-    //create failsafe way
-    if (InFile.fail()) //OutFile out if the file cannot be opened
+    if (InFile.fail())                                      // Create failsafe way.
     {
         cout << "the input file could not be opened" << endl;
         exit(0);
     }
 
-    // Prompt the user for OutFile name
-    cout << "Enter the output file name: ";
+    cout << "Enter the output file name: ";                 // Prompt the user for OutFile name.
     cin >> outFileName;
 
-    // Open outfile.
-    OutFile.open(outFileName);
+    OutFile.open(outFileName);                              // Open outfile.
 }
