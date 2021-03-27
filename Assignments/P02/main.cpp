@@ -57,7 +57,7 @@ void openFiles(ifstream& InFile, ofstream& OutFile);
  *       - None
  *
  *   Usage:
- * 	     -  
+ * 	     - Creates node for a Linked List. 
  * 
  */
 struct LinkedNodes
@@ -105,7 +105,7 @@ struct LinkedNodes
         FirstCountry = A;
         SecondCountry = B;
         edge = num;
-    };
+    }
 
  /**
   * Public : ostream
@@ -124,13 +124,32 @@ struct LinkedNodes
     {
         return OutFile << other.FirstCountry << " ->" << other.SecondCountry <<
             "[ label =" << " \" " << other.edge << " \" ]" << '\n';
-    };
+    }
 };
 
-
-
-//below is an instance of our node that will create a node to print out to 
-//and link to other nodes
+/*
+ *    Class Name: Node
+ * 
+ *    Description:
+ *        - A class to store a Node node and to link to other nodes.
+ *       
+ *    private Methods:
+ *        - None.
+ *   public Methods:
+ *       - Node()
+ *       - Node(string CountryInitials, string Name)  
+ *       - Node(const Node& other)
+ *       - ~Node() {};
+ *       - void SetInitials(string CountryInitials)
+ *       - void SetCountryName(string Name)
+ *       - string GetCountryName()
+ *       - string GetInitials()
+ *       - friend ostream& operator<<(ostream& OutFile, Node& other)
+ *       - friend istream& operator>>(istream& InFile, Node& Node)
+ *       
+ *   Usage:
+ *       - To link the countries and the edges.
+ */
 class Node
 {
 private:
@@ -146,16 +165,15 @@ private:
     string CountryName;
 
 public:
-    //default constructor to hold our values
 
-/**
+  /**
   * Public : Node()
   * 
   * Description:
-  *      - Copy constructor to initialize countries name and initials.
+  *      - Default Constructor initialize countries name and initials.
   * 
   * Params:
-  *      - const Node& other.
+  *      - None.
   * 
   * Returns:
   *      - N/A
@@ -163,7 +181,7 @@ public:
     Node()
     {
         Initials = CountryName = 'a';
-    };
+    }
 
   /**
   * Public : Node()
@@ -183,11 +201,12 @@ public:
         Initials = CountryInitials;
     }
 
-     /**
+  /**
   * Public : Node()
   * 
   * Description:
-  *      - Copy constructor to initialize countries name and initials.
+  *      - Copy constructor to initialize countries name
+  *      - and initials with the values of the other object.
   * 
   * Params:
   *      - const Node& other.
