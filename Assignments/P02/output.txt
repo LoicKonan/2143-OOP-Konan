@@ -243,8 +243,6 @@ EH [label = "Western-Sahara"]
 YE [label = "Yemen"]
 ZM [label = "Zambia"]
 ZW [label = "Zimbabwe"]
-1000
-
 CC -> CR [label = "144 miles"]
 ID -> TR [label = "537 miles"]
 TD -> DJ [label = "263 miles"]
