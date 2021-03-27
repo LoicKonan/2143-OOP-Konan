@@ -24,7 +24,4 @@ This means we will be implementing a (tiny) **subset** of the graphviz language 
   - $ ./output.txt
 
 - Copy and Paste This Code into GraphViz
-
-- [GraphVizCode.txt](GraphVizCode.txt)
-
-[graphviz.png](graphviz.png)
+  - [GraphVizCode.txt](GraphVizCode.txt)
