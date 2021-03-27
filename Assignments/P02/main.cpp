@@ -43,17 +43,31 @@ using namespace std;
 //Function prototypes to read from and write to a file.
 void openFiles(ifstream& InFile, ofstream& OutFile);
 
-
-// creating a struct to read the linked nodes and their edges
+/*
+ *    Struct Name: LinkedNodes
+ * 
+ *   Description:
+ *       - Holds The countries  names.
+ *       - And the edges between the countries (a connection).
+ *
+ *   Public Methods:
+ * 	     - LinkedNodes()
+ *       - LinkedNodes(string A, string B, int num)
+ *
+ *   Private Methods:
+ *       - None
+ *
+ *   Usage:
+ * 	     -  
+ * 
+ */
 struct LinkedNodes
 {
     string FirstCountry;
     string SecondCountry;
     int edge;
 
-
-    // creating a default constructor to set the values to basic default values
-    LinkedNodes()
+    LinkedNodes()                              
     {
         FirstCountry = SecondCountry = "Name";
         edge = 0;
