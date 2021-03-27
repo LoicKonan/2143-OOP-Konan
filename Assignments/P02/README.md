@@ -4,14 +4,8 @@
 
 #### Description
 
-This Program is about implementing a **graphviz Language "wrapper" or "facade"**.
-This means we will be implementing a (tiny) **subset** of the graphviz language capability so we can visualize some of the typical data structures.
-
-- **GraphViz** is a software library that takes a structured syntax and turns it into a visual representation of a "graph" (get it? "graph" "viz") :smile:.
-
-- It allows a developer to visualize what may be happening with our data structures. Wouldn't you like to see your linked list printed as something more than just:
-
-  - head->10->20->30->null 😏??
+This Program is about implementing a **graphviz Language "wrapper"**.
+This means we will be implementing a (tiny) **subset** of the graphviz language capability so we can visualize some of the typical data structures that will show all the countries of the world with a distance needed to travel to or from each other.
 
 |  #  | File                 | Description                     |
 | :-: | -------------------- | ------------------------------- |
