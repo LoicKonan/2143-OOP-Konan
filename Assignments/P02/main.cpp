@@ -83,8 +83,8 @@ struct LinkedNodes
 class Node
 {
 private:
-    //private attributes
-    /*string EdgeColor;
+    /*private attributes
+    string EdgeColor;
     string FillColor;
     string OutlineColor;
     string EdgeStyle;
@@ -111,14 +111,14 @@ public:
 
     ~Node() {};
 
-    void SetInitials(string)
+    void SetInitials(string CountryInitials)
     {
         Initials = CountryInitials;
     }
 
-    void SetCountryName(string)
+    void SetCountryName(string Name)
     {
-        CountryName = name;
+        CountryName = Name;
     }
 
     string GetCountryName()
@@ -138,10 +138,10 @@ public:
         this->CountryName = other.CountryName;
     }
 
-    friend ostream& operator<<(ostream& OutFile, const Node& other)
+    friend ostream& operator<<(ostream& OutFile, Node& other)
     {
-        return OutFile << nodes.Initials << "[label =" << " \" "
-        << nodes.CountryName << " \"]" << '\n';
+        return OutFile << other.Initials << "[label =" << " \" "
+        << other.CountryName << " \"]" << '\n';
     }
 
     friend istream& operator>>(istream& InFile, Node& Node)
