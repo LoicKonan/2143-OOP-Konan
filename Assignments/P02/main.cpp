@@ -29,7 +29,8 @@ public:
     Node()
     {
         Initials = CountryName = 'a';
-    };// default constructor
+    };
+
     //overloaded default method for our node
     //default string of initials and then countryname
     Node(string CountryInitials, string Name)
@@ -37,7 +38,6 @@ public:
         CountryName = Name;
         Initials = CountryInitials;
     }
-    //four methods below to get and set the input values
 
     //setters for out attributes
     void SetInitials(string);
@@ -61,7 +61,6 @@ public:
     friend istream& operator>>(istream& InFile, Node& Node);
     //destructor for our class
     ~Node() {};
-
 };
 
 
@@ -105,7 +104,7 @@ string Node::GetInitials()
     return Initials;
 }
 
-//creating a structer to read the linked nodes and their edges
+// creating a struct to read the linked nodes and their edges
 struct LinkedNodes
 {
     //infile reads node node then edge number
@@ -114,15 +113,15 @@ struct LinkedNodes
     int edge;
 
 
-    //creating a default constructor to set the values to basic default values
+    // creating a default constructor to set the values to basic default values
     LinkedNodes()
     {
         FirstCountry = SecondCountry = "Name";
         edge = 0;
 
-    };
+    }
+
     //create an overload for stuct Node
-    //assign the values to the structure name
     LinkedNodes(string A, string B, int num)
     {
         FirstCountry = A;
@@ -133,7 +132,6 @@ struct LinkedNodes
     //overloaded outfile operator that formats the output
     friend ostream& operator<<(ostream& OutFile, LinkedNodes& other)
     {
-        //format the output suitable for graphviz
         return OutFile << other.FirstCountry << " ->" << other.SecondCountry <<
             "[ label =" << " \" " << other.edge << " \" ]" << '\n';
 
@@ -170,12 +168,8 @@ int main()
     InFile >> GraphType;// read in the graph type and go to next line
     OutFile << GraphType << " MyGraph "<< "{ "<<
         "\n\n";
-    InFile >> NumNodes;// read in the next line which is the number of nodes
+    InFile >> NumNodes;                     // read in the next line which is the number of nodes
     
-                       //dont need to print out nodes for transfer to graphviz
-    //OutFile << "There are :  " << NumNodes << "  Nodes" << endl;
-    //this is what we will read until
-
     while (!InFile.eof())
     {//until eof() is encountered
         for (int i = 0; i < NumNodes;i++)
@@ -196,27 +190,18 @@ int main()
         //graphviz doesnt need this
         //OutFile << " There are " << Numedges << " linked nodes" << endl << endl;
 
-        for (int i = 0; i < Numedges;i++)// traverse tille end of read in value
-        {
-            //read in the first line the first instance
-
-                //read in all three from infile 
-                //create new node dynamically
-                //store in the vector
+        for (int i = 0; i < Numedges;i++)          
+        {                                                   //store in the vector
             InFile >> FirstCountry >> SecondCountry >> edges;
             Links = new LinkedNodes(FirstCountry, SecondCountry, edges);
             node_edges.push_back(Links);
-
-
         }
 
         for (int i = 0;i < node_edges.size();i++)
-        {
-            //call ostream overload for the stuct
-            //print out each line
-            OutFile << *node_edges[i];
+        {                                                   
+            OutFile << *node_edges[i];                      // print out each line
         }
-        OutFile << "}" << endl; // close off the graph design
+        OutFile << "}" << endl;                             
     }
 
     InFile.close();
