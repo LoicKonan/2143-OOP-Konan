@@ -1,6 +1,7 @@
-digraph G {
-
-  subgraph cluster_0 {
+digraph G 
+{
+  subgraph cluster_0 
+  {
     style=filled;
     color=lightgrey;
     node [style=filled,color=white];
@@ -8,7 +9,8 @@ digraph G {
     label = "process #1";
   }
 
-  subgraph cluster_1 {
+  subgraph cluster_1 
+  {
     node [style=filled];
     b0 -> b1 -> b2 -> b3;
     label = "process #2";
