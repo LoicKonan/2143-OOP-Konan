@@ -25,3 +25,4 @@ This means we will be implementing a (tiny) **subset** of the graphviz language 
 
 - Copy and Paste This Code into GraphViz
   - [GraphVizCode.txt](GraphVizCode.txt)
+<img src="graphviz.svg" width="800">
