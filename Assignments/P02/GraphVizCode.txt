@@ -1,626 +1,462 @@
 digraph
 { 
-AF[label = " Afghanistan " color = red shape = diamond]
-AX[label = " Aland-Islands " color = red shape = diamond]
-AL[label = " Albania " color = red shape = diamond]
-DZ[label = " Algeria " color = red shape = diamond]
-AS[label = " American-Samoa " color = red shape = diamond]
-AD[label = " AndorrA " color = red shape = diamond]
-AO[label = " Angola " color = red shape = diamond]
-AI[label = " Anguilla " color = red shape = diamond]
-AQ[label = " Antarctica " color = red shape = diamond]
-AG[label = " Antigua-and-Barbuda " color = red shape = diamond]
-AR[label = " Argentina " color = red shape = diamond]
-AM[label = " Armenia " color = red shape = diamond]
-AW[label = " Aruba " color = red shape = diamond]
-AU[label = " Australia " color = red shape = diamond]
-AT[label = " Austria " color = red shape = diamond]
-AZ[label = " Azerbaijan " color = red shape = diamond]
-BS[label = " Bahamas " color = red shape = diamond]
-BH[label = " Bahrain " color = red shape = diamond]
-BD[label = " Bangladesh " color = red shape = diamond]
-BB[label = " Barbados " color = red shape = diamond]
-BY[label = " Belarus " color = red shape = diamond]
-BE[label = " Belgium " color = red shape = diamond]
-BZ[label = " Belize " color = red shape = diamond]
-BJ[label = " Benin " color = red shape = diamond]
-BM[label = " Bermuda " color = red shape = diamond]
-BT[label = " Bhutan " color = red shape = diamond]
-BO[label = " Bolivia " color = red shape = diamond]
-BA[label = " Bosnia-and-Herzegovina " color = red shape = diamond]
-BW[label = " Botswana " color = red shape = diamond]
-BV[label = " Bouvet-Island " color = red shape = diamond]
-BR[label = " Brazil " color = red shape = diamond]
-IO[label = " British-Indian-Ocean-Territory " color = red shape = diamond]
-BN[label = " Brunei-Darussalam " color = red shape = diamond]
-BG[label = " Bulgaria " color = red shape = diamond]
-BF[label = " Burkina-Faso " color = red shape = diamond]
-BI[label = " Burundi " color = red shape = diamond]
-KH[label = " Cambodia " color = red shape = diamond]
-CM[label = " Cameroon " color = red shape = diamond]
-CA[label = " Canada " color = red shape = diamond]
-CV[label = " Cape-Verde " color = red shape = diamond]
-KY[label = " Cayman-Islands " color = red shape = diamond]
-CF[label = " Central-African-Republic " color = red shape = diamond]
-TD[label = " Chad " color = red shape = diamond]
-CL[label = " Chile " color = red shape = diamond]
-CN[label = " China " color = red shape = diamond]
-CX[label = " Christmas-Island " color = red shape = diamond]
-CC[label = " Cocos-Islands " color = red shape = diamond]
-CO[label = " Colombia " color = red shape = diamond]
-KM[label = " Comoros " color = red shape = diamond]
-CG[label = " Congo " color = red shape = diamond]
-CD[label = " Congo " color = red shape = diamond]
-CK[label = " Cook-Islands " color = red shape = diamond]
-CR[label = " Costa-Rica " color = red shape = diamond]
-CI[label = " Cote-DIvoire " color = red shape = diamond]
-HR[label = " Croatia " color = red shape = diamond]
-CU[label = " Cuba " color = red shape = diamond]
-CY[label = " Cyprus " color = red shape = diamond]
-CZ[label = " Czech-Republic " color = red shape = diamond]
-DK[label = " Denmark " color = red shape = diamond]
-DJ[label = " Djibouti " color = red shape = diamond]
-DM[label = " Dominica " color = red shape = diamond]
-DO[label = " Dominican-Republic " color = red shape = diamond]
-EC[label = " Ecuador " color = red shape = diamond]
-EG[label = " Egypt " color = red shape = diamond]
-SV[label = " El-Salvador " color = red shape = diamond]
-GQ[label = " Equatorial-Guinea " color = red shape = diamond]
-ER[label = " Eritrea " color = red shape = diamond]
-EE[label = " Estonia " color = red shape = diamond]
-ET[label = " Ethiopia " color = red shape = diamond]
-FK[label = " Falkland-Islands " color = red shape = diamond]
-FO[label = " Faroe-Islands " color = red shape = diamond]
-FJ[label = " Fiji " color = red shape = diamond]
-FI[label = " Finland " color = red shape = diamond]
-FR[label = " France " color = red shape = diamond]
-GF[label = " French-Guiana " color = red shape = diamond]
-PF[label = " French-Polynesia " color = red shape = diamond]
-TF[label = " French-Southern-Territories " color = red shape = diamond]
-GA[label = " Gabon " color = red shape = diamond]
-GM[label = " Gambia " color = red shape = diamond]
-GE[label = " Georgia " color = red shape = diamond]
-DE[label = " Germany " color = red shape = diamond]
-GH[label = " Ghana " color = red shape = diamond]
-GI[label = " Gibraltar " color = red shape = diamond]
-GR[label = " Greece " color = red shape = diamond]
-GL[label = " Greenland " color = red shape = diamond]
-GD[label = " Grenada " color = red shape = diamond]
-GP[label = " Guadeloupe " color = red shape = diamond]
-GU[label = " Guam " color = red shape = diamond]
-GT[label = " Guatemala " color = red shape = diamond]
-GG[label = " Guernsey " color = red shape = diamond]
-GN[label = " Guinea " color = red shape = diamond]
-GW[label = " Guinea-Bissau " color = red shape = diamond]
-GY[label = " Guyana " color = red shape = diamond]
-HT[label = " Haiti " color = red shape = diamond]
-HM[label = " Heard-Island-and-Mcdonald-Islands " color = red shape = diamond]
-VA[label = " Vatican-City " color = red shape = diamond]
-HN[label = " Honduras " color = red shape = diamond]
-HK[label = " Hong-Kong " color = red shape = diamond]
-HU[label = " Hungary " color = red shape = diamond]
-IS[label = " Iceland " color = red shape = diamond]
-IN[label = " India " color = red shape = diamond]
-ID[label = " Indonesia " color = red shape = diamond]
-IR[label = " Iran " color = red shape = diamond]
-IQ[label = " Iraq " color = red shape = diamond]
-IE[label = " Ireland " color = red shape = diamond]
-IM[label = " Isle-of-Man " color = red shape = diamond]
-IL[label = " Israel " color = red shape = diamond]
-IT[label = " Italy " color = red shape = diamond]
-JM[label = " Jamaica " color = red shape = diamond]
-JP[label = " Japan " color = red shape = diamond]
-JE[label = " Jersey " color = red shape = diamond]
-JO[label = " Jordan " color = red shape = diamond]
-KZ[label = " Kazakhstan " color = red shape = diamond]
-KE[label = " Kenya " color = red shape = diamond]
-KI[label = " Kiribati " color = red shape = diamond]
-KP[label = " North-Korea " color = red shape = diamond]
-KR[label = " South-Korea " color = red shape = diamond]
-KW[label = " Kuwait " color = red shape = diamond]
-KG[label = " Kyrgyzstan " color = red shape = diamond]
-LA[label = " Democratic-Republic-Lao " color = red shape = diamond]
-LV[label = " Latvia " color = red shape = diamond]
-LB[label = " Lebanon " color = red shape = diamond]
-LS[label = " Lesotho " color = red shape = diamond]
-LR[label = " Liberia " color = red shape = diamond]
-LY[label = " Libyan-Arab-Jamahiriya " color = red shape = diamond]
-LI[label = " Liechtenstein " color = red shape = diamond]
-LT[label = " Lithuania " color = red shape = diamond]
-LU[label = " Luxembourg " color = red shape = diamond]
-MO[label = " Macao " color = red shape = diamond]
-MK[label = " Macedonia " color = red shape = diamond]
-MG[label = " Madagascar " color = red shape = diamond]
-MW[label = " Malawi " color = red shape = diamond]
-MY[label = " Malaysia " color = red shape = diamond]
-MV[label = " Maldives " color = red shape = diamond]
-ML[label = " Mali " color = red shape = diamond]
-MT[label = " Malta " color = red shape = diamond]
-MH[label = " Marshall-Islands " color = red shape = diamond]
-MQ[label = " Martinique " color = red shape = diamond]
-MR[label = " Mauritania " color = red shape = diamond]
-MU[label = " Mauritius " color = red shape = diamond]
-YT[label = " Mayotte " color = red shape = diamond]
-MX[label = " Mexico " color = red shape = diamond]
-FM[label = " Federated-States-of-Micronesia " color = red shape = diamond]
-MD[label = " Republic-of-Moldova " color = red shape = diamond]
-MC[label = " Monaco " color = red shape = diamond]
-MN[label = " Mongolia " color = red shape = diamond]
-MS[label = " Montserrat " color = red shape = diamond]
-MA[label = " Morocco " color = red shape = diamond]
-MZ[label = " Mozambique " color = red shape = diamond]
-MM[label = " Myanmar " color = red shape = diamond]
-NA[label = " Namibia " color = red shape = diamond]
-NR[label = " Nauru " color = red shape = diamond]
-NP[label = " Nepal " color = red shape = diamond]
-NL[label = " Netherlands " color = red shape = diamond]
-AN[label = " Netherlands-Antilles " color = red shape = diamond]
-NC[label = " New-Caledonia " color = red shape = diamond]
-NZ[label = " New-Zealand " color = red shape = diamond]
-NI[label = " Nicaragua " color = red shape = diamond]
-NE[label = " Niger " color = red shape = diamond]
-NG[label = " Nigeria " color = red shape = diamond]
-NU[label = " Niue " color = red shape = diamond]
-NF[label = " Norfolk-Island " color = red shape = diamond]
-MP[label = " Northern-Mariana-Islands " color = red shape = diamond]
-NO[label = " Norway " color = red shape = diamond]
-OM[label = " Oman " color = red shape = diamond]
-PK[label = " Pakistan " color = red shape = diamond]
-PW[label = " Palau " color = red shape = diamond]
-PS[label = " Palestinian-Territory " color = red shape = diamond]
-PA[label = " Panama " color = red shape = diamond]
-PG[label = " Papua-New-Guinea " color = red shape = diamond]
-PY[label = " Paraguay " color = red shape = diamond]
-PE[label = " Peru " color = red shape = diamond]
-PH[label = " Philippines " color = red shape = diamond]
-PN[label = " Pitcairn " color = red shape = diamond]
-PL[label = " Poland " color = red shape = diamond]
-PT[label = " Portugal " color = red shape = diamond]
-PR[label = " Puerto-Rico " color = red shape = diamond]
-QA[label = " Qatar " color = red shape = diamond]
-RE[label = " Reunion " color = red shape = diamond]
-RO[label = " Romania " color = red shape = diamond]
-RU[label = " Russian-Federation " color = red shape = diamond]
-RW[label = " RWANDA " color = red shape = diamond]
-SH[label = " Saint-Helena " color = red shape = diamond]
-KN[label = " Saint-Kitts-and-Nevis " color = red shape = diamond]
-LC[label = " Saint-Lucia " color = red shape = diamond]
-PM[label = " Saint-Pierre-and-Miquelon " color = red shape = diamond]
-VC[label = " Saint-Vincent-and-the-Grenadines " color = red shape = diamond]
-WS[label = " Samoa " color = red shape = diamond]
-SM[label = " San-Marino " color = red shape = diamond]
-ST[label = " Sao-Tome-and-Principe " color = red shape = diamond]
-SA[label = " Saudi-Arabia " color = red shape = diamond]
-SN[label = " Senegal " color = red shape = diamond]
-CS[label = " Serbia-and-Montenegro " color = red shape = diamond]
-SC[label = " Seychelles " color = red shape = diamond]
-SL[label = " Sierra-Leone " color = red shape = diamond]
-SG[label = " Singapore " color = red shape = diamond]
-SK[label = " Slovakia " color = red shape = diamond]
-SI[label = " Slovenia " color = red shape = diamond]
-SB[label = " Solomon-Islands " color = red shape = diamond]
-SO[label = " Somalia " color = red shape = diamond]
-ZA[label = " South-Africa " color = red shape = diamond]
-GS[label = " South-Georgia-and-the-South-Sandwich-Islands " color = red shape = diamond]
-ES[label = " Spain " color = red shape = diamond]
-LK[label = " Sri-Lanka " color = red shape = diamond]
-SD[label = " Sudan " color = red shape = diamond]
-SR[label = " Suriname " color = red shape = diamond]
-SJ[label = " Svalbard-and-Jan-Mayen " color = red shape = diamond]
-SZ[label = " Swaziland " color = red shape = diamond]
-SE[label = " Sweden " color = red shape = diamond]
-CH[label = " Switzerland " color = red shape = diamond]
-SY[label = " Syrian-Arab-Republic " color = red shape = diamond]
-TW[label = " Taiwan " color = red shape = diamond]
-TJ[label = " Tajikistan " color = red shape = diamond]
-TZ[label = " United-Republic-of-Tanzania " color = red shape = diamond]
-TH[label = " Thailand " color = red shape = diamond]
-TL[label = " Timor-Leste " color = red shape = diamond]
-TG[label = " Togo " color = red shape = diamond]
-TK[label = " Tokelau " color = red shape = diamond]
-TO[label = " Tonga " color = red shape = diamond]
-TT[label = " Trinidad-and-Tobago " color = red shape = diamond]
-TN[label = " Tunisia " color = red shape = diamond]
-TR[label = " Turkey " color = red shape = diamond]
-TM[label = " Turkmenistan " color = red shape = diamond]
-TC[label = " Turks-and-Caicos-Islands " color = red shape = diamond]
-TV[label = " Tuvalu " color = red shape = diamond]
-UG[label = " Uganda " color = red shape = diamond]
-UA[label = " Ukraine " color = red shape = diamond]
-AE[label = " United-Arab-Emirates " color = red shape = diamond]
-GB[label = " United-Kingdom " color = red shape = diamond]
-US[label = " United-States " color = red shape = diamond]
-UM[label = " United-States-Minor-Outlying-Islands " color = red shape = diamond]
-UY[label = " Uruguay " color = red shape = diamond]
-UZ[label = " Uzbekistan " color = red shape = diamond]
-VU[label = " Vanuatu " color = red shape = diamond]
-VE[label = " Venezuela " color = red shape = diamond]
-VN[label = " Viet-Nam " color = red shape = diamond]
-VG[label = " British-Virgin-Islands " color = red shape = diamond]
-VI[label = " US-Virgin-Islands " color = red shape = diamond]
-WF[label = " Wallis-and-Futuna " color = red shape = diamond]
-EH[label = " Western-Sahara " color = red shape = diamond]
-YE[label = " Yemen " color = red shape = diamond]
-ZM[label = " Zambia " color = red shape = diamond]
-ZW[label = " Zimbabwe " color = red shape = diamond]
-
-CC->CR[ label = " 144 mi " ];
-ID->TR[ label = " 537 mi " ];
-TD->DJ[ label = " 263 mi " ];
-BH->GI[ label = " 865 mi " ];
-GT->CF[ label = " 752 mi " ];
-AT->CH[ label = " 666 mi " ];
-SO->LU[ label = " 636 mi " ];
-BY->ES[ label = " 102 mi " ];
-IQ->TO[ label = " 859 mi " ];
-CD->EG[ label = " 611 mi " ];
-LV->TK[ label = " 298 mi " ];
-AF->MY[ label = " 589 mi " ];
-VE->CS[ label = " 135 mi " ];
-LK->GF[ label = " 275 mi " ];
-AG->MP[ label = " 430 mi " ];
-RE->LR[ label = " 664 mi " ];
-UM->KY[ label = " 757 mi " ];
-NU->UG[ label = " 909 mi " ];
-NR->AX[ label = " 749 mi " ];
-MP->GB[ label = " 449 mi " ];
-PG->TF[ label = " 774 mi " ];
-GI->SG[ label = " 499 mi " ];
-TK->PW[ label = " 550 mi " ];
-CK->BM[ label = " 344 mi " ];
-ZM->LC[ label = " 995 mi " ];
-ET->CM[ label = " 297 mi " ];
-CY->AL[ label = " 494 mi " ];
-SE->MT[ label = " 333 mi " ];
-KI->BH[ label = " 515 mi " ];
-MA->NA[ label = " 131 mi " ];
-NP->BD[ label = " 796 mi " ];
-IL->CS[ label = " 490 mi " ];
-BD->TK[ label = " 194 mi " ];
-BS->VU[ label = " 352 mi " ];
-NR->PH[ label = " 563 mi " ];
-JM->BB[ label = " 261 mi " ];
-QA->TF[ label = " 592 mi " ];
-LA->AI[ label = " 244 mi " ];
-HT->PW[ label = " 546 mi " ];
-PR->AQ[ label = " 547 mi " ];
-MM->TW[ label = " 604 mi " ];
-RO->BW[ label = " 246 mi " ];
-CI->IS[ label = " 186 mi " ];
-LS->BN[ label = " 247 mi " ];
-IE->CD[ label = " 779 mi " ];
-PG->SB[ label = " 151 mi " ];
-BW->HU[ label = " 964 mi " ];
-MY->MT[ label = " 470 mi " ];
-SN->JP[ label = " 155 mi " ];
-GF->IR[ label = " 300 mi " ];
-HR->BS[ label = " 602 mi " ];
-KM->CD[ label = " 639 mi " ];
-AG->TR[ label = " 461 mi " ];
-NP->PF[ label = " 694 mi " ];
-GP->CD[ label = " 384 mi " ];
-EC->VE[ label = " 938 mi " ];
-SR->VA[ label = " 345 mi " ];
-US->NI[ label = " 739 mi " ];
-SH->FR[ label = " 413 mi " ];
-UG->GT[ label = " 995 mi " ];
-KZ->NO[ label = " 888 mi " ];
-KR->BW[ label = " 547 mi " ];
-TW->GF[ label = " 365 mi " ];
-FJ->AT[ label = " 998 mi " ];
-MW->TH[ label = " 346 mi " ];
-ER->CM[ label = " 833 mi " ];
-HN->MO[ label = " 565 mi " ];
-AZ->EH[ label = " 451 mi " ];
-IR->ES[ label = " 864 mi " ];
-SA->LC[ label = " 986 mi " ];
-GN->RU[ label = " 974 mi " ];
-NO->PE[ label = " 963 mi " ];
-GM->FM[ label = " 497 mi " ];
-GT->MT[ label = " 743 mi " ];
-UZ->YT[ label = " 466 mi " ];
-KG->BI[ label = " 686 mi " ];
-QA->SH[ label = " 369 mi " ];
-BI->AL[ label = " 884 mi " ];
-SK->MZ[ label = " 143 mi " ];
-SH->VU[ label = " 687 mi " ];
-MV->NZ[ label = " 706 mi " ];
-EE->DM[ label = " 362 mi " ];
-SJ->HN[ label = " 709 mi " ];
-NZ->ST[ label = " 168 mi " ];
-MV->PN[ label = " 357 mi " ];
-MD->LC[ label = " 922 mi " ];
-ET->WS[ label = " 162 mi " ];
-LV->LU[ label = " 230 mi " ];
-CN->BN[ label = " 250 mi " ];
-IT->MA[ label = " 567 mi " ];
-SA->NO[ label = " 643 mi " ];
-HR->PW[ label = " 410 mi " ];
-CF->AT[ label = " 761 mi " ];
-BM->TF[ label = " 391 mi " ];
-MC->HK[ label = " 475 mi " ];
-BE->SB[ label = " 805 mi " ];
-LR->NA[ label = " 120 mi " ];
-SL->MM[ label = " 897 mi " ];
-YE->GR[ label = " 137 mi " ];
-BA->PM[ label = " 450 mi " ];
-MN->TV[ label = " 904 mi " ];
-PL->BA[ label = " 382 mi " ];
-RU->GR[ label = " 464 mi " ];
-UY->GI[ label = " 507 mi " ];
-CL->AL[ label = " 647 mi " ];
-DK->GD[ label = " 611 mi " ];
-JE->AM[ label = " 961 mi " ];
-MR->TW[ label = " 568 mi " ];
-RO->YE[ label = " 364 mi " ];
-CV->CO[ label = " 273 mi " ];
-ZA->ET[ label = " 316 mi " ];
-AS->IO[ label = " 365 mi " ];
-SI->VG[ label = " 251 mi " ];
-GG->DO[ label = " 312 mi " ];
-MW->PF[ label = " 292 mi " ];
-TT->AN[ label = " 137 mi " ];
-LT->BS[ label = " 505 mi " ];
-KE->YT[ label = " 567 mi " ];
-TW->CA[ label = " 698 mi " ];
-TH->GU[ label = " 936 mi " ];
-VE->SK[ label = " 411 mi " ];
-PA->PE[ label = " 880 mi " ];
-AD->BY[ label = " 733 mi " ];
-LA->ES[ label = " 219 mi " ];
-KR->WF[ label = " 408 mi " ];
-PS->CC[ label = " 870 mi " ];
-TO->BT[ label = " 196 mi " ];
-AG->KP[ label = " 707 mi " ];
-AM->ER[ label = " 960 mi " ];
-MZ->KH[ label = " 678 mi " ];
-BA->UA[ label = " 771 mi " ];
-CM->YT[ label = " 825 mi " ];
-CI->GY[ label = " 274 mi " ];
-IQ->ML[ label = " 987 mi " ];
-GE->CS[ label = " 839 mi " ];
-AO->VU[ label = " 429 mi " ];
-IL->ST[ label = " 651 mi " ];
-PF->AZ[ label = " 772 mi " ];
-IN->YE[ label = " 180 mi " ];
-GI->LR[ label = " 547 mi " ];
-PE->LS[ label = " 782 mi " ];
-SY->UZ[ label = " 138 mi " ];
-AI->NI[ label = " 476 mi " ];
-CZ->GF[ label = " 668 mi " ];
-NZ->MC[ label = " 404 mi " ];
-VU->PR[ label = " 530 mi " ];
-PY->CA[ label = " 110 mi " ];
-ET->PY[ label = " 808 mi " ];
-MC->SB[ label = " 311 mi " ];
-SJ->GH[ label = " 640 mi " ];
-GI->PN[ label = " 428 mi " ];
-GE->BE[ label = " 289 mi " ];
-MW->MO[ label = " 275 mi " ];
-GT->AU[ label = " 694 mi " ];
-CY->BS[ label = " 338 mi " ];
-BB->EG[ label = " 207 mi " ];
-SI->PE[ label = " 800 mi " ];
-MQ->EH[ label = " 687 mi " ];
-MQ->HK[ label = " 659 mi " ];
-GT->US[ label = " 455 mi " ];
-LS->BO[ label = " 231 mi " ];
-LK->SG[ label = " 718 mi " ];
-SO->IN[ label = " 359 mi " ];
-DZ->BZ[ label = " 560 mi " ];
-LB->CZ[ label = " 970 mi " ];
-BS->TW[ label = " 953 mi " ];
-PR->AL[ label = " 575 mi " ];
-IS->AI[ label = " 864 mi " ];
-JO->IL[ label = " 705 mi " ];
-KR->GT[ label = " 637 mi " ];
-BG->BE[ label = " 108 mi " ];
-UY->MH[ label = " 840 mi " ];
-GS->KP[ label = " 273 mi " ];
-TV->OM[ label = " 577 mi " ];
-GD->SI[ label = " 595 mi " ];
-US->BA[ label = " 335 mi " ];
-AS->PR[ label = " 897 mi " ];
-ML->BF[ label = " 125 mi " ];
-VC->SO[ label = " 920 mi " ];
-NU->RE[ label = " 284 mi " ];
-PG->SN[ label = " 188 mi " ];
-IE->AQ[ label = " 103 mi " ];
-DZ->PF[ label = " 595 mi " ];
-LC->TO[ label = " 634 mi " ];
-MX->ZA[ label = " 582 mi " ];
-BO->TJ[ label = " 451 mi " ];
-BD->CO[ label = " 150 mi " ];
-CK->PG[ label = " 726 mi " ];
-SN->VG[ label = " 572 mi " ];
-AU->NU[ label = " 489 mi " ];
-MT->JM[ label = " 583 mi " ];
-PR->GN[ label = " 123 mi " ];
-AI->TN[ label = " 900 mi " ];
-IM->SJ[ label = " 155 mi " ];
-DZ->VI[ label = " 714 mi " ];
-ZA->IE[ label = " 307 mi " ];
-NU->MU[ label = " 876 mi " ];
-US->AN[ label = " 808 mi " ];
-IM->MX[ label = " 347 mi " ];
-TR->HM[ label = " 904 mi " ];
-SN->GY[ label = " 770 mi " ];
-GH->BB[ label = " 627 mi " ];
-HR->TZ[ label = " 716 mi " ];
-CC->BB[ label = " 645 mi " ];
-AM->MW[ label = " 499 mi " ];
-NC->KW[ label = " 209 mi " ];
-WS->SV[ label = " 160 mi " ];
-MZ->VE[ label = " 316 mi " ];
-IN->MG[ label = " 284 mi " ];
-IO->FO[ label = " 363 mi " ];
-TR->AU[ label = " 775 mi " ];
-VE->CU[ label = " 999 mi " ];
-MG->GD[ label = " 130 mi " ];
-CG->VC[ label = " 245 mi " ];
-TM->AN[ label = " 807 mi " ];
-TK->TT[ label = " 482 mi " ];
-AF->CD[ label = " 254 mi " ];
-HR->AZ[ label = " 704 mi " ];
-GM->FJ[ label = " 792 mi " ];
-EH->EE[ label = " 448 mi " ];
-MG->WF[ label = " 999 mi " ];
-MN->IS[ label = " 187 mi " ];
-EE->FO[ label = " 794 mi " ];
-AI->NR[ label = " 310 mi " ];
-AD->HM[ label = " 630 mi " ];
-SL->GI[ label = " 696 mi " ];
-VI->AS[ label = " 412 mi " ];
-GP->AR[ label = " 295 mi " ];
-BZ->PG[ label = " 320 mi " ];
-CF->IO[ label = " 838 mi " ];
-PH->SO[ label = " 814 mi " ];
-IR->CV[ label = " 597 mi " ];
-IQ->DM[ label = " 540 mi " ];
-SL->RU[ label = " 323 mi " ];
-LR->AQ[ label = " 442 mi " ];
-BA->BF[ label = " 498 mi " ];
-LY->MQ[ label = " 302 mi " ];
-KY->GG[ label = " 828 mi " ];
-PW->VN[ label = " 905 mi " ];
-TT->QA[ label = " 633 mi " ];
-NA->OM[ label = " 860 mi " ];
-AR->OM[ label = " 126 mi " ];
-SK->TN[ label = " 743 mi " ];
-GY->RU[ label = " 744 mi " ];
-VA->RO[ label = " 227 mi " ];
-VA->BA[ label = " 779 mi " ];
-SI->TK[ label = " 283 mi " ];
-TJ->PS[ label = " 903 mi " ];
-JE->KP[ label = " 595 mi " ];
-CC->GW[ label = " 588 mi " ];
-SV->PW[ label = " 326 mi " ];
-MV->PG[ label = " 436 mi " ];
-NZ->NA[ label = " 954 mi " ];
-BM->PM[ label = " 758 mi " ];
-JP->DJ[ label = " 917 mi " ];
-GQ->AD[ label = " 936 mi " ];
-ST->GH[ label = " 952 mi " ];
-SN->RO[ label = " 806 mi " ];
-TO->TR[ label = " 481 mi " ];
-FK->ZA[ label = " 687 mi " ];
-UM->ST[ label = " 641 mi " ];
-GF->AE[ label = " 953 mi " ];
-IR->ST[ label = " 859 mi " ];
-CZ->GG[ label = " 516 mi " ];
-TJ->IQ[ label = " 399 mi " ];
-MZ->GD[ label = " 561 mi " ];
-HM->KW[ label = " 763 mi " ];
-MP->CK[ label = " 595 mi " ];
-OM->BY[ label = " 406 mi " ];
-HU->BN[ label = " 897 mi " ];
-GB->NC[ label = " 975 mi " ];
-GI->MR[ label = " 393 mi " ];
-BW->GW[ label = " 100 mi " ];
-MT->ST[ label = " 918 mi " ];
-VG->BT[ label = " 585 mi " ];
-SD->IM[ label = " 693 mi " ];
-QA->IM[ label = " 592 mi " ];
-NG->HN[ label = " 685 mi " ];
-TD->GM[ label = " 116 mi " ];
-CV->AW[ label = " 873 mi " ];
-BI->IS[ label = " 478 mi " ];
-SA->OM[ label = " 683 mi " ];
-VN->ML[ label = " 608 mi " ];
-KW->TF[ label = " 361 mi " ];
-AR->EE[ label = " 720 mi " ];
-SD->SE[ label = " 103 mi " ];
-AU->GM[ label = " 861 mi " ];
-BG->MZ[ label = " 494 mi " ];
-BO->ML[ label = " 685 mi " ];
-LB->MG[ label = " 207 mi " ];
-PT->TL[ label = " 650 mi " ];
-FI->CG[ label = " 497 mi " ];
-VU->GE[ label = " 407 mi " ];
-AQ->DO[ label = " 399 mi " ];
-IN->MG[ label = " 468 mi " ];
-ML->VI[ label = " 751 mi " ];
-CH->BB[ label = " 321 mi " ];
-PS->DE[ label = " 266 mi " ];
-AX->TC[ label = " 310 mi " ];
-NA->JP[ label = " 384 mi " ];
-OM->DK[ label = " 942 mi " ];
-WF->PA[ label = " 190 mi " ];
-IL->RE[ label = " 396 mi " ];
-ST->LS[ label = " 606 mi " ];
-ES->BZ[ label = " 557 mi " ];
-BV->EH[ label = " 825 mi " ];
-AN->CA[ label = " 826 mi " ];
-MW->MO[ label = " 960 mi " ];
-CV->TK[ label = " 392 mi " ];
-MH->IN[ label = " 371 mi " ];
-VU->GH[ label = " 943 mi " ];
-LT->TZ[ label = " 795 mi " ];
-VC->BR[ label = " 235 mi " ];
-CG->MG[ label = " 942 mi " ];
-NG->ID[ label = " 523 mi " ];
-LB->PE[ label = " 240 mi " ];
-UZ->GF[ label = " 985 mi " ];
-SJ->CU[ label = " 245 mi " ];
-BV->YT[ label = " 980 mi " ];
-NL->CS[ label = " 266 mi " ];
-BT->BD[ label = " 752 mi " ];
-MG->PF[ label = " 543 mi " ];
-BN->SE[ label = " 182 mi " ];
-LB->HN[ label = " 402 mi " ];
-ZA->AZ[ label = " 406 mi " ];
-MD->UZ[ label = " 350 mi " ];
-GY->NL[ label = " 768 mi " ];
-FO->YT[ label = " 544 mi " ];
-IN->CS[ label = " 996 mi " ];
-KH->GD[ label = " 114 mi " ];
-GQ->PF[ label = " 195 mi " ];
-MG->ER[ label = " 930 mi " ];
-AR->SH[ label = " 266 mi " ];
-FJ->BE[ label = " 638 mi " ];
-WS->IR[ label = " 257 mi " ];
-CL->JO[ label = " 555 mi " ];
-MO->GF[ label = " 755 mi " ];
-YE->BR[ label = " 299 mi " ];
-SC->NO[ label = " 486 mi " ];
-TK->TW[ label = " 375 mi " ];
-MC->CG[ label = " 521 mi " ];
-EH->MO[ label = " 432 mi " ];
-SL->MN[ label = " 132 mi " ];
-VC->KZ[ label = " 121 mi " ];
-EH->SN[ label = " 288 mi " ];
-CM->TT[ label = " 702 mi " ];
-ER->LV[ label = " 402 mi " ];
-MP->UA[ label = " 813 mi " ];
-BM->MC[ label = " 419 mi " ];
-AD->LU[ label = " 743 mi " ];
-BO->AI[ label = " 894 mi " ];
-VG->TD[ label = " 835 mi " ];
-GW->BI[ label = " 120 mi " ];
-CV->CG[ label = " 458 mi " ];
-BJ->GR[ label = " 562 mi " ];
-TV->SG[ label = " 585 mi " ];
-AL->TL[ label = " 857 mi " ];
-BV->ST[ label = " 347 mi " ];
-SY->LY[ label = " 496 mi " ];
-KZ->NU[ label = " 265 mi " ];
-ZA->UG[ label = " 634 mi " ];
-VN->KZ[ label = " 865 mi " ];
-JP->SH[ label = " 288 mi " ];
-MT->GD[ label = " 742 mi " ];
-IQ->PN[ label = " 600 mi " ];
-ES->SC[ label = " 375 mi " ];
-TL->KP[ label = " 702 mi " ];
-TR->EC[ label = " 687 mi " ];
-PH->VA[ label = " 951 mi " ];
-MN->BI[ label = " 791 mi " ];
-CX->TD[ label = " 229 mi " ];
-CX->DM[ label = " 636 mi " ];
-LU->GQ[ label = " 980 mi " ];
-KN->UY[ label = " 559 mi " ];
-SB->SB[ label = " 508 mi " ];
-SL->CG[ label = " 476 mi " ];
-LC->HU[ label = " 901 mi " ];
-AE->BG[ label = " 997 mi " ];
-
+AF [label = "Afghanistan ", color = red, shape = diamond, width = 1]
+AX [label = "Aland-Islands ", color = red, shape = diamond, width = 1]
+AL [label = "Albania ", color = red, shape = diamond, width = 1]
+DZ [label = "Algeria ", color = red, shape = diamond, width = 1]
+AS [label = "American-Samoa ", color = red, shape = diamond, width = 1]
+AD [label = "AndorrA ", color = red, shape = diamond, width = 1]
+AO [label = "Angola ", color = red, shape = diamond, width = 1]
+AI [label = "Anguilla ", color = red, shape = diamond, width = 1]
+AQ [label = "Antarctica ", color = red, shape = diamond, width = 1]
+AG [label = "Antigua-and-Barbuda ", color = red, shape = diamond, width = 1]
+AR [label = "Argentina ", color = red, shape = diamond, width = 1]
+AM [label = "Armenia ", color = red, shape = diamond, width = 1]
+AW [label = "Aruba ", color = red, shape = diamond, width = 1]
+AU [label = "Australia ", color = red, shape = diamond, width = 1]
+AT [label = "Austria ", color = red, shape = diamond, width = 1]
+AZ [label = "Azerbaijan ", color = red, shape = diamond, width = 1]
+BS [label = "Bahamas ", color = red, shape = diamond, width = 1]
+BH [label = "Bahrain ", color = red, shape = diamond, width = 1]
+BD [label = "Bangladesh ", color = red, shape = diamond, width = 1]
+BB [label = "Barbados ", color = red, shape = diamond, width = 1]
+BY [label = "Belarus ", color = red, shape = diamond, width = 1]
+BE [label = "Belgium ", color = red, shape = diamond, width = 1]
+BZ [label = "Belize ", color = red, shape = diamond, width = 1]
+BJ [label = "Benin ", color = red, shape = diamond, width = 1]
+BM [label = "Bermuda ", color = red, shape = diamond, width = 1]
+BT [label = "Bhutan ", color = red, shape = diamond, width = 1]
+BO [label = "Bolivia ", color = red, shape = diamond, width = 1]
+BA [label = "Bosnia-and-Herzegovina ", color = red, shape = diamond, width = 1]
+BW [label = "Botswana ", color = red, shape = diamond, width = 1]
+BV [label = "Bouvet-Island ", color = red, shape = diamond, width = 1]
+BR [label = "Brazil ", color = red, shape = diamond, width = 1]
+IO [label = "British-Indian-Ocean-Territory ", color = red, shape = diamond, width = 1]
+BN [label = "Brunei-Darussalam ", color = red, shape = diamond, width = 1]
+BG [label = "Bulgaria ", color = red, shape = diamond, width = 1]
+BF [label = "Burkina-Faso ", color = red, shape = diamond, width = 1]
+BI [label = "Burundi ", color = red, shape = diamond, width = 1]
+KH [label = "Cambodia ", color = red, shape = diamond, width = 1]
+CM [label = "Cameroon ", color = red, shape = diamond, width = 1]
+CA [label = "Canada ", color = red, shape = diamond, width = 1]
+CV [label = "Cape-Verde ", color = red, shape = diamond, width = 1]
+KY [label = "Cayman-Islands ", color = red, shape = diamond, width = 1]
+CF [label = "Central-African-Republic ", color = red, shape = diamond, width = 1]
+TD [label = "Chad ", color = red, shape = diamond, width = 1]
+CL [label = "Chile ", color = red, shape = diamond, width = 1]
+CN [label = "China ", color = red, shape = diamond, width = 1]
+CX [label = "Christmas-Island ", color = red, shape = diamond, width = 1]
+CC [label = "Cocos-Islands ", color = red, shape = diamond, width = 1]
+CO [label = "Colombia ", color = red, shape = diamond, width = 1]
+KM [label = "Comoros ", color = red, shape = diamond, width = 1]
+CG [label = "Congo ", color = red, shape = diamond, width = 1]
+CD [label = "Congo ", color = red, shape = diamond, width = 1]
+CK [label = "Cook-Islands ", color = red, shape = diamond, width = 1]
+CR [label = "Costa-Rica ", color = red, shape = diamond, width = 1]
+CI [label = "Cote-DIvoire ", color = red, shape = diamond, width = 1]
+HR [label = "Croatia ", color = red, shape = diamond, width = 1]
+CU [label = "Cuba ", color = red, shape = diamond, width = 1]
+CY [label = "Cyprus ", color = red, shape = diamond, width = 1]
+CZ [label = "Czech-Republic ", color = red, shape = diamond, width = 1]
+DK [label = "Denmark ", color = red, shape = diamond, width = 1]
+DJ [label = "Djibouti ", color = red, shape = diamond, width = 1]
+DM [label = "Dominica ", color = red, shape = diamond, width = 1]
+DO [label = "Dominican-Republic ", color = red, shape = diamond, width = 1]
+EC [label = "Ecuador ", color = red, shape = diamond, width = 1]
+EG [label = "Egypt ", color = red, shape = diamond, width = 1]
+SV [label = "El-Salvador ", color = red, shape = diamond, width = 1]
+GQ [label = "Equatorial-Guinea ", color = red, shape = diamond, width = 1]
+ER [label = "Eritrea ", color = red, shape = diamond, width = 1]
+EE [label = "Estonia ", color = red, shape = diamond, width = 1]
+ET [label = "Ethiopia ", color = red, shape = diamond, width = 1]
+FK [label = "Falkland-Islands ", color = red, shape = diamond, width = 1]
+FO [label = "Faroe-Islands ", color = red, shape = diamond, width = 1]
+FJ [label = "Fiji ", color = red, shape = diamond, width = 1]
+FI [label = "Finland ", color = red, shape = diamond, width = 1]
+FR [label = "France ", color = red, shape = diamond, width = 1]
+GF [label = "French-Guiana ", color = red, shape = diamond, width = 1]
+PF [label = "French-Polynesia ", color = red, shape = diamond, width = 1]
+TF [label = "French-Southern-Territories ", color = red, shape = diamond, width = 1]
+GA [label = "Gabon ", color = red, shape = diamond, width = 1]
+GM [label = "Gambia ", color = red, shape = diamond, width = 1]
+GE [label = "Georgia ", color = red, shape = diamond, width = 1]
+DE [label = "Germany ", color = red, shape = diamond, width = 1]
+GH [label = "Ghana ", color = red, shape = diamond, width = 1]
+GI [label = "Gibraltar ", color = red, shape = diamond, width = 1]
+GR [label = "Greece ", color = red, shape = diamond, width = 1]
+GL [label = "Greenland ", color = red, shape = diamond, width = 1]
+GD [label = "Grenada ", color = red, shape = diamond, width = 1]
+GP [label = "Guadeloupe ", color = red, shape = diamond, width = 1]
+GU [label = "Guam ", color = red, shape = diamond, width = 1]
+GT [label = "Guatemala ", color = red, shape = diamond, width = 1]
+GG [label = "Guernsey ", color = red, shape = diamond, width = 1]
+GN [label = "Guinea ", color = red, shape = diamond, width = 1]
+GW [label = "Guinea-Bissau ", color = red, shape = diamond, width = 1]
+GY [label = "Guyana ", color = red, shape = diamond, width = 1]
+HT [label = "Haiti ", color = red, shape = diamond, width = 1]
+HM [label = "Heard-Island-and-Mcdonald-Islands ", color = red, shape = diamond, width = 1]
+VA [label = "Vatican-City ", color = red, shape = diamond, width = 1]
+HN [label = "Honduras ", color = red, shape = diamond, width = 1]
+HK [label = "Hong-Kong ", color = red, shape = diamond, width = 1]
+HU [label = "Hungary ", color = red, shape = diamond, width = 1]
+IS [label = "Iceland ", color = red, shape = diamond, width = 1]
+IN [label = "India ", color = red, shape = diamond, width = 1]
+ID [label = "Indonesia ", color = red, shape = diamond, width = 1]
+IR [label = "Iran ", color = red, shape = diamond, width = 1]
+IQ [label = "Iraq ", color = red, shape = diamond, width = 1]
+IE [label = "Ireland ", color = red, shape = diamond, width = 1]
+IM [label = "Isle-of-Man ", color = red, shape = diamond, width = 1]
+IL [label = "Israel ", color = red, shape = diamond, width = 1]
+IT [label = "Italy ", color = red, shape = diamond, width = 1]
+JM [label = "Jamaica ", color = red, shape = diamond, width = 1]
+JP [label = "Japan ", color = red, shape = diamond, width = 1]
+JE [label = "Jersey ", color = red, shape = diamond, width = 1]
+JO [label = "Jordan ", color = red, shape = diamond, width = 1]
+KZ [label = "Kazakhstan ", color = red, shape = diamond, width = 1]
+KE [label = "Kenya ", color = red, shape = diamond, width = 1]
+KI [label = "Kiribati ", color = red, shape = diamond, width = 1]
+KP [label = "North-Korea ", color = red, shape = diamond, width = 1]
+KR [label = "South-Korea ", color = red, shape = diamond, width = 1]
+KW [label = "Kuwait ", color = red, shape = diamond, width = 1]
+KG [label = "Kyrgyzstan ", color = red, shape = diamond, width = 1]
+LA [label = "Democratic-Republic-Lao ", color = red, shape = diamond, width = 1]
+LV [label = "Latvia ", color = red, shape = diamond, width = 1]
+LB [label = "Lebanon ", color = red, shape = diamond, width = 1]
+LS [label = "Lesotho ", color = red, shape = diamond, width = 1]
+LR [label = "Liberia ", color = red, shape = diamond, width = 1]
+LY [label = "Libyan-Arab-Jamahiriya ", color = red, shape = diamond, width = 1]
+LI [label = "Liechtenstein ", color = red, shape = diamond, width = 1]
+LT [label = "Lithuania ", color = red, shape = diamond, width = 1]
+LU [label = "Luxembourg ", color = red, shape = diamond, width = 1]
+MO [label = "Macao ", color = red, shape = diamond, width = 1]
+MK [label = "Macedonia ", color = red, shape = diamond, width = 1]
+MG [label = "Madagascar ", color = red, shape = diamond, width = 1]
+MW [label = "Malawi ", color = red, shape = diamond, width = 1]
+MY [label = "Malaysia ", color = red, shape = diamond, width = 1]
+MV [label = "Maldives ", color = red, shape = diamond, width = 1]
+ML [label = "Mali ", color = red, shape = diamond, width = 1]
+MT [label = "Malta ", color = red, shape = diamond, width = 1]
+MH [label = "Marshall-Islands ", color = red, shape = diamond, width = 1]
+MQ [label = "Martinique ", color = red, shape = diamond, width = 1]
+MR [label = "Mauritania ", color = red, shape = diamond, width = 1]
+MU [label = "Mauritius ", color = red, shape = diamond, width = 1]
+YT [label = "Mayotte ", color = red, shape = diamond, width = 1]
+MX [label = "Mexico ", color = red, shape = diamond, width = 1]
+FM [label = "Federated-States-of-Micronesia ", color = red, shape = diamond, width = 1]
+MD [label = "Republic-of-Moldova ", color = red, shape = diamond, width = 1]
+MC [label = "Monaco ", color = red, shape = diamond, width = 1]
+MN [label = "Mongolia ", color = red, shape = diamond, width = 1]
+MS [label = "Montserrat ", color = red, shape = diamond, width = 1]
+MA [label = "Morocco ", color = red, shape = diamond, width = 1]
+MZ [label = "Mozambique ", color = red, shape = diamond, width = 1]
+MM [label = "Myanmar ", color = red, shape = diamond, width = 1]
+NA [label = "Namibia ", color = red, shape = diamond, width = 1]
+NR [label = "Nauru ", color = red, shape = diamond, width = 1]
+NP [label = "Nepal ", color = red, shape = diamond, width = 1]
+NL [label = "Netherlands ", color = red, shape = diamond, width = 1]
+AN [label = "Netherlands-Antilles ", color = red, shape = diamond, width = 1]
+NC [label = "New-Caledonia ", color = red, shape = diamond, width = 1]
+NZ [label = "New-Zealand ", color = red, shape = diamond, width = 1]
+NI [label = "Nicaragua ", color = red, shape = diamond, width = 1]
+NE [label = "Niger ", color = red, shape = diamond, width = 1]
+NG [label = "Nigeria ", color = red, shape = diamond, width = 1]
+NU [label = "Niue ", color = red, shape = diamond, width = 1]
+NF [label = "Norfolk-Island ", color = red, shape = diamond, width = 1]
+MP [label = "Northern-Mariana-Islands ", color = red, shape = diamond, width = 1]
+NO [label = "Norway ", color = red, shape = diamond, width = 1]
+OM [label = "Oman ", color = red, shape = diamond, width = 1]
+PK [label = "Pakistan ", color = red, shape = diamond, width = 1]
+PW [label = "Palau ", color = red, shape = diamond, width = 1]
+PS [label = "Palestinian-Territory ", color = red, shape = diamond, width = 1]
+PA [label = "Panama ", color = red, shape = diamond, width = 1]
+PG [label = "Papua-New-Guinea ", color = red, shape = diamond, width = 1]
+PY [label = "Paraguay ", color = red, shape = diamond, width = 1]
+PE [label = "Peru ", color = red, shape = diamond, width = 1]
+PH [label = "Philippines ", color = red, shape = diamond, width = 1]
+PN [label = "Pitcairn ", color = red, shape = diamond, width = 1]
+PL [label = "Poland ", color = red, shape = diamond, width = 1]
+PT [label = "Portugal ", color = red, shape = diamond, width = 1]
+PR [label = "Puerto-Rico ", color = red, shape = diamond, width = 1]
+QA [label = "Qatar ", color = red, shape = diamond, width = 1]
+RE [label = "Reunion ", color = red, shape = diamond, width = 1]
+RO [label = "Romania ", color = red, shape = diamond, width = 1]
+RU [label = "Russian-Federation ", color = red, shape = diamond, width = 1]
+RW [label = "RWANDA ", color = red, shape = diamond, width = 1]
+SH [label = "Saint-Helena ", color = red, shape = diamond, width = 1]
+KN [label = "Saint-Kitts-and-Nevis ", color = red, shape = diamond, width = 1]
+LC [label = "Saint-Lucia ", color = red, shape = diamond, width = 1]
+PM [label = "Saint-Pierre-and-Miquelon ", color = red, shape = diamond, width = 1]
+VC [label = "Saint-Vincent-and-the-Grenadines ", color = red, shape = diamond, width = 1]
+WS [label = "Samoa ", color = red, shape = diamond, width = 1]
+SM [label = "San-Marino ", color = red, shape = diamond, width = 1]
+ST [label = "Sao-Tome-and-Principe ", color = red, shape = diamond, width = 1]
+SA [label = "Saudi-Arabia ", color = red, shape = diamond, width = 1]
+SN [label = "Senegal ", color = red, shape = diamond, width = 1]
+CS [label = "Serbia-and-Montenegro ", color = red, shape = diamond, width = 1]
+SC [label = "Seychelles ", color = red, shape = diamond, width = 1]
+SL [label = "Sierra-Leone ", color = red, shape = diamond, width = 1]
+SG [label = "Singapore ", color = red, shape = diamond, width = 1]
+SK [label = "Slovakia ", color = red, shape = diamond, width = 1]
+SI [label = "Slovenia ", color = red, shape = diamond, width = 1]
+SB [label = "Solomon-Islands ", color = red, shape = diamond, width = 1]
+SO [label = "Somalia ", color = red, shape = diamond, width = 1]
+ZA [label = "South-Africa ", color = red, shape = diamond, width = 1]
+GS [label = "South-Georgia-and-the-South-Sandwich-Islands ", color = red, shape = diamond, width = 1]
+ES [label = "Spain ", color = red, shape = diamond, width = 1]
+LK [label = "Sri-Lanka ", color = red, shape = diamond, width = 1]
+SD [label = "Sudan ", color = red, shape = diamond, width = 1]
+SR [label = "Suriname ", color = red, shape = diamond, width = 1]
+SJ [label = "Svalbard-and-Jan-Mayen ", color = red, shape = diamond, width = 1]
+SZ [label = "Swaziland ", color = red, shape = diamond, width = 1]
+SE [label = "Sweden ", color = red, shape = diamond, width = 1]
+CH [label = "Switzerland ", color = red, shape = diamond, width = 1]
+SY [label = "Syrian-Arab-Republic ", color = red, shape = diamond, width = 1]
+TW [label = "Taiwan ", color = red, shape = diamond, width = 1]
+TJ [label = "Tajikistan ", color = red, shape = diamond, width = 1]
+TZ [label = "United-Republic-of-Tanzania ", color = red, shape = diamond, width = 1]
+TH [label = "Thailand ", color = red, shape = diamond, width = 1]
+TL [label = "Timor-Leste ", color = red, shape = diamond, width = 1]
+TG [label = "Togo ", color = red, shape = diamond, width = 1]
+TK [label = "Tokelau ", color = red, shape = diamond, width = 1]
+TO [label = "Tonga ", color = red, shape = diamond, width = 1]
+TT [label = "Trinidad-and-Tobago ", color = red, shape = diamond, width = 1]
+TN [label = "Tunisia ", color = red, shape = diamond, width = 1]
+TR [label = "Turkey ", color = red, shape = diamond, width = 1]
+TM [label = "Turkmenistan ", color = red, shape = diamond, width = 1]
+TC [label = "Turks-and-Caicos-Islands ", color = red, shape = diamond, width = 1]
+TV [label = "Tuvalu ", color = red, shape = diamond, width = 1]
+UG [label = "Uganda ", color = red, shape = diamond, width = 1]
+UA [label = "Ukraine ", color = red, shape = diamond, width = 1]
+AE [label = "United-Arab-Emirates ", color = red, shape = diamond, width = 1]
+GB [label = "United-Kingdom ", color = red, shape = diamond, width = 1]
+US [label = "United-States ", color = red, shape = diamond, width = 1]
+UM [label = "United-States-Minor-Outlying-Islands ", color = red, shape = diamond, width = 1]
+UY [label = "Uruguay ", color = red, shape = diamond, width = 1]
+UZ [label = "Uzbekistan ", color = red, shape = diamond, width = 1]
+VU [label = "Vanuatu ", color = red, shape = diamond, width = 1]
+VE [label = "Venezuela ", color = red, shape = diamond, width = 1]
+VN [label = "Viet-Nam ", color = red, shape = diamond, width = 1]
+VG [label = "British-Virgin-Islands ", color = red, shape = diamond, width = 1]
+VI [label = "US-Virgin-Islands ", color = red, shape = diamond, width = 1]
+WF [label = "Wallis-and-Futuna ", color = red, shape = diamond, width = 1]
+EH [label = "Western-Sahara ", color = red, shape = diamond, width = 1]
+YE [label = "Yemen ", color = red, shape = diamond, width = 1]
+ZM [label = "Zambia ", color = red, shape = diamond, width = 1]
+ZW [label = "Zimbabwe ", color = red, shape = diamond, width = 1]
+CC -> CR [label = "144 miles"]
+ID -> TR [label = "537 miles"]
+TD -> DJ [label = "263 miles"]
+BH -> GI [label = "865 miles"]
+GT -> CF [label = "752 miles"]
+AT -> CH [label = "666 miles"]
+SO -> LU [label = "636 miles"]
+BY -> ES [label = "102 miles"]
+IQ -> TO [label = "859 miles"]
+CD -> EG [label = "611 miles"]
+LV -> TK [label = "298 miles"]
+AF -> MY [label = "589 miles"]
+VE -> CS [label = "135 miles"]
+LK -> GF [label = "275 miles"]
+AG -> MP [label = "430 miles"]
+RE -> LR [label = "664 miles"]
+UM -> KY [label = "757 miles"]
+NU -> UG [label = "909 miles"]
+NR -> AX [label = "749 miles"]
+MP -> GB [label = "449 miles"]
+PG -> TF [label = "774 miles"]
+GI -> SG [label = "499 miles"]
+TK -> PW [label = "550 miles"]
+CK -> BM [label = "344 miles"]
+ZM -> LC [label = "995 miles"]
+ET -> CM [label = "297 miles"]
+CY -> AL [label = "494 miles"]
+SE -> MT [label = "333 miles"]
+KI -> BH [label = "515 miles"]
+MA -> NA [label = "131 miles"]
+NP -> BD [label = "796 miles"]
+IL -> CS [label = "490 miles"]
+BD -> TK [label = "194 miles"]
+BS -> VU [label = "352 miles"]
+NR -> PH [label = "563 miles"]
+JM -> BB [label = "261 miles"]
+QA -> TF [label = "592 miles"]
+LA -> AI [label = "244 miles"]
+HT -> PW [label = "546 miles"]
+PR -> AQ [label = "547 miles"]
+MM -> TW [label = "604 miles"]
+RO -> BW [label = "246 miles"]
+CI -> IS [label = "186 miles"]
+LS -> BN [label = "247 miles"]
+IE -> CD [label = "779 miles"]
+PG -> SB [label = "151 miles"]
+BW -> HU [label = "964 miles"]
+MY -> MT [label = "470 miles"]
+SN -> JP [label = "155 miles"]
+GF -> IR [label = "300 miles"]
+HR -> BS [label = "602 miles"]
+KM -> CD [label = "639 miles"]
+AG -> TR [label = "461 miles"]
+NP -> PF [label = "694 miles"]
+GP -> CD [label = "384 miles"]
+EC -> VE [label = "938 miles"]
+SR -> VA [label = "345 miles"]
+US -> NI [label = "739 miles"]
+SH -> FR [label = "413 miles"]
+UG -> GT [label = "995 miles"]
+KZ -> NO [label = "888 miles"]
+KR -> BW [label = "547 miles"]
+TW -> GF [label = "365 miles"]
+FJ -> AT [label = "998 miles"]
+MW -> TH [label = "346 miles"]
+ER -> CM [label = "833 miles"]
+HN -> MO [label = "565 miles"]
+AZ -> EH [label = "451 miles"]
+IR -> ES [label = "864 miles"]
+SA -> LC [label = "986 miles"]
+GN -> RU [label = "974 miles"]
+NO -> PE [label = "963 miles"]
+GM -> FM [label = "497 miles"]
+GT -> MT [label = "743 miles"]
+UZ -> YT [label = "466 miles"]
+KG -> BI [label = "686 miles"]
+QA -> SH [label = "369 miles"]
+BI -> AL [label = "884 miles"]
+SK -> MZ [label = "143 miles"]
+SH -> VU [label = "687 miles"]
+MV -> NZ [label = "706 miles"]
+EE -> DM [label = "362 miles"]
+SJ -> HN [label = "709 miles"]
+NZ -> ST [label = "168 miles"]
+MV -> PN [label = "357 miles"]
+MD -> LC [label = "922 miles"]
+ET -> WS [label = "162 miles"]
+LV -> LU [label = "230 miles"]
+CN -> BN [label = "250 miles"]
+IT -> MA [label = "567 miles"]
+SA -> NO [label = "643 miles"]
+HR -> PW [label = "410 miles"]
+CF -> AT [label = "761 miles"]
+BM -> TF [label = "391 miles"]
+MC -> HK [label = "475 miles"]
+BE -> SB [label = "805 miles"]
+LR -> NA [label = "120 miles"]
+SL -> MM [label = "897 miles"]
+YE -> GR [label = "137 miles"]
+BA -> PM [label = "450 miles"]
+MN -> TV [label = "904 miles"]
+PL -> BA [label = "382 miles"]
+RU -> GR [label = "464 miles"]
+UY -> GI [label = "507 miles"]
+CL -> AL [label = "647 miles"]
+DK -> GD [label = "611 miles"]
+JE -> AM [label = "961 miles"]
+MR -> TW [label = "568 miles"]
+RO -> YE [label = "364 miles"]
+CV -> CO [label = "273 miles"]
+ZA -> ET [label = "316 miles"]
+AS -> IO [label = "365 miles"]
+SI -> VG [label = "251 miles"]
+GG -> DO [label = "312 miles"]
+MW -> PF [label = "292 miles"]
+TT -> AN [label = "137 miles"]
+LT -> BS [label = "505 miles"]
+KE -> YT [label = "567 miles"]
+TW -> CA [label = "698 miles"]
+TH -> GU [label = "936 miles"]
+VE -> SK [label = "411 miles"]
+PA -> PE [label = "880 miles"]
+AD -> BY [label = "733 miles"]
+LA -> ES [label = "219 miles"]
+KR -> WF [label = "408 miles"]
+PS -> CC [label = "870 miles"]
+TO -> BT [label = "196 miles"]
+AG -> KP [label = "707 miles"]
+AM -> ER [label = "960 miles"]
+MZ -> KH [label = "678 miles"]
+BA -> UA [label = "771 miles"]
+CM -> YT [label = "825 miles"]
+CI -> GY [label = "274 miles"]
+IQ -> ML [label = "987 miles"]
+GE -> CS [label = "839 miles"]
+AO -> VU [label = "429 miles"]
+IL -> ST [label = "651 miles"]
+PF -> AZ [label = "772 miles"]
+IN -> YE [label = "180 miles"]
+GI -> LR [label = "547 miles"]
+PE -> LS [label = "782 miles"]
+SY -> UZ [label = "138 miles"]
+AI -> NI [label = "476 miles"]
+CZ -> GF [label = "668 miles"]
+NZ -> MC [label = "404 miles"]
+VU -> PR [label = "530 miles"]
+PY -> CA [label = "110 miles"]
+ET -> PY [label = "808 miles"]
+MC -> SB [label = "311 miles"]
+SJ -> GH [label = "640 miles"]
+GI -> PN [label = "428 miles"]
+GE -> BE [label = "289 miles"]
+MW -> MO [label = "275 miles"]
+GT -> AU [label = "694 miles"]
+CY -> BS [label = "338 miles"]
+BB -> EG [label = "207 miles"]
+SI -> PE [label = "800 miles"]
+MQ -> EH [label = "687 miles"]
+MQ -> HK [label = "659 miles"]
+GT -> US [label = "455 miles"]
+LS -> BO [label = "231 miles"]
+LK -> SG [label = "718 miles"]
+SO -> IN [label = "359 miles"]
+DZ -> BZ [label = "560 miles"]
+LB -> CZ [label = "970 miles"]
+BS -> TW [label = "953 miles"]
+PR -> AL [label = "575 miles"]
+IS -> AI [label = "864 miles"]
+JO -> IL [label = "705 miles"]
+KR -> GT [label = "637 miles"]
+BG -> BE [label = "108 miles"]
+UY -> MH [label = "840 miles"]
+GS -> KP [label = "273 miles"]
+TV -> OM [label = "577 miles"]
+GD -> SI [label = "595 miles"]
+US -> BA [label = "335 miles"]
+TW -> AO [label = "431 miles"]
+AZ -> KY [label = "647 miles"]
+DZ -> YE [label = "716 miles"]
+PS -> CM [label = "172 miles"]
+AI -> TF [label = "722 miles"]
+NR -> AM [label = "918 miles"]
+UZ -> GR [label = "529 miles"]
+ST -> LV [label = "811 miles"]
+PT -> AF [label = "749 miles"]
+BS -> DK [label = "681 miles"]
+IN -> DO [label = "706 miles"]
+FK -> KW [label = "137 miles"]
+SH -> IM [label = "540 miles"]
+PW -> GS [label = "188 miles"]
+CK -> GG [label = "253 miles"]
+BB -> PR [label = "495 miles"]
+VI -> LS [label = "765 miles"]
+MG -> FO [label = "292 miles"]
+BJ -> AG [label = "359 miles"]
+IT -> GQ [label = "575 miles"]
+BV -> TZ [label = "836 miles"]
+HK -> MX [label = "417 miles"]
+FR -> HK [label = "426 miles"]
+CY -> LR [label = "735 miles"]
+MG -> IE [label = "978 miles"]
+CS -> ZM [label = "119 miles"]
+SZ -> HK [label = "154 miles"]
+MG -> TF [label = "116 miles"]
+BZ -> KE [label = "488 miles"]
+CU -> PT [label = "344 miles"]
+KW -> SK [label = "296 miles"]
+IE -> YT [label = "417 miles"]
+NC -> PM [label = "956 miles"]
+LC -> LT [label = "916 miles"]
+CU -> IR [label = "397 miles"]
+US -> BT [label = "281 miles"]
+KH -> PN [label = "617 miles"]
+NA -> IE [label = "445 miles"]
+VE -> KM [label = "525 miles"]
+NC -> IO [label = "121 miles"]
 }
