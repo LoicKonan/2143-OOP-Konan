@@ -154,13 +154,13 @@ struct LinkedNodes
 class Node
 {
 private:
-    /*private attributes
-    string EdgeColor;
-    string FillColor;
-    string OutlineColor;
-    string EdgeStyle;
-    string Name;
-    string NodeNumber;*/
+    // string EdgeColor;
+    // string FillColor;
+    // string OutlineColor;
+    // string EdgeStyle;
+    
+    int width;
+    string shape;
 
     string Initials;
     string CountryName;
@@ -182,6 +182,8 @@ public:
     Node()
     {
         Initials = CountryName = 'a';
+        width = 1;
+        shape = "diamond";
     }
 
   /**
@@ -200,6 +202,8 @@ public:
     {
         CountryName = Name;
         Initials = CountryInitials;
+        width = 1;
+        shape = "diamond";
     }
 
   /**
@@ -219,6 +223,8 @@ public:
     {
         this->Initials = other.Initials;
         this->CountryName = other.CountryName;
+        this->width = other.width;
+        this->shape = other.shape;
     }
 
 /**
@@ -317,7 +323,8 @@ public:
     friend ostream& operator<<(ostream& OutFile, Node& other)
     {
         return OutFile << other.Initials << " [label =" << " \""
-        << other.CountryName << "\"]" << '\n';
+        << other.CountryName << " \", " << "color = red, " << "shape = " << other.shape  
+        << ", width = " << other.width  << "]" << '\n';
     }
 
 /**
