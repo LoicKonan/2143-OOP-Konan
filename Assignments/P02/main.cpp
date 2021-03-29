@@ -64,10 +64,15 @@ class Node
 {
 private:
     
-    int width;
+    float width;
+    int sides;
+    int peripheries;
     string shape;
     string Initials;
     string CountryName;
+    string color;
+    string style;
+
 
 public:
 
@@ -86,10 +91,36 @@ public:
     Node()
     {
         Initials = CountryName = ' ';
-        width = 1;
-        shape = "diamond";
+        width = 1.5;
+        int sides = 6;
+        int peripheries = 2;
+        shape = "polygon";
+        color = "yellow";
+        style = "filled";
     }
+    
+    /**
+    * Public : Node()
+    *
+    * Description:
+    *      - Overloaded constructor.
+    *
+    * Params:
+    *      - string CountryInitials, string Name.
+    *
+    * Returns:
+    *      - N/A
+    */
+    Node(string CountryInitials, string Name)
+    {
+        Initials = CountryName = ' ';
+        width = 1.5;
+        shape = "polygon";
+        color = "red";
+        style = "filled";
+        sides = 6;
 
+    }
 
     /**
       * Public : ~Node()
@@ -119,10 +150,15 @@ public:
       */
     friend ostream& operator<<(ostream& OutFile, Node& other)
     {
-        
-        return OutFile << other.Initials << " [label =" << " \""
-            << other.CountryName << " \", " << "color = red, " << "shape = " << other.shape
-            << ", width = " << other.width << "]" << '\n';
+        return OutFile 
+            << other.Initials    << " [label =" << " \""
+            << other.CountryName << " \""       << ", shape = " 
+            << other.shape       << ", sides = "     
+            << other.sides       << ", peripheries = " 
+            << other.peripheries << ", color = "  
+            << other.color       << ", style = "      
+            << other.style       << ", width = "      
+            << other.width       << "]"         << '\n';
     }
 
     /**
@@ -226,8 +262,10 @@ struct LinkedNodes
      */
     friend ostream& operator<<(ostream& OutFile, LinkedNodes& other)
     {
-        return OutFile << other.FirstCountry << " -> " << other.SecondCountry
-            << " [label =" << " \"" << other.edge << " miles\"" << " arrowhead = odiamond]"<< '\n';
+        return OutFile 
+            << other.FirstCountry       << " -> " << other.SecondCountry
+            << " [label =" << " \""     << other.edge << " miles\"" 
+            << " arrowhead = odiamond]" << '\n';
     }
 };
 
