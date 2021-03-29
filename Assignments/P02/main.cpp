@@ -53,13 +53,7 @@ void openFiles(ifstream& InFile, ofstream& OutFile);
  *
  *   public Methods:
  *       - Node()
- *       - Node(string CountryInitials, string Name)
- *       - Node(const Node& other)
  *       - ~Node() {};
- *       - void SetInitials(string CountryInitials)
- *       - void SetCountryName(string Name)
- *       - string GetCountryName()
- *       - string GetInitials()
  *       - friend ostream& operator<<(ostream& OutFile, Node& other)
  *       - friend istream& operator>>(istream& InFile, Node& Node)
  *
@@ -69,14 +63,9 @@ void openFiles(ifstream& InFile, ofstream& OutFile);
 class Node
 {
 private:
-    // string EdgeColor;
-    // string FillColor;
-    // string OutlineColor;
-    // string EdgeStyle;
-
+    
     int width;
     string shape;
-
     string Initials;
     string CountryName;
 
@@ -96,51 +85,11 @@ public:
     */
     Node()
     {
-        Initials = CountryName = 'a';
+        Initials = CountryName = ' ';
         width = 1;
         shape = "diamond";
     }
 
-    /**
-    * Public : Node()
-    *
-    * Description:
-    *      - Overloaded constructor to initialize countries name and initials.
-    *
-    * Params:
-    *      - string CountryInitials, string Name.
-    *
-    * Returns:
-    *      - N/A
-    */
-    Node(string CountryInitials, string Name)
-    {
-        CountryName = Name;
-        Initials = CountryInitials;
-        width = 1;
-        shape = "ellipse";
-    }
-
-    /**
-    * Public : Node()
-    *
-    * Description:
-    *      - Copy constructor to initialize countries name
-    *      - and initials with the values of the other object.
-    *
-    * Params:
-    *      - const Node& other.
-    *
-    * Returns:
-    *      - N/A
-    */
-    Node(const Node& other)
-    {
-        this->Initials = other.Initials;
-        this->CountryName = other.CountryName;
-        this->width = other.width;
-        this->shape = other.shape;
-    }
 
     /**
       * Public : ~Node()
@@ -155,73 +104,6 @@ public:
       *      - N/A
       */
     ~Node() {};
-
-    /**
-     * Public : SetInitials()
-     *
-     * Description:
-     *      - setter for the Countries initials
-     *
-     * Params:
-     *      - string CountryInitials
-     *
-     * Returns:
-     *      - void
-     */
-    void SetInitials(string CountryInitials)
-    {
-        Initials = CountryInitials;
-    }
-
-
-    /**
-    * Public : SetCountryName()
-    *
-    * Description:
-    *      - setter for the Countries Name
-    *
-    * Params:
-    *      - string Name
-    *
-    * Returns:
-    *      - void
-    */
-    void SetCountryName(string Name)
-    {
-        CountryName = Name;
-    }
-
-    /**
-     * Public : GetCountryName()
-     *
-     * Description:
-     *      - Getter for the contryies Names.
-     * Params:
-     *      - none.
-     *
-     * Returns:
-     *      - string
-     */
-    string GetCountryName()
-    {
-        return CountryName;
-    }
-
-    /**
-     * Public : GetInitials()
-     *
-     * Description:
-     *      - Getter for the contryies Initials.
-     * Params:
-     *      - none.
-     *
-     * Returns:
-     *      - string
-     */
-    string GetInitials()
-    {
-        return Initials;
-    }
 
     /**
       * Public : ostream()
@@ -304,7 +186,7 @@ struct LinkedNodes
       */
     LinkedNodes()
     {
-        FirstCountry = SecondCountry = "Name";
+        FirstCountry = SecondCountry = " ";
         edge = 0;
 
     }
