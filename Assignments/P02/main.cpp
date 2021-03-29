@@ -276,7 +276,7 @@ int main()
     ofstream OutFile;
     openFiles(InFile, OutFile);
 
-    vector<LinkedNodes*> node_edge_labels;                        // Create a vector of edge_label pointers.
+    vector<LinkedNodes*> node_edge_labels;                  // Create a vector of edge_label pointers.
     LinkedNodes* Links;                                     // Pointer to edge_labels.
     Node nodes;                                             // Create object call nodes.
 
@@ -290,7 +290,7 @@ int main()
 
 
     InFile >> GraphType;                                    // Read in the graph type.
-    OutFile << GraphType << " Countries\n{ " << "\n";                 // Display the graph Type.
+    OutFile << GraphType << " Countries\n{ " << "\n";       // Display the graph Type.
     InFile >> NumNodes;                                     // Read in number of nodes.
 
     while (!InFile.eof())                                   // While the file not empty.
@@ -301,18 +301,18 @@ int main()
             OutFile << nodes;
         }
 
-        InFile >> Numedge_labels;                                 // Read in the number of edge_labels
+        InFile >> Numedge_labels;                           // Read in the number of edge_labels
 
         for (int i = 0; i < Numedge_labels;i++)
         {
             InFile >> start_node_id >> end_node_id >> edge_labels;
             Links = new LinkedNodes(start_node_id, end_node_id, edge_labels);
-            node_edge_labels.push_back(Links);                    // Store in the vector.
+            node_edge_labels.push_back(Links);              // Store in the vector.
         }
 
         for ( unsigned int i = 0;i < node_edge_labels.size();i++)
         {
-            OutFile << *node_edge_labels[i];                      // Print out each line.
+            OutFile << *node_edge_labels[i];                // Print out each line.
         }
         OutFile << "}" << endl;
     }
