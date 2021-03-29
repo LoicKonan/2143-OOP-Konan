@@ -87,12 +87,13 @@ public:
     */
     Node()
     {
-        node_id = node_label = ' ';
-        width = 1.5;
-        int sides = 6;
-        shape = "hexagon";
-        color = "green:red;0.25:blue";
-        style = "filled";
+        node_label = ' ';
+        node_id    =  ' ';
+        width      = 1.5;
+        int sides  = 6;
+        shape      = "hexagon";
+        color      = "green:red;0.25:blue";
+        style      = "filled";
     }
     
     /**
@@ -109,13 +110,13 @@ public:
     */
     Node(string Countrynode_id, string Name)
     {
-        node_id = node_label = ' ';
-        width = 1.5;
-        int sides = 6;
-        shape = "hexagon";
-        color = "green:red;0.25:blue";
-        style = "filled";
-
+        node_label = ' ';
+        node_id    =  ' ';
+        width      = 1.5;
+        int sides  = 6;
+        shape      = "hexagon";
+        color      = "green:red;0.25:blue";
+        style      = "filled";
     }
 
     /**
@@ -147,8 +148,8 @@ public:
     friend ostream& operator<<(ostream& OutFile, Node& other)
     {
         return OutFile 
-            << other.node_id    << " [label =" << " \""
-            << other.node_label << " \""       << ", shape = " 
+            << other.node_id     << " [label =" << " \""
+            << other.node_label  << " \""       << ", shape = " 
             << other.shape       << ", color = \""  
             << other.color       << "\", style = "      
             << other.style       << ", width = "      
@@ -216,8 +217,9 @@ struct LinkedNodes
       */
     LinkedNodes()
     {
-        start_node_id = end_node_id = " ";
-        edge_label = 0;
+        start_node_id = " ";
+        end_node_id   = " ";
+        edge_label    = 0;
 
     }
 
@@ -237,8 +239,8 @@ struct LinkedNodes
     LinkedNodes(string A, string B, int num)
     {
         start_node_id = A;
-        end_node_id = B;
-        edge_label = num;
+        end_node_id   = B;
+        edge_label    = num;
     }
 
     /**
@@ -257,7 +259,7 @@ struct LinkedNodes
     friend ostream& operator<<(ostream& OutFile, LinkedNodes& other)
     {
         return OutFile 
-            << other.start_node_id       << " -> " << other.end_node_id
+            << other.start_node_id      << " -> " << other.end_node_id
             << " [label =" << " \""     << other.edge_label << " miles\"" 
             << " arrowhead = odiamond]" << '\n';
     }
@@ -297,7 +299,7 @@ int main()
     {
         for (int i = 0; i < NumNodes;i++)
         {
-            InFile >> nodes;                                // Read in the node and print it out.
+            InFile  >> nodes;                               // Read in the node and print it out.
             OutFile << nodes;
         }
 
