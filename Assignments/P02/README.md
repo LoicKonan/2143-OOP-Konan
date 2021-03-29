@@ -14,7 +14,7 @@ This means we will be implementing a (tiny) **subset** of the graphviz language 
 |   3   | [output.txt](output.txt)             | the output file of the design.                           |
 |   4   | [Banner](Banner)                     | Banner for Assignment.                                   |
 |   5   | [graphviz.svg](graphviz.svg)         | Will display the picture produce by the graphviz program |
-|   6   | [GraphVizCode.txt](GraphVizCode.txt) | The code needed to paste in the graphviz website.        |
+|   6   | [GraphVizCode.dot](GraphVizCode.dot) | The code to paste in the graphviz website.               |
 
 ### Instructions
 
@@ -24,5 +24,5 @@ This means we will be implementing a (tiny) **subset** of the graphviz language 
   - $ ./output.txt
 
 - Copy and Paste This Code into GraphViz
-  - [GraphVizCode.txt](GraphVizCode.txt)
+  - [GraphVizCode.dot](GraphVizCode.dot)
 <img src="graphviz.svg" width="800">

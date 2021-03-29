@@ -25,9 +25,9 @@
 *         input.txt
 *
 *    Usage:
-*           main.cpp          : driver program
-*           input.txt         : Input file
-*           output.txt        : output file
+*           main.cpp                : driver program
+*           input.txt               : Input file
+*           GraphVizCode.dot        : output file
 *
 ******************************************************************************/
 #include<sstream>
