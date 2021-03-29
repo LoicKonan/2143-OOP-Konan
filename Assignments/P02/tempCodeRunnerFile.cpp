@@ -1,19 +1,5 @@
-  // /**
-    //   * Public : LinkedNodes()
-    //   *
-    //   * Description:
-    //   *      - Overload constructor.
-    //   *      - Initialize countries name and the edges.
-    //   *
-    //   * Params:
-    //   *      - string A, string B, int num.
-    //   *
-    //   * Returns:
-    //   *      - N/A
-    //   */
-    // LinkedNodes(string A, string B, int num)
+ // friend istream& operator>>(istream& InFile, Node& Node)
     // {
-    //     FirstCountry = A;
-    //     SecondCountry = B;
-    //     edge = num;
+    //     InFile >> Node.Initials >> Node.CountryName;
+    //     return InFile;
     // }

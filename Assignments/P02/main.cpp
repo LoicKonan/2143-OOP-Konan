@@ -246,11 +246,16 @@ int main()
 
     vector<LinkedNodes*> node_edges;                        // Create a vector of edge pointers.
     LinkedNodes* Links;                                     // Pointer to edges.
-    Node nodes;                                             // Create object call nodes
+    Node nodes;                                             // Create object call nodes.
+
     int NumNodes;
     int Numedges;
     int edges;
-    string GraphType = "", FirstCountry, SecondCountry;
+
+    string GraphType = "";
+    string FirstCountry;
+    string SecondCountry;
+
 
     InFile >> GraphType;                                    // Read in the graph type.
     OutFile << GraphType << "\n{ " << "\n";                 // Display the graph Type.
