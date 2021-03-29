@@ -88,9 +88,8 @@ public:
     Node()
     {
         node_label = ' ';
-        node_id    =  ' ';
+        node_id    = ' ';
         width      = 1.5;
-        int sides  = 6;
         shape      = "hexagon";
         color      = "green:red;0.25:blue";
         style      = "filled";
@@ -111,9 +110,8 @@ public:
     Node(string Countrynode_id, string Name)
     {
         node_label = ' ';
-        node_id    =  ' ';
+        node_id    = ' ';
         width      = 1.5;
-        int sides  = 6;
         shape      = "hexagon";
         color      = "green:red;0.25:blue";
         style      = "filled";
@@ -260,8 +258,8 @@ struct LinkedNodes
     {
         return OutFile 
             << other.start_node_id      << " -> " << other.end_node_id
-            << " [label =" << " \""     << other.edge_label << " miles\"" 
-            << " arrowhead = odiamond]" << '\n';
+            << " [label =" << " \""     << other.edge_label 
+            << " miles\""  << " arrowhead = odiamond]\n";
     }
 };
 
@@ -292,7 +290,7 @@ int main()
 
 
     InFile >> GraphType;                                    // Read in the graph type.
-    OutFile << GraphType << " Countries\n{ " << "\n";       // Display the graph Type.
+    OutFile << GraphType << " Countries\n{ \n";             // Display the graph Type.
     InFile >> NumNodes;                                     // Read in number of nodes.
 
     while (!InFile.eof())                                   // While the file not empty.
@@ -352,7 +350,7 @@ void openFiles(ifstream& InFile, ofstream& OutFile)
 
     if (InFile.fail())                                      // Create failsafe way.
     {
-        cout << "the input file could not be opened" << endl;
+        cout << "the input file could not be opened\n";
         exit(0);
     }
 
