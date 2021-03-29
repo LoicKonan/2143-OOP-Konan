@@ -13,11 +13,11 @@
 *    Semester:         Spring 2021
 *
 *    Description:
-*                      This Program is about implementing a **graphviz Language 
+*                      This Program is about implementing a **graphviz Language
 *                      "wrapper" or "facade"**.
-*                      This means we will be implementing a (tiny) **subset** of 
+*                      This means we will be implementing a (tiny) **subset** of
 *                      the graphviz language capability so we can visualize some
-*                      of the typical data structures that will show all the 
+*                      of the typical data structures that will show all the
 *                      countries of the world with a distance needed to travel to
 *                      or from each other.
 *    Files:
@@ -44,7 +44,7 @@ void openFiles(ifstream& InFile, ofstream& OutFile);
 
 /*
  *    Struct Name: LinkedNodes
- * 
+ *
  *   Description:
  *       - Holds The countries  names.
  *       - And the edges between the countries (a connection).
@@ -57,8 +57,8 @@ void openFiles(ifstream& InFile, ofstream& OutFile);
  *       - None
  *
  *   Usage:
- * 	     - Creates node for a Linked List. 
- * 
+ * 	     - Creates node for a Linked List.
+ *
  */
 struct LinkedNodes
 {
@@ -66,79 +66,79 @@ struct LinkedNodes
     string SecondCountry;
     int edge;
 
-/**
-  * Public : LinkedNodes()
-  * 
-  * Description:
-  *      - Default constructor.
-  *      - Initialize countries name and the edges.
-  *      - friend ostream& operator<<(ostream& OutFile, LinkedNodes& other).
-  * 
-  * Params:
-  *      - None.
-  * 
-  * Returns:
-  *      - N/A
-  */
-    LinkedNodes()                                  
+    /**
+      * Public : LinkedNodes()
+      *
+      * Description:
+      *      - Default constructor.
+      *      - Initialize countries name and the edges.
+      *      - friend ostream& operator<<(ostream& OutFile, LinkedNodes& other).
+      *
+      * Params:
+      *      - None.
+      *
+      * Returns:
+      *      - N/A
+      */
+    LinkedNodes()
     {
         FirstCountry = SecondCountry = "Name";
         edge = 0;
 
     }
 
-/**
-  * Public : LinkedNodes()
-  * 
-  * Description:
-  *      - Overload constructor.
-  *      - Initialize countries name and the edges.
-  * 
-  * Params:
-  *      - string A, string B, int num.
-  * 
-  * Returns:
-  *      - N/A
-  */
-    LinkedNodes(string A, string B, int num) 
+    /**
+      * Public : LinkedNodes()
+      *
+      * Description:
+      *      - Overload constructor.
+      *      - Initialize countries name and the edges.
+      *
+      * Params:
+      *      - string A, string B, int num.
+      *
+      * Returns:
+      *      - N/A
+      */
+    LinkedNodes(string A, string B, int num)
     {
         FirstCountry = A;
         SecondCountry = B;
         edge = num;
     }
 
- /**
-  * Public : ostream
-  * 
-  * Description:
-  *      - Overloading the cout operator to print the countries names.
-  *      -  To print the edges.
-  *
-  * Params:
-  *      - ostream& OutFile, LinkedNodes& other
-  * 
-  * Returns:
-  *      - [string] ostream
-  */
+    /**
+     * Public : ostream
+     *
+     * Description:
+     *      - Overloading the cout operator to print the countries names.
+     *      -  To print the edges.
+     *
+     * Params:
+     *      - ostream& OutFile, LinkedNodes& other
+     *
+     * Returns:
+     *      - [string] ostream
+     */
     friend ostream& operator<<(ostream& OutFile, LinkedNodes& other)
     {
-        return OutFile << other.FirstCountry << " -> " << other.SecondCountry 
-        << " [label =" << " \"" << other.edge << " miles\"]" << '\n';
+        return OutFile << other.FirstCountry << " -> " << other.SecondCountry
+            << " [label =" << " \"" << other.edge << " miles\"" << " arrowhead= odiamond ]"<< '\n';
     }
 };
 
 /*
  *    Class Name: Node
- * 
+ *
  *    Description:
  *        - A class to store a Node node and to link to other nodes.
- *       
+ *
  *    private Methods:
  *        - None.
  *
  *   public Methods:
  *       - Node()
- *       - Node(string CountryInitials, string Name)  
+ *       - Node(string CountryInitials, string Name)
  *       - Node(const Node& other)
  *       - ~Node() {};
  *       - void SetInitials(string CountryInitials)
@@ -147,7 +147,7 @@ struct LinkedNodes
  *       - string GetInitials()
  *       - friend ostream& operator<<(ostream& OutFile, Node& other)
  *       - friend istream& operator>>(istream& InFile, Node& Node)
- *       
+ *
  *   Usage:
  *       - To link the countries and the edges.
  */
@@ -158,7 +158,7 @@ private:
     // string FillColor;
     // string OutlineColor;
     // string EdgeStyle;
-    
+
     int width;
     string shape;
 
@@ -167,18 +167,18 @@ private:
 
 public:
 
-  /**
-  * Public : Node()
-  * 
-  * Description:
-  *      - Default Constructor initialize countries name and initials.
-  * 
-  * Params:
-  *      - None.
-  * 
-  * Returns:
-  *      - N/A
-  */
+    /**
+    * Public : Node()
+    *
+    * Description:
+    *      - Default Constructor initialize countries name and initials.
+    *
+    * Params:
+    *      - None.
+    *
+    * Returns:
+    *      - N/A
+    */
     Node()
     {
         Initials = CountryName = 'a';
@@ -186,39 +186,39 @@ public:
         shape = "diamond";
     }
 
-  /**
-  * Public : Node()
-  * 
-  * Description:
-  *      - Overloaded constructor to initialize countries name and initials.
-  * 
-  * Params:
-  *      - string CountryInitials, string Name.
-  * 
-  * Returns:
-  *      - N/A
-  */
+    /**
+    * Public : Node()
+    *
+    * Description:
+    *      - Overloaded constructor to initialize countries name and initials.
+    *
+    * Params:
+    *      - string CountryInitials, string Name.
+    *
+    * Returns:
+    *      - N/A
+    */
     Node(string CountryInitials, string Name)
     {
         CountryName = Name;
         Initials = CountryInitials;
         width = 1;
-        shape = "diamond";
+        shape = "ellipse";
     }
 
-  /**
-  * Public : Node()
-  * 
-  * Description:
-  *      - Copy constructor to initialize countries name
-  *      - and initials with the values of the other object.
-  * 
-  * Params:
-  *      - const Node& other.
-  * 
-  * Returns:
-  *      - N/A
-  */
+    /**
+    * Public : Node()
+    *
+    * Description:
+    *      - Copy constructor to initialize countries name
+    *      - and initials with the values of the other object.
+    *
+    * Params:
+    *      - const Node& other.
+    *
+    * Returns:
+    *      - N/A
+    */
     Node(const Node& other)
     {
         this->Initials = other.Initials;
@@ -227,118 +227,119 @@ public:
         this->shape = other.shape;
     }
 
-/**
-  * Public : ~Node()
-  * 
-  * Description:
-  *      - Destructor.
-  * 
-  * Params:
-  *      - None.
-  * 
-  * Returns:
-  *      - N/A
-  */
+    /**
+      * Public : ~Node()
+      *
+      * Description:
+      *      - Destructor.
+      *
+      * Params:
+      *      - None.
+      *
+      * Returns:
+      *      - N/A
+      */
     ~Node() {};
 
-/**
- * Public : SetInitials()
- *
- * Description:
- *      - setter for the Countries initials
- *
- * Params:
- *      - string CountryInitials
- *
- * Returns:
- *      - void
- */
+    /**
+     * Public : SetInitials()
+     *
+     * Description:
+     *      - setter for the Countries initials
+     *
+     * Params:
+     *      - string CountryInitials
+     *
+     * Returns:
+     *      - void
+     */
     void SetInitials(string CountryInitials)
     {
         Initials = CountryInitials;
     }
 
 
-  /**
-  * Public : SetCountryName()
-  *  
-  * Description:
-  *      - setter for the Countries Name
-  *
-  * Params:
-  *      - string Name
-  *
-  * Returns:
-  *      - void
-  */
+    /**
+    * Public : SetCountryName()
+    *
+    * Description:
+    *      - setter for the Countries Name
+    *
+    * Params:
+    *      - string Name
+    *
+    * Returns:
+    *      - void
+    */
     void SetCountryName(string Name)
     {
         CountryName = Name;
     }
 
- /**
-  * Public : GetCountryName()
-  *
-  * Description:
-  *      - Getter for the contryies Names.
-  * Params:
-  *      - none.
-  *
-  * Returns:
-  *      - string
-  */
+    /**
+     * Public : GetCountryName()
+     *
+     * Description:
+     *      - Getter for the contryies Names.
+     * Params:
+     *      - none.
+     *
+     * Returns:
+     *      - string
+     */
     string GetCountryName()
     {
         return CountryName;
     }
 
- /**
-  * Public : GetInitials()
-  *
-  * Description:
-  *      - Getter for the contryies Initials.
-  * Params:
-  *      - none.
-  *
-  * Returns:
-  *      - string
-  */
+    /**
+     * Public : GetInitials()
+     *
+     * Description:
+     *      - Getter for the contryies Initials.
+     * Params:
+     *      - none.
+     *
+     * Returns:
+     *      - string
+     */
     string GetInitials()
     {
         return Initials;
     }
 
-/**
-  * Public : ostream()
-  * 
-  * Description:
-  *      - Overloading the cout operator to print the countries names.
-  *      - Print the countries initials.
-  * Params:
-  *      - ostream& OutFile, Node& other
-  * 
-  * Returns:
-  *      - [string] ostream
-  */
+    /**
+      * Public : ostream()
+      *
+      * Description:
+      *      - Overloading the cout operator to print the countries names.
+      *      - Print the countries initials.
+      * Params:
+      *      - ostream& OutFile, Node& other
+      *
+      * Returns:
+      *      - [string] ostream
+      */
     friend ostream& operator<<(ostream& OutFile, Node& other)
     {
+        
         return OutFile << other.Initials << " [label =" << " \""
-        << other.CountryName << " \", " << "color = red, " << "shape = " << other.shape  
-        << ", width = " << other.width  << "]" << '\n';
+            << other.CountryName << " \", " << "color = red, " << "shape = " << other.shape
+            << ", width = " << other.width << "]" << '\n';
     }
 
-/**
-  * Public : istream()
-  * 
-  * Description:
-  *      - Overloading the cin operator to read in the countries names.
-  *      - To read in the countries initials.
-  * Params:
-  *      - istream& InFile, Node& Node
-  * 
-  * Returns:
-  *      - [string] istream
-  */
+    /**
+      * Public : istream()
+      *
+      * Description:
+      *      - Overloading the cin operator to read in the countries names.
+      *      - To read in the countries initials.
+      * Params:
+      *      - istream& InFile, Node& Node
+      *
+      * Returns:
+      *      - [string] istream
+      */
     friend istream& operator>>(istream& InFile, Node& Node)
     {
         InFile >> Node.Initials >> Node.CountryName;
@@ -350,7 +351,7 @@ public:
  * Main Driver
  *
  * For this program
- * 
+ *
  */
 int main()
 {
@@ -367,31 +368,31 @@ int main()
     string GraphType = "", FirstCountry, SecondCountry;
 
     InFile >> GraphType;                                    // Read in the graph type.
-    OutFile << GraphType << "\n{ "<< "\n";                  // Display the graph Type.
+    OutFile << GraphType << "\n{ " << "\n";                  // Display the graph Type.
     InFile >> NumNodes;                                     // Read in number of nodes.
-    
+
     while (!InFile.eof())                                   // While the file not empty.
     {
         for (int i = 0; i < NumNodes;i++)
-        { 
+        {
             InFile >> nodes;                                // Read in the node and print it out.
             OutFile << nodes;
         }
 
         InFile >> Numedges;                                 // Read in the number of edges
 
-        for (int i = 0; i < Numedges;i++)          
-        {                                                   
+        for (int i = 0; i < Numedges;i++)
+        {
             InFile >> FirstCountry >> SecondCountry >> edges;
             Links = new LinkedNodes(FirstCountry, SecondCountry, edges);
             node_edges.push_back(Links);                    // Store in the vector.
         }
 
-        for (int i = 0;i < node_edges.size();i++)
-        {                                                   
+        for ( unsigned int i = 0;i < node_edges.size();i++)
+        {
             OutFile << *node_edges[i];                      // Print out each line.
         }
-        OutFile << "}" << endl;                             
+        OutFile << "}" << endl;
     }
 
     InFile.close();
@@ -404,12 +405,12 @@ int main()
  *
  * Function Name: openFiles ()
  *
- * Description:   
+ * Description:
  *      - To prompt the user to enter infile and output file name.
  *      - To Make sure the infile can be open.
  *
- * Parameters:    
- *      - ifstream& InFile, ofstream& OutFile 
+ * Parameters:
+ *      - ifstream& InFile, ofstream& OutFile
  *
  * Returns:
  *      - void
