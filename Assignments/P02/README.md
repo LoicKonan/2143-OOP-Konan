@@ -21,7 +21,7 @@ This means we will be implementing a (tiny) **subset** of the graphviz language 
 - Enter these file name below.
   - $ ./main.cpp
   - $ ./input.txt
-  - $ ./output.txt
+  - $ ./GraphVizCode.dot
 
 - Copy and Paste This Code into GraphViz
   - [GraphVizCode.dot](GraphVizCode.dot)
