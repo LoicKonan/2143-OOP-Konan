@@ -92,7 +92,7 @@ public:
         width = 1.5;
         int sides = 6;
         shape = "hexagon";
-        color = "yellow";
+        color = "green:red;0.25:blue";
         style = "filled";
     }
     
@@ -114,7 +114,7 @@ public:
         width = 1.5;
         int sides = 6;
         shape = "hexagon";
-        color = "yellow";
+        color = "green:red;0.25:blue";
         style = "filled";
 
     }
