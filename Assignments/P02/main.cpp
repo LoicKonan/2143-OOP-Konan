@@ -43,91 +43,6 @@ using namespace std;
 void openFiles(ifstream& InFile, ofstream& OutFile);
 
 /*
- *    Struct Name: LinkedNodes
- *
- *   Description:
- *       - Holds The countries  names.
- *       - And the edges between the countries (a connection).
- *
- *   Public Methods:
- * 	     - LinkedNodes()
- *       - LinkedNodes(string A, string B, int num)
- *
- *   Private Methods:
- *       - None
- *
- *   Usage:
- * 	     - Creates node for a Linked List.
- *
- */
-struct LinkedNodes
-{
-    string FirstCountry;
-    string SecondCountry;
-    int edge;
-
-    /**
-      * Public : LinkedNodes()
-      *
-      * Description:
-      *      - Default constructor.
-      *      - Initialize countries name and the edges.
-      *      - friend ostream& operator<<(ostream& OutFile, LinkedNodes& other).
-      *
-      * Params:
-      *      - None.
-      *
-      * Returns:
-      *      - N/A
-      */
-    LinkedNodes()
-    {
-        FirstCountry = SecondCountry = "Name";
-        edge = 0;
-
-    }
-
-    /**
-      * Public : LinkedNodes()
-      *
-      * Description:
-      *      - Overload constructor.
-      *      - Initialize countries name and the edges.
-      *
-      * Params:
-      *      - string A, string B, int num.
-      *
-      * Returns:
-      *      - N/A
-      */
-    LinkedNodes(string A, string B, int num)
-    {
-        FirstCountry = A;
-        SecondCountry = B;
-        edge = num;
-    }
-
-    /**
-     * Public : ostream
-     *
-     * Description:
-     *      - Overloading the cout operator to print the countries names.
-     *      -  To print the edges.
-     *
-     * Params:
-     *      - ostream& OutFile, LinkedNodes& other
-     *
-     * Returns:
-     *      - [string] ostream
-     */
-    friend ostream& operator<<(ostream& OutFile, LinkedNodes& other)
-    {
-        return OutFile << other.FirstCountry << " -> " << other.SecondCountry
-            << " [label =" << " \"" << other.edge << " miles\"" << " arrowhead= odiamond ]"<< '\n';
-    }
-};
-
-/*
  *    Class Name: Node
  *
  *    Description:
@@ -347,6 +262,94 @@ public:
     }
 };
 
+
+
+/*
+ *    Struct Name: LinkedNodes
+ *
+ *   Description:
+ *       - Holds The countries  names.
+ *       - And the edges between the countries (a connection).
+ *
+ *   Public Methods:
+ * 	     - LinkedNodes()
+ *       - LinkedNodes(string A, string B, int num)
+ *
+ *   Private Methods:
+ *       - None
+ *
+ *   Usage:
+ * 	     - Creates node for a Linked List.
+ *
+ */
+struct LinkedNodes
+{
+    string FirstCountry;
+    string SecondCountry;
+    int edge;
+
+    /**
+      * Public : LinkedNodes()
+      *
+      * Description:
+      *      - Default constructor.
+      *      - Initialize countries name and the edges.
+      *      - friend ostream& operator<<(ostream& OutFile, LinkedNodes& other).
+      *
+      * Params:
+      *      - None.
+      *
+      * Returns:
+      *      - N/A
+      */
+    LinkedNodes()
+    {
+        FirstCountry = SecondCountry = "Name";
+        edge = 0;
+
+    }
+
+    /**
+      * Public : LinkedNodes()
+      *
+      * Description:
+      *      - Overload constructor.
+      *      - Initialize countries name and the edges.
+      *
+      * Params:
+      *      - string A, string B, int num.
+      *
+      * Returns:
+      *      - N/A
+      */
+    LinkedNodes(string A, string B, int num)
+    {
+        FirstCountry = A;
+        SecondCountry = B;
+        edge = num;
+    }
+
+    /**
+     * Public : ostream
+     *
+     * Description:
+     *      - Overloading the cout operator to print the countries names.
+     *      -  To print the edges.
+     *
+     * Params:
+     *      - ostream& OutFile, LinkedNodes& other
+     *
+     * Returns:
+     *      - [string] ostream
+     */
+    friend ostream& operator<<(ostream& OutFile, LinkedNodes& other)
+    {
+        return OutFile << other.FirstCountry << " -> " << other.SecondCountry
+            << " [label =" << " \"" << other.edge << " miles\"" << " arrowhead = odiamond]"<< '\n';
+    }
+};
+
+
 /**
  * Main Driver
  *
@@ -368,7 +371,7 @@ int main()
     string GraphType = "", FirstCountry, SecondCountry;
 
     InFile >> GraphType;                                    // Read in the graph type.
-    OutFile << GraphType << "\n{ " << "\n";                  // Display the graph Type.
+    OutFile << GraphType << "\n{ " << "\n";                 // Display the graph Type.
     InFile >> NumNodes;                                     // Read in number of nodes.
 
     while (!InFile.eof())                                   // While the file not empty.
