@@ -65,8 +65,6 @@ class Node
 private:
     
     float width;
-    int sides;
-    int peripheries;
     string shape;
     string Initials;
     string CountryName;
@@ -93,8 +91,7 @@ public:
         Initials = CountryName = ' ';
         width = 1.5;
         int sides = 6;
-        int peripheries = 2;
-        shape = "polygon";
+        shape = "hexagon";
         color = "yellow";
         style = "filled";
     }
@@ -113,12 +110,12 @@ public:
     */
     Node(string CountryInitials, string Name)
     {
-        Initials = CountryName = ' ';
+         Initials = CountryName = ' ';
         width = 1.5;
-        shape = "polygon";
-        color = "red";
+        int sides = 6;
+        shape = "hexagon";
+        color = "yellow";
         style = "filled";
-        sides = 6;
 
     }
 
@@ -153,9 +150,7 @@ public:
         return OutFile 
             << other.Initials    << " [label =" << " \""
             << other.CountryName << " \""       << ", shape = " 
-            << other.shape       << ", sides = "     
-            << other.sides       << ", peripheries = " 
-            << other.peripheries << ", color = "  
+            << other.shape       << ", color = "  
             << other.color       << ", style = "      
             << other.style       << ", width = "      
             << other.width       << "]"         << '\n';
