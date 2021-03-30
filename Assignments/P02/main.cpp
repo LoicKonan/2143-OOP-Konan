@@ -109,8 +109,8 @@ public:
     */
     Node(string Countrynode_id, string Name)
     {
-        node_label = ' ';
-        node_id    = ' ';
+        node_label = Countrynode_id;
+        node_id    = Name;
         width      = 1.5;
         shape      = "hexagon";
         color      = "green:red;0.25:blue";
