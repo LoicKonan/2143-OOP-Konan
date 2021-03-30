@@ -6,6 +6,11 @@
 *    Author:           Ethan Coyle
 *    Email:            Ejcoyle0912@my.msutexas.edu
 *
+*
+*    Author:           Jonathan Hogan
+*    Email:            jon.hogan83@gmail.com
+*
+*
 *    Label:            P02
 *    Title:            Program 02 - Graphviz Class
 *    Course:           CMPS 2143
