@@ -4,7 +4,7 @@
 
 #### Description
 
-This is a take Home Exam and also a Review for the final _**Object Oriented Programming**_.
+This is a take Home Exam and also a Review for our final Exam in _**Object Oriented Programming**_ .
 
 |   #   | File                                              | Description                                     |
 | :---: | ------------------------------------------------- | ----------------------------------------------- |
