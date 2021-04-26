@@ -9,7 +9,7 @@ This is a take Home Exam and also a Review for our final Exam in _**Object Orien
 |   #   | File                                                      | Description                                     |
 | :---: | --------------------------------------------------------- | ----------------------------------------------- |
 |   1   | [Banner](Banner)                                          | Banner for Assignment.                          |
-|   2   | [OOP-Grade-Booster-Exam.pdf](OOP-Grade-Booster-Exam.pdf) | Take Home exam and also a Review for the final. |
+|   2   | [OOP-Grade-Booster-Exam.pdf](OOP-Grade-Booster-Exam.pdf)  | Take Home exam and also a Review for the final.  |
 
 ### Instructions
 
